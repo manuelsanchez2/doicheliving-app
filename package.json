@@ -9,12 +9,11 @@
     "server": "nodemon server.js",
     "lint": "eslint . --ext .js",
     "build": "cd client && npm run build && npm run build-storybook",
-    "start": "node server.js",
     "prettify": "prettier --write .",
     "postinstall": "cd client && npm install",
-    "client": "npm run storybook && npm run cra",
+    "client": "cd client && npm start",
     "storybook": "cd client && npm run storybook",
-    "cra": "cd client && npm run start"
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\" \"npm run storybook\""
   },
   "repository": {
     "type": "git",
