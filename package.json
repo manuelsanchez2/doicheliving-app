@@ -6,7 +6,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "prettify": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.1"
   }
 }
