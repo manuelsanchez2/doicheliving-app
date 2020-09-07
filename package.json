@@ -9,9 +9,11 @@
     "server": "nodemon server.js",
     "lint": "eslint . --ext .js",
     "build": "cd client && npm run build && npm run build-storybook",
-    "start": "node server.js",
     "prettify": "prettier --write .",
-    "postinstall": "cd client && npm install"
+    "postinstall": "cd client && npm install",
+    "client": "cd client && npm start",
+    "storybook": "cd client && npm run storybook",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\" \"npm run storybook\""
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,7 @@
   "homepage": "https://github.com/manuelsanchez2/doicheliving-app#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "json-server": "^0.16.1",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
