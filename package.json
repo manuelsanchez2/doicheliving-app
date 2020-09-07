@@ -11,7 +11,10 @@
     "build": "cd client && npm run build && npm run build-storybook",
     "start": "node server.js",
     "prettify": "prettier --write .",
-    "postinstall": "cd client && npm install"
+    "postinstall": "cd client && npm install",
+    "client": "npm run storybook && npm run cra",
+    "storybook": "cd client && npm run storybook",
+    "cra": "cd client && npm run start"
   },
   "repository": {
     "type": "git",
