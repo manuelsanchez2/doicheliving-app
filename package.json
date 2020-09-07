@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/manuelsanchez2/doicheliving-app/issues"
   },
-  "homepage": "https://github.com/manuelsanchez2/doicheliving-app#readme"
+  "homepage": "https://github.com/manuelsanchez2/doicheliving-app#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
 }
