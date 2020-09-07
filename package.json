@@ -6,6 +6,7 @@
   "main": "server.js",
   "scripts": {
     "test": "npm run lint && cd client && npm test",
+    "server": "nodemon server.js",
     "lint": "eslint . --ext .js",
     "build": "cd client && npm run build && npm run build-storybook",
     "start": "node server.js",
@@ -41,6 +42,7 @@
     "eslint-plugin-react-hooks": "^2.5.1",
     "husky": "^4.2.5",
     "lint-staged": "^10.3.0",
+    "nodemon": "^2.0.4",
     "prettier": "^2.1.1"
   },
   "husky": {
