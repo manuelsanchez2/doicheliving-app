@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import GlobalCSS from "./GlobalCSS";
+
 // import {
 //   BrowserRouter as Router,
 //   Switch,
@@ -11,6 +13,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
+      <GlobalCSS />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
