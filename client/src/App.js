@@ -1,5 +1,5 @@
 import React from "react";
-import GlobalCSS from "./GlobalCSS";
+import GlobalStyles from "./GlobalStyles";
 
 // import {
 //   BrowserRouter as Router,
@@ -11,7 +11,7 @@ import GlobalCSS from "./GlobalCSS";
 function App() {
   return (
     <>
-      <GlobalCSS />
+      <GlobalStyles />
       <header className="App-header">Hola</header>
     </>
   );
