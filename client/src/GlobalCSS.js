@@ -19,6 +19,7 @@ const GlobalCSS = () => {
         }
 
         body {
+          background-color: pink;
         }
 
         code {
