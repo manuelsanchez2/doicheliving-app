@@ -1,5 +1,7 @@
 import React from "react";
 import { Global, css } from "@emotion/core";
+import Lato from "./assets/fonts/Lato-Regular.ttf";
+import Nunito from "./assets/fonts/Nunito-Regular.ttf";
 
 const GlobalStyles = () => {
   return (
@@ -10,8 +12,18 @@ const GlobalStyles = () => {
         *:after {
           box-sizing: border-box;
         }
+        @font-face {
+          font-family: "Lato-Regular";
+          src: url(${Lato}) format("ttf");
+        }
+        @font-face {
+          font-family: "Nunito-Regular";
+          src: url(${Nunito}) format("ttf");
+        }
 
-        #root {
+        :root {
+          --font-lato: "Lato-Regular";
+          --font-nunito: "Nunito-Regular";
           --color-yellow: #ffce00;
           --color-black: #000000;
           --color-white: #ffffff;
@@ -36,6 +48,8 @@ const GlobalStyles = () => {
           color: var(--color-black);
           padding: 0;
           margin: 0;
+          font-size: 32px;
+          font-family: var(--font-nunito);
         }
 
         code {
