@@ -37,6 +37,11 @@ const GlobalStyles = () => {
             rgba(255, 0, 0, 1) 45%,
             rgba(0, 0, 0, 1) 95%
           );
+          --shadow-down: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 3px 6px rgba(0, 0, 0, 0.2);
+
+          --shadow-up: 0 -2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 -2px 6px rgba(0, 0, 0, 0.2);
         }
 
         html {
@@ -50,6 +55,18 @@ const GlobalStyles = () => {
           margin: 0;
           font-size: 32px;
           font-family: var(--font-nunito);
+        }
+
+        .header {
+          box-shadow: var(--shadow-down);
+          min-height: 75px;
+        }
+        .main {
+          min-height: 650px;
+        }
+        .footer {
+          min-height: 75px;
+          box-shadow: var(--shadow-up);
         }
 
         code {

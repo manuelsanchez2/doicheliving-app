@@ -12,7 +12,9 @@ function App() {
   return (
     <>
       <GlobalStyles />
-      <header className="App-header">Hola</header>
+      <header className="header">Hola</header>
+      <main className="main">HOLA SOY MAIN</main>
+      <footer className="footer">HOLA SOY FOOTER</footer>
     </>
   );
 }
