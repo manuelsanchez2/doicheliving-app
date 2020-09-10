@@ -7,6 +7,8 @@ const RedButton = styled.button`
   padding: 0.3rem 2rem;
   color: var(--color-white);
   font-family: var(--font-lato);
+  font-size: 1rem;
+  letter-spacing: 3px;
 `;
 
 export default RedButton;
