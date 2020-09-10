@@ -22,7 +22,6 @@ const GlobalStyles = () => {
         }
 
         :root {
-          height: 100vh;
           --font-lato: "Lato-Regular";
           --font-nunito: "Nunito-Regular";
           --color-yellow: #ffce00;
@@ -43,79 +42,83 @@ const GlobalStyles = () => {
 
           --shadow-up: 0 -2.8px 2.2px rgba(0, 0, 0, 0.034),
             0 -2px 6px rgba(0, 0, 0, 0.2);
-        }
 
-        html {
+          height: 100vh;
         }
 
         code {
         }
 
-        @media (max-width: 400px) {
-          h2 {
-            font-size: 30px;
-            font-family: var(--font-nunito);
-            font-weight: bold;
-          }
-          h3 {
-            font-size: 18px;
-            font-family: var(--font-lato);
-            font-weight: bold;
-          }
-          h4 {
-            font-size: 16px;
-            font-family: var(--font-lato);
-            font-weight: bold;
-          }
-          p {
-            font-size: 16px;
-            font-family: var(--font-lato);
-          }
+        /* @media (max-width: 375px) { */
+        h2 {
+          font-size: 1.6rem;
+          font-family: var(--font-nunito);
+          font-weight: bold;
+        }
+        h3 {
+          font-size: 1.1rem;
+          font-family: var(--font-lato);
+          font-weight: bold;
+        }
+        h4 {
+          font-size: 1rem;
+          font-family: var(--font-lato);
+          font-weight: bold;
+        }
+        p {
+          font-size: 1rem;
+          font-family: var(--font-lato);
+        }
 
-          small {
-            font-size: 13px;
-            font-family: var(--font-lato);
-          }
+        small {
+          font-size: 0.8rem;
+          font-family: var(--font-lato);
+        }
 
-          body {
-            padding: 0;
-            margin: 0;
-            background-color: var(--color-yellow);
-          }
+        html,
+        body {
+          padding: 0;
+          margin: 0;
+        }
 
-          .header {
-            box-shadow: var(--shadow-down);
-            min-height: 80px;
-            display: flex;
-            justify-content: space-around;
-            border-radius: 0px 0px 20px 20px;
-            background-color: var(--color-white);
-          }
-          .main {
-          }
-          .footer {
-            box-shadow: var(--shadow-up);
-            min-height: 80px;
-            display: flex;
-            justify-content: space-around;
-            background-color: var(--color-white);
-            border-radius: 20px 20px 0px 0px;
-            margin-bottom: -68px;
-          }
+        body {
+          background-color: var(--color-yellow);
+        }
 
-          .container {
-            height: 100vh;
-            width: 100vw;
-            display: grid;
-            grid-template-rows: auto 2fr auto;
-            margin: 0 auto;
-          }
+        .container {
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          overflow: auto;
+        }
 
-          img {
-            max-width: 45px;
-            max-height: 45px;
-            margin-top: 15px;
-          }
+        .header {
+          box-shadow: var(--shadow-down);
+          max-height: 15%;
+          display: flex;
+          justify-content: space-around;
+          border-radius: 0px 0px 10px 10px;
+          border: 1px solid var(--color-grayborder);
+          background-color: var(--color-white);
+        }
+        .main {
+          flex: 1;
+          padding: 0 1em 0 1em;
+        }
+        .footer {
+          box-shadow: var(--shadow-up);
+          max-height: 15%;
+          display: flex;
+          justify-content: space-around;
+          background-color: var(--color-white);
+          border-radius: 10px 10px 0px 0px;
+          border: 1px solid var(--color-grayborder);
+        }
+
+        img {
+          max-width: 30px;
+          max-height: 30px;
+          margin: 15px 0;
         }
       `}
     />
