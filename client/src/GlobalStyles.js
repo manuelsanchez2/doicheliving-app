@@ -49,7 +49,7 @@ const GlobalStyles = () => {
         }
 
         body {
-          background-color: var(--color-white);
+          background-color: var(--color-yellow);
           color: var(--color-black);
           padding: 0;
           margin: 0;
