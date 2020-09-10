@@ -10,7 +10,7 @@ const StyledFooter = styled.nav`
   justify-content: space-around;
   background-color: var(--color-white);
   border-radius: 10px 10px 0px 0px;
-  border: 1px solid var(--color-grayborder);
+  border-top: 1px solid var(--color-grayborder);
 `;
 
 const Footer = () => {

@@ -40,7 +40,7 @@ const GlobalStyles = () => {
           );
 
           --shadow-down: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-            0 8px 6px rgba(0, 0, 0, 0.2);
+            0 2px 6px rgba(0, 0, 0, 0.2);
 
           --shadow-up: 0 -2.8px 2.2px rgba(0, 0, 0, 0.034),
             0 -2px 6px rgba(0, 0, 0, 0.2);
@@ -100,9 +100,11 @@ const GlobalStyles = () => {
         }
 
         img {
-          max-width: 30px;
-          max-height: 30px;
-          margin: 15px 0;
+          min-width: 30px;
+          min-height: 35px;
+          max-width: 35px;
+          max-height: 35px;
+          margin: 15px 10px;
         }
       `}
     />
