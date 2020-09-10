@@ -22,6 +22,7 @@ const GlobalStyles = () => {
         }
 
         :root {
+          height: 100vh;
           --font-lato: "Lato-Regular";
           --font-nunito: "Nunito-Regular";
           --color-yellow: #ffce00;
@@ -38,38 +39,83 @@ const GlobalStyles = () => {
             rgba(0, 0, 0, 1) 95%
           );
           --shadow-down: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-            0 3px 6px rgba(0, 0, 0, 0.2);
+            0 8px 6px rgba(0, 0, 0, 0.2);
 
           --shadow-up: 0 -2.8px 2.2px rgba(0, 0, 0, 0.034),
             0 -2px 6px rgba(0, 0, 0, 0.2);
         }
 
         html {
-          font-size: 100%;
-        }
-
-        body {
-          background-color: var(--color-yellow);
-          color: var(--color-black);
-          padding: 0;
-          margin: 0;
-          font-size: 32px;
-          font-family: var(--font-nunito);
-        }
-
-        .header {
-          box-shadow: var(--shadow-down);
-          min-height: 75px;
-        }
-        .main {
-          min-height: 650px;
-        }
-        .footer {
-          min-height: 75px;
-          box-shadow: var(--shadow-up);
         }
 
         code {
+        }
+
+        @media (max-width: 400px) {
+          h2 {
+            font-size: 30px;
+            font-family: var(--font-nunito);
+            font-weight: bold;
+          }
+          h3 {
+            font-size: 18px;
+            font-family: var(--font-lato);
+            font-weight: bold;
+          }
+          h4 {
+            font-size: 16px;
+            font-family: var(--font-lato);
+            font-weight: bold;
+          }
+          p {
+            font-size: 16px;
+            font-family: var(--font-lato);
+          }
+
+          small {
+            font-size: 13px;
+            font-family: var(--font-lato);
+          }
+
+          body {
+            padding: 0;
+            margin: 0;
+            background-color: var(--color-yellow);
+          }
+
+          .header {
+            box-shadow: var(--shadow-down);
+            min-height: 80px;
+            display: flex;
+            justify-content: space-around;
+            border-radius: 0px 0px 20px 20px;
+            background-color: var(--color-white);
+          }
+          .main {
+          }
+          .footer {
+            box-shadow: var(--shadow-up);
+            min-height: 80px;
+            display: flex;
+            justify-content: space-around;
+            background-color: var(--color-white);
+            border-radius: 20px 20px 0px 0px;
+            margin-bottom: -68px;
+          }
+
+          .container {
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-rows: auto 2fr auto;
+            margin: 0 auto;
+          }
+
+          img {
+            max-width: 45px;
+            max-height: 45px;
+            margin-top: 15px;
+          }
         }
       `}
     />
