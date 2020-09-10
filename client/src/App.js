@@ -1,7 +1,7 @@
 import React from "react";
 import GlobalStyles from "./GlobalStyles";
-import doichelivingSrc from "./assets/images/doicheliving-logo.png";
-
+import Header from "./components/Header";
+import doichelivingSrc from "../assets/images/doicheliving-logo.png";
 // import {
 //   BrowserRouter as Router,
 //   Switch,
@@ -14,11 +14,8 @@ function App() {
     <div className="container">
       <GlobalStyles />
 
-      <header className="header">
-        <img src={doichelivingSrc} alt="" />
-        <img src={doichelivingSrc} alt="" />
-        <img src={doichelivingSrc} alt="" />
-      </header>
+      <Header />
+
       <div className="main">
         <h2>¿Qué quieres descubrir de Alemania? </h2>
         <h3>Organiza tu viaje</h3>

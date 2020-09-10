@@ -92,7 +92,7 @@ const GlobalStyles = () => {
           overflow: auto;
         }
 
-        .header {
+        /* .header {
           box-shadow: var(--shadow-down);
           max-height: 15%;
           display: flex;
@@ -100,7 +100,7 @@ const GlobalStyles = () => {
           border-radius: 0px 0px 10px 10px;
           border: 1px solid var(--color-grayborder);
           background-color: var(--color-white);
-        }
+        } */
         .main {
           flex: 1;
           padding: 0 1em 0 1em;

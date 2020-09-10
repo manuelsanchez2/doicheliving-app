@@ -1,1 +1,1 @@
-export { default } from "./RedButton";
+export { default } from "./YellowButton";
