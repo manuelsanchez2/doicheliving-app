@@ -1,7 +1,7 @@
 import React from "react";
 import GlobalStyles from "./GlobalStyles";
 import Header from "./components/Header";
-import doichelivingSrc from "../assets/images/doicheliving-logo.png";
+import Footer from "./components/Footer";
 // import {
 //   BrowserRouter as Router,
 //   Switch,
@@ -13,9 +13,7 @@ function App() {
   return (
     <div className="container">
       <GlobalStyles />
-
       <Header />
-
       <div className="main">
         <h2>¿Qué quieres descubrir de Alemania? </h2>
         <h3>Organiza tu viaje</h3>
@@ -38,12 +36,7 @@ function App() {
         <h3>Iconos</h3>
         <p>Aqui vamos a tener unos supericonos</p>
       </div>
-      <footer className="footer">
-        <img src={doichelivingSrc} alt="" />
-        <img src={doichelivingSrc} alt="" />
-        <img src={doichelivingSrc} alt="" />
-        <img src={doichelivingSrc} alt="" />
-      </footer>
+      <Footer />
     </div>
   );
 }

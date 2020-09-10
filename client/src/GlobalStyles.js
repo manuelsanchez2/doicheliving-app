@@ -24,6 +24,7 @@ const GlobalStyles = () => {
         :root {
           --font-lato: "Lato-Regular";
           --font-nunito: "Nunito-Regular";
+
           --color-yellow: #ffce00;
           --color-black: #000000;
           --color-white: #ffffff;
@@ -37,6 +38,7 @@ const GlobalStyles = () => {
             rgba(238, 0, 0, 1) 48%,
             rgba(159, 25, 25, 1) 96%
           );
+
           --shadow-down: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
             0 8px 6px rgba(0, 0, 0, 0.2);
 
@@ -92,27 +94,9 @@ const GlobalStyles = () => {
           overflow: auto;
         }
 
-        /* .header {
-          box-shadow: var(--shadow-down);
-          max-height: 15%;
-          display: flex;
-          justify-content: space-around;
-          border-radius: 0px 0px 10px 10px;
-          border: 1px solid var(--color-grayborder);
-          background-color: var(--color-white);
-        } */
         .main {
           flex: 1;
           padding: 0 1em 0 1em;
-        }
-        .footer {
-          box-shadow: var(--shadow-up);
-          max-height: 15%;
-          display: flex;
-          justify-content: space-around;
-          background-color: var(--color-white);
-          border-radius: 10px 10px 0px 0px;
-          border: 1px solid var(--color-grayborder);
         }
 
         img {
