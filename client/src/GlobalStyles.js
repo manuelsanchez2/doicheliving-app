@@ -31,6 +31,7 @@ const GlobalStyles = () => {
           --color-grayplace: #9b9b9b;
           --color-grayinput: #f0f4f5;
           --color-grayborder: #d5d5d5;
+          --color-darkgrayborder: #707070;
           --color-graytrans: #c9c8c8;
           --color-red: #ff0000;
           --color-redgrad: linear-gradient(
@@ -102,6 +103,13 @@ const GlobalStyles = () => {
         .main--login {
           flex: 1;
           padding: 2em 1em 0 1em;
+        }
+
+        .form-container {
+          background: var(--color-white);
+          border-radius: 10px 10px 10px 10px;
+          border: 1px solid var(--color-darkgrayborder);
+          box-shadow: 0.5px 0px 20px 0px rgba(0, 0, 0, 0.3);
         }
 
         img {
