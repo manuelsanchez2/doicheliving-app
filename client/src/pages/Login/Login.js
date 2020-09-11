@@ -8,41 +8,69 @@ const StyledLoginContainer = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   overflow: auto;
   background: var(--color-yellow);
+
+  img {
+    max-height: 5rem;
+    max-width: 5rem;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 17px;
+    margin-top: 12px;
+  }
 `;
 
 const Login = () => {
   return (
     <StyledLoginContainer>
       <Header />
+      <button>VOLVER A LA PAGINA ANTERIOR</button>
+
       <div className="main--login">
-        <div className="form__container">
-          <img src={logo2Src} alt="doicheliving logo" />
-          <h2>INICIAR SESIÓN</h2>
-          <form>
-            <div className="form__field">
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Inserta tu email aquí "
-              />
+        <div className="form__high__container">
+          <div className="form__width__container">
+            <div className="form__image">
+              <img src={logo2Src} alt="doicheliving logo" />
             </div>
-            <div className="form__field">
-              <label htmlFor="password">Contraseña</label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                placeholder="Inserta tu contraseña aquí "
-              />
+            <h2>INICIAR SESIÓN</h2>
+            <form>
+              <div className="form__field">
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Inserta tu email aquí "
+                />
+              </div>
+              <div className="form__field">
+                <label htmlFor="password">Contraseña</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Inserta tu contraseña aquí "
+                />
+              </div>
+              <div className="form__field">
+                <input
+                  className="button__login"
+                  type="submit"
+                  value="ACCEDER A LA CUENTA"
+                />
+              </div>
+            </form>
+            <div className="form__text">
+              <small>
+                ¿No tienes una cuenta? Haz click <strong>aquí</strong> para
+                crear una en cuestión de segundos.
+              </small>
             </div>
-            <div className="form__field">
-              <input type="submit" value="INICIAR SESIÓN" />
-            </div>
-          </form>
+          </div>
         </div>
       </div>
       <Footer />

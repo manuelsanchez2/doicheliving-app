@@ -15,6 +15,10 @@ const StyledHeader = styled.header`
   background-color: var(--color-white);
 
   img {
+    min-width: 30px;
+    min-height: 35px;
+    max-width: 35px;
+    max-height: 35px;
     margin: 15px 10px;
   }
 

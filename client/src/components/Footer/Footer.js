@@ -15,6 +15,14 @@ const StyledFooter = styled.nav`
   background-color: var(--color-white);
   border-radius: 10px 10px 0px 0px;
   border-top: 1.5px solid var(--color-darkgrayborder);
+
+  img {
+    min-width: 30px;
+    min-height: 35px;
+    max-width: 35px;
+    max-height: 35px;
+    margin: 15px 10px;
+  }
 `;
 
 const Footer = () => {
