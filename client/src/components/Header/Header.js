@@ -7,7 +7,7 @@ import profileSrc from "../../assets/images/header-profile.svg";
 
 const StyledHeader = styled.header`
   box-shadow: var(--shadow-down);
-  max-height: 15%;
+  max-height: 20%;
   display: flex;
   justify-content: space-between;
   border-radius: 0px 0px 10px 10px;
@@ -15,20 +15,18 @@ const StyledHeader = styled.header`
   background-color: var(--color-white);
 
   img {
-    min-width: 30px;
-    min-height: 35px;
-    max-width: 35px;
-    max-height: 35px;
-    margin: 15px 10px;
+    height: 2rem;
+    width: 2rem;
+    margin: 15px 5px;
   }
 
   div:first-child > img {
     margin-left: 25px;
-    max-width: 30px;
   }
 
   div:nth-child(2) > img {
-    max-width: 45px;
+    /* min-width: 36px;
+    min-height: 36px; */
   }
 
   div:last-child > img {

@@ -12,16 +12,16 @@ const StyledFooter = styled.nav`
   max-height: 15%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   background-color: var(--color-white);
   border-radius: 10px 10px 0px 0px;
   border-top: 1.5px solid var(--color-darkgrayborder);
 
   img {
-    min-width: 30px;
-    min-height: 35px;
-    max-width: 35px;
-    max-height: 35px;
-    margin: 15px 10px;
+    width: 2rem;
+    height: 2rem;
+    margin: 12px 10px;
+    padding-bottom: 2.5px;
   }
 `;
 

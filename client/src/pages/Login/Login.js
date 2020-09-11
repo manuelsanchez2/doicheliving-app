@@ -1,8 +1,10 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import styled from "@emotion/styled";
 import logo2Src from "../../assets/images/doicheliving-logo2.png";
+import returnSrc from "../../assets/images/arrow.svg";
 
 const StyledLoginContainer = styled.div`
   height: 100vh;
@@ -22,13 +24,25 @@ const StyledLoginContainer = styled.div`
     margin-bottom: 17px;
     margin-top: 12px;
   }
+
+  button {
+    background: var(--color-white);
+    border: 1px solid var(--color-darkgrayborder);
+    border-radius: 50px;
+    width: 48px;
+    height: 48px;
+    margin: 10px 0 0 10px;
+  }
 `;
 
 const Login = () => {
+  const history = useHistory();
   return (
     <StyledLoginContainer>
       <Header />
-      <button>VOLVER A LA PAGINA ANTERIOR</button>
+      <button onClick={() => history.goBack()}>
+        <img src={returnSrc} alt="return button" />
+      </button>
 
       <div className="main--login">
         <div className="form__high__container">

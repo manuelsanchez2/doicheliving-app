@@ -114,7 +114,7 @@ const GlobalStyles = () => {
           justify-content: center;
           align-items: center;
           flex: 1;
-          padding: 2em 1em 0 1em;
+          padding: 0em 1em 0 1em;
         }
 
         .form__image {
@@ -131,13 +131,13 @@ const GlobalStyles = () => {
           align-items: center;
           justify-content: center;
           display: flex;
-          max-height: 60%;
+          max-height: 80%;
         }
 
         .form__width__container {
           max-width: 320px;
           width: 100%;
-          padding: 3rem 1rem;
+          padding: 3.5rem 1.5rem;
         }
 
         .form__field {
