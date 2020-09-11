@@ -77,6 +77,14 @@ const GlobalStyles = () => {
           font-size: 0.8rem;
           font-family: var(--font-lato);
         }
+        label {
+          font-size: 0.8rem;
+          font-family: var(--font-lato);
+        }
+        ::placeholder {
+          font-size: 0.8rem;
+          font-family: var(--font-lato);
+        }
 
         html,
         body {
@@ -105,11 +113,14 @@ const GlobalStyles = () => {
           padding: 2em 1em 0 1em;
         }
 
-        .form-container {
+        .form__container {
           background: var(--color-white);
           border-radius: 10px 10px 10px 10px;
           border: 1px solid var(--color-darkgrayborder);
           box-shadow: 0.5px 0px 20px 0px rgba(0, 0, 0, 0.3);
+        }
+
+        .form__field {
         }
 
         img {
