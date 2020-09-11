@@ -99,6 +99,11 @@ const GlobalStyles = () => {
           padding: 0 1em 0 1em;
         }
 
+        .main--login {
+          flex: 1;
+          padding: 2em 1em 0 1em;
+        }
+
         img {
           min-width: 30px;
           min-height: 35px;

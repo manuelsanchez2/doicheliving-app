@@ -23,13 +23,13 @@ const Footer = () => {
       <Link to="/home">
         <img src={homeSrc} alt="Home" />
       </Link>
-      <Link to="/map">
+      <Link to="/">
         <img src={mapSrc} alt="Map" />
       </Link>
-      <Link to="/search">
+      <Link to="/">
         <img src={searchSrc} alt="Search Icon" />
       </Link>
-      <Link to="/profile">
+      <Link to="/login">
         <img src={profileSrc} alt="Profile icon" />
       </Link>
     </StyledFooter>
