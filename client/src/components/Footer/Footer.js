@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "@emotion/styled";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import homeSrc from "../../assets/images/footer-home.svg";
 import mapSrc from "../../assets/images/footer-map.svg";
 import searchSrc from "../../assets/images/footer-search.svg";
@@ -20,18 +20,18 @@ const StyledFooter = styled.nav`
 const Footer = () => {
   return (
     <StyledFooter>
-      <a href="/home">
+      <Link to="/home">
         <img src={homeSrc} alt="Home" />
-      </a>
-      <a href="/map">
+      </Link>
+      <Link to="/map">
         <img src={mapSrc} alt="Map" />
-      </a>
-      <a href="/search">
+      </Link>
+      <Link to="/search">
         <img src={searchSrc} alt="Search Icon" />
-      </a>
-      <a href="/profile">
+      </Link>
+      <Link to="/profile">
         <img src={profileSrc} alt="Profile icon" />
-      </a>
+      </Link>
     </StyledFooter>
   );
 };
