@@ -27,7 +27,7 @@ const MenuItemList = styled.ul`
   height: 101vh;
   width: 85vw;
   padding-top: 5.5rem;
-  z-index: 99;
+  z-index: 50;
 `;
 
 const MenuImage = styled.img`

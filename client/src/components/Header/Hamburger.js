@@ -4,27 +4,26 @@ import styled from "@emotion/styled";
 import PropTypes from "prop-types";
 
 const Container = styled.div`
-  width: 30px;
-  height: 30px;
-  margin: 15px 5px;
+  margin-top: 15px;
   margin-left: 25px;
 `;
 
 const StyledBurger = styled.div`
   width: 2rem;
   height: 2rem;
-
-  position: absolute;
-  display: none;
+  /* position: fixed; */
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
-  z-index: 999;
+  z-index: 1000;
+  position: ${({ open }) => (open ? "fixed" : "static")};
+  transition: all 0.5s linear;
 
   div {
-    width: 1.8rem;
+    width: 2rem;
     height: 0.25rem;
     background-color: ${({ open }) => (open ? "red" : "#707070")};
+
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
@@ -59,6 +58,6 @@ const Hamburger = () => {
 export default Hamburger;
 
 Hamburger.propTypes = {
-  onClick: PropTypes.func.isRequired,
-  open: PropTypes.bool.isRequired,
+  onClick: PropTypes.func,
+  open: PropTypes.bool,
 };
