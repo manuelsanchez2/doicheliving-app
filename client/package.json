@@ -27,6 +27,7 @@
     "react-query": "^2.15.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "react-share": "^4.2.1",
     "reactjs-popup": "^2.0.3"
   },
   "scripts": {
