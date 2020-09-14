@@ -2,8 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "@emotion/styled";
 import doichelivingSrc from "../../assets/images/doicheliving-logo.png";
-import hamburgerSrc from "../../assets/images/header-hamburger.svg";
+// import hamburgerSrc from "../../assets/images/header-hamburger.svg";
 import profileSrc from "../../assets/images/header-profile.svg";
+import Hamburger from "./Hamburger";
 
 const StyledHeader = styled.header`
   box-shadow: var(--shadow-down);
@@ -37,9 +38,7 @@ const StyledHeader = styled.header`
 const Header = () => {
   return (
     <StyledHeader>
-      <div>
-        <img src={hamburgerSrc} alt="" />
-      </div>
+      <Hamburger />
       <div>
         <img src={doichelivingSrc} alt="" />
       </div>
