@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "@emotion/styled";
-import doichelivingSrc from "../../assets/images/doicheliving-logo.png";
-import profileSrc from "../../assets/images/header-profile.svg";
+import doichelivingSrc from "../../assets/icons/doicheliving-logo.png";
+import profileSrc from "../../assets/icons/header-profile.svg";
 import Hamburger from "./Hamburger";
 
 const ImageHeader = styled.img`

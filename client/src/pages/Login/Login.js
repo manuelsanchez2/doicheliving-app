@@ -3,8 +3,8 @@ import { useHistory } from "react-router-dom";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import styled from "@emotion/styled";
-import logo2Src from "../../assets/images/doicheliving-logo2.png";
-import returnSrc from "../../assets/images/arrow.svg";
+import logo2Src from "../../assets/icons/doicheliving-logo2.png";
+import returnSrc from "../../assets/icons/arrow.svg";
 
 const StyledLoginContainer = styled.div`
   height: 100vh;
