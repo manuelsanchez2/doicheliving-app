@@ -3,13 +3,19 @@ import Menu from "./Menu";
 import styled from "@emotion/styled";
 import PropTypes from "prop-types";
 
+const Container = styled.div`
+  width: 30px;
+  height: 30px;
+  margin: 15px 5px;
+  margin-left: 25px;
+`;
+
 const StyledBurger = styled.div`
   width: 2rem;
   height: 2rem;
-  position: fixed;
-  top: 15px;
-  right: 20px;
-  z-index: 20;
+
+  position: absolute;
+  z-index: 999;
   display: none;
   @media (max-width: 768px) {
     display: flex;
@@ -19,7 +25,7 @@ const StyledBurger = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => (open ? "#ccc" : "#333")};
+    background-color: ${({ open }) => (open ? "red" : "#707070")};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
@@ -40,14 +46,14 @@ const Hamburger = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <>
+    <Container>
       <StyledBurger open={open} onClick={() => setOpen(!open)}>
         <div />
         <div />
         <div />
       </StyledBurger>
       <Menu open={open} />
-    </>
+    </Container>
   );
 };
 

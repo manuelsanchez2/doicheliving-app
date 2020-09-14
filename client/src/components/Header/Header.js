@@ -21,10 +21,6 @@ const StyledHeader = styled.header`
     margin: 15px 5px;
   }
 
-  div:first-child > img {
-    margin-left: 25px;
-  }
-
   div:nth-child(2) > img {
     /* min-width: 36px;
     min-height: 36px; */
