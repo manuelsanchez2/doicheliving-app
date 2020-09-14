@@ -11,6 +11,10 @@ import styled from "@emotion/styled";
 import PictureTest from "../../assets/images/picture-test-1.jpg";
 import PictureTest2 from "../../assets/images/picture-test-2.jpg";
 import PictureTest3 from "../../assets/images/picture-test-3.jpg";
+import instagramSrc from "../../assets/icons/social-instagram.svg";
+import facebookSrc from "../../assets/icons/social-facebook.svg";
+import mailSrc from "../../assets/icons/social-mail.svg";
+import shareSrc from "../../assets/icons/social-share.svg";
 import { Link } from "react-router-dom";
 
 const url =
@@ -59,6 +63,7 @@ const Login = () => {
           lazyLoad
           dots={false}
           animateIn={true}
+          rewind={false}
         >
           <BigPictureContainer>
             <Link to="/login">
@@ -115,6 +120,7 @@ const Login = () => {
           lazyLoad
           dots={false}
           animateIn={true}
+          rewind={false}
         >
           <BigPictureContainer>
             <img src={PictureTest3} alt="" />
@@ -132,7 +138,10 @@ const Login = () => {
             <img src={PictureTest3} alt="" />
           </BigPictureContainer>
         </OwlCarousel>
-        <div className="subscribe__section">
+
+        {/* SUBSCRIBE SECTION  */}
+
+        <section className="subscribe__section">
           <p className="subscribe__section__text">
             ¡Suscríbete a nuestra newsletter y estate al tanto de todas nuestras
             novedades!
@@ -166,10 +175,29 @@ const Login = () => {
               }}
             />
           </div>
-        </div>
+        </section>
 
-        <h3>Iconos</h3>
-        <p>Aqui vamos a tener unos supericonos</p>
+        <section className="social__section">
+          <h3>¿Te gusta Doiche Living?</h3>
+          <div className="social__section__container">
+            <div className="social__item__container">
+              <img src={instagramSrc} alt="" />
+              <small>Síguenos en Instagram</small>
+            </div>
+            <div className="social__item__container">
+              <img src={mailSrc} alt="" />
+              <small>Contacta con nosotros</small>
+            </div>
+            <div className="social__item__container">
+              <img src={facebookSrc} alt="" />
+              <small>Síguenos en Facebook</small>
+            </div>
+            <div className="social__item__container">
+              <img src={shareSrc} alt="" />
+              <small>Comparte la aplicación</small>
+            </div>
+          </div>
+        </section>
       </div>
       <Footer />
     </div>
