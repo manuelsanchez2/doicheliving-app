@@ -7,24 +7,26 @@ import profileSrc from "../../assets/images/header-profile.svg";
 
 const StyledHeader = styled.header`
   box-shadow: var(--shadow-down);
-  max-height: 15%;
+  max-height: 20%;
   display: flex;
   justify-content: space-between;
   border-radius: 0px 0px 10px 10px;
-  border-bottom: 1px solid var(--color-grayborder);
+  border-bottom: 1.5px solid var(--color-darkgrayborder);
   background-color: var(--color-white);
 
   img {
-    margin: 15px 10px;
+    height: 2rem;
+    width: 2rem;
+    margin: 15px 5px;
   }
 
   div:first-child > img {
     margin-left: 25px;
-    max-width: 30px;
   }
 
   div:nth-child(2) > img {
-    max-width: 45px;
+    /* min-width: 36px;
+    min-height: 36px; */
   }
 
   div:last-child > img {

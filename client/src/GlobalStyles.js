@@ -31,6 +31,7 @@ const GlobalStyles = () => {
           --color-grayplace: #9b9b9b;
           --color-grayinput: #f0f4f5;
           --color-grayborder: #d5d5d5;
+          --color-darkgrayborder: #707070;
           --color-graytrans: #c9c8c8;
           --color-red: #ff0000;
           --color-redgrad: linear-gradient(
@@ -75,6 +76,15 @@ const GlobalStyles = () => {
         small {
           font-size: 0.8rem;
           font-family: var(--font-lato);
+          line-height: 0.8rem;
+        }
+        label {
+          font-size: 0.7rem;
+          font-family: var(--font-lato);
+        }
+        ::placeholder {
+          font-size: 0.8rem;
+          font-family: var(--font-lato);
         }
 
         html,
@@ -99,12 +109,71 @@ const GlobalStyles = () => {
           padding: 0 1em 0 1em;
         }
 
-        img {
-          min-width: 30px;
-          min-height: 35px;
-          max-width: 35px;
-          max-height: 35px;
-          margin: 15px 10px;
+        .main--login {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex: 1;
+          padding: 0em 1em 0 1em;
+        }
+
+        .form__image {
+          align-items: center;
+          justify-content: center;
+          display: flex;
+        }
+
+        .form__high__container {
+          background: var(--color-white);
+          border-radius: 10px 10px 10px 10px;
+          border: 1px solid var(--color-darkgrayborder);
+          box-shadow: 0.5px 0px 20px 0px rgba(0, 0, 0, 0.3);
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          max-height: 80%;
+        }
+
+        .form__width__container {
+          max-width: 320px;
+          width: 100%;
+          padding: 3.5rem 1.5rem;
+        }
+
+        .form__field {
+          display: flex;
+          padding-bottom: 0.9rem;
+          align-items: center;
+        }
+
+        .form__field:last-child {
+          justify-content: center;
+        }
+
+        .form__field label {
+          flex: 0 0 80px;
+          font-family: var(--font-lato);
+        }
+
+        .form__field input[type="password"],
+        .form__field input[type="email"],
+        .form__field input[type="text"] {
+          border: 1px solid var(--color-grayborder);
+          background: #f0f4f5;
+          border-radius: 4px 4px 4px 4px;
+          padding: 0.5rem;
+          flex: 1;
+        }
+
+        .button__login {
+          border: 1px solid var(--color-yellow);
+          background: var(--color-yellow);
+          border-radius: 10px;
+          color: var(--color-white);
+          font-family: var(--font-lato);
+          font-size: 1rem;
+          letter-spacing: 2px;
+          padding: 0.3rem 1.5rem;
         }
       `}
     />
