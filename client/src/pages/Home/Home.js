@@ -4,9 +4,6 @@ import Mailchimp from "react-mailchimp-form";
 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
 import styled from "@emotion/styled";
 import PictureTest from "../../assets/images/picture-test-1.jpg";
 import PictureTest2 from "../../assets/images/picture-test-2.jpg";
@@ -21,30 +18,39 @@ const url =
   "https://doicheliving.us20.list-manage.com/subscribe/post?u=9cdf1aa6dc72fdfd1cda13b58&amp;id=aba90a6fa5";
 
 const BigPictureContainer = styled.div`
-  width: 35vw;
-  height: 23vh;
-  border: 1px solid var(--color-darkgrayborder);
-  border-radius: 20px;
-  box-shadow: 0.5px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  background: white;
 
   img {
     object-fit: cover;
-    height: 100%;
     border-radius: 20px;
+    width: 8.5rem;
+    height: 12.5rem;
+    border: 1px solid var(--color-darkgrayborder);
+    box-shadow: 0.5px 0px 20px 0px rgba(0, 0, 0, 0.3);
   }
 `;
 
 const SmallPictureContainer = styled.div`
-  width: 30vw;
-  height: 15vh;
-  border: 1px solid var(--color-darkgrayborder);
-  border-radius: 20px;
-  box-shadow: 0.5px 0px 20px 0px rgba(0, 0, 0, 0.3);
-
   img {
     object-fit: cover;
-    height: 100%;
     border-radius: 20px;
+    width: 7rem;
+    height: 5.5rem;
+    border: 1px solid var(--color-darkgrayborder);
+    box-shadow: 0.5px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  }
+`;
+const CarouselContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  > * {
+    margin-right: 0.15rem;
   }
 `;
 
@@ -53,18 +59,9 @@ const Login = () => {
     <div className="container">
       <Header />
       <div className="main--main">
-        <h2>¿Qué quieres descubrir de Alemania? </h2>
+        <h2>¿Qué quieres descubrir de Alemania?</h2>
         <h3>Organiza tu viaje</h3>
-        <OwlCarousel
-          className="owl-theme"
-          touchDrag
-          margin={10}
-          items="2.5"
-          lazyLoad
-          dots={false}
-          animateIn={true}
-          rewind={false}
-        >
+        <CarouselContainer>
           <BigPictureContainer>
             <Link to="/login">
               <img src={PictureTest} alt="" />
@@ -82,19 +79,10 @@ const Login = () => {
           <BigPictureContainer>
             <img src={PictureTest} alt="" />
           </BigPictureContainer>
-        </OwlCarousel>
+        </CarouselContainer>
 
         <h3>Destinos más populares</h3>
-        <OwlCarousel
-          className="owl-theme"
-          touchDrag
-          margin={10}
-          items="3"
-          lazyLoad
-          rewind={false}
-          dots={false}
-          animateIn={true}
-        >
+        <CarouselContainer>
           <SmallPictureContainer>
             <img src={PictureTest2} alt="" />
           </SmallPictureContainer>
@@ -110,18 +98,9 @@ const Login = () => {
           <SmallPictureContainer>
             <img src={PictureTest2} alt="" />
           </SmallPictureContainer>
-        </OwlCarousel>
+        </CarouselContainer>
         <h3>Rutas por Alemania</h3>
-        <OwlCarousel
-          className="owl-theme"
-          touchDrag
-          margin={10}
-          items="2.5"
-          lazyLoad
-          dots={false}
-          animateIn={true}
-          rewind={false}
-        >
+        <CarouselContainer>
           <BigPictureContainer>
             <img src={PictureTest3} alt="" />
           </BigPictureContainer>
@@ -137,7 +116,7 @@ const Login = () => {
           <BigPictureContainer>
             <img src={PictureTest3} alt="" />
           </BigPictureContainer>
-        </OwlCarousel>
+        </CarouselContainer>
 
         {/* SUBSCRIBE SECTION  */}
 
