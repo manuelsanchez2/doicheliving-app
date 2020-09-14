@@ -1,4 +1,7 @@
 import React from "react";
+
+import Mailchimp from "react-mailchimp-form";
+
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import OwlCarousel from "react-owl-carousel";
@@ -9,6 +12,9 @@ import PictureTest from "../../assets/images/picture-test-1.jpg";
 import PictureTest2 from "../../assets/images/picture-test-2.jpg";
 import PictureTest3 from "../../assets/images/picture-test-3.jpg";
 import { Link } from "react-router-dom";
+
+const url =
+  "https://doicheliving.us20.list-manage.com/subscribe/post?u=9cdf1aa6dc72fdfd1cda13b58&amp;id=aba90a6fa5";
 
 const BigPictureContainer = styled.div`
   width: 35vw;
@@ -132,18 +138,32 @@ const Login = () => {
             novedades!
           </p>
           <div className="subscribe__section__field">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Inserta tu email aquí "
-            />
-          </div>
-          <div>
-            <input
-              className="subscribe__section__button"
-              type="submit"
-              value="ENVIAR"
+            <Mailchimp
+              action={url}
+              fields={[
+                {
+                  name: "FNAME",
+                  placeholder: "Tu nombre",
+                  type: "name",
+                  required: true,
+                },
+                {
+                  name: "EMAIL",
+                  placeholder: "Tu email",
+                  type: "email",
+                  required: true,
+                },
+              ]}
+              messages={{
+                sending: "Enviando...",
+                success: "¡Gracias por suscribirte a Doiche Living!",
+                error: "Hemos tenido un problema interno. Estamos en ello :).",
+                empty:
+                  "Tienes que rellenar todos los datos para suscribirte a Doiche Living.",
+                duplicate:
+                  "Has intentado introducir demasiadas veces el mismo correo.",
+                button: "ENVIAR",
+              }}
             />
           </div>
         </div>
