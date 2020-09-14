@@ -109,6 +109,50 @@ const GlobalStyles = () => {
           padding: 0 1em 0 1em;
         }
 
+        /* MAIN PAGE  */
+
+        .main--main {
+          flex: 1;
+          padding: 0 1em 0 1em;
+        }
+
+        .subscribe__section {
+          height: 20%;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          flex-flow: column nowrap;
+        }
+
+        .subscribe__section__text {
+          font-family: var(--font-lato);
+          font-size: 1rem;
+          text-align: center;
+        }
+
+        .subscribe__section__field input:first-child {
+          border: 1px solid var(--color-grayborder);
+          background: #f0f4f5;
+          border-radius: 4px 4px 4px 4px;
+          padding: 0.5rem;
+          flex: 1;
+          width: 90vw;
+        }
+
+        .subscribe__section__button {
+          border: 1px solid var(--color-redgrad);
+          border-radius: 15px;
+          background: var(--color-redgrad);
+          margin-top: 10px;
+          padding: 0.5rem 2rem;
+          color: var(--color-white);
+          font-family: var(--font-lato);
+          font-size: 1rem;
+          letter-spacing: 3px;
+          display: block;
+        }
+
+        /* LOGIN PAGE  */
         .main--login {
           display: flex;
           justify-content: center;

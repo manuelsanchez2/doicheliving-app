@@ -42,7 +42,7 @@ const Login = () => {
   return (
     <div className="container">
       <Header />
-      <div className="main">
+      <div className="main--main">
         <h2>¿Qué quieres descubrir de Alemania? </h2>
         <h3>Organiza tu viaje</h3>
         <OwlCarousel
@@ -126,8 +126,28 @@ const Login = () => {
             <img src={PictureTest3} alt="" />
           </BigPictureContainer>
         </OwlCarousel>
-        <h3>Suscribete con nosotros</h3>
-        <p>Si quieres formar parte del equipo de Doiche Living..</p>
+        <div className="subscribe__section">
+          <p className="subscribe__section__text">
+            ¡Suscríbete a nuestra newsletter y estate al tanto de todas nuestras
+            novedades!
+          </p>
+          <div className="subscribe__section__field">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Inserta tu email aquí "
+            />
+          </div>
+          <div>
+            <input
+              className="subscribe__section__button"
+              type="submit"
+              value="ENVIAR"
+            />
+          </div>
+        </div>
+
         <h3>Iconos</h3>
         <p>Aqui vamos a tener unos supericonos</p>
       </div>

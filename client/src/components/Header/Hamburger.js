@@ -15,14 +15,14 @@ const StyledBurger = styled.div`
   height: 2rem;
 
   position: absolute;
-  z-index: 999;
   display: none;
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
+  z-index: 999;
 
   div {
-    width: 2rem;
+    width: 1.8rem;
     height: 0.25rem;
     background-color: ${({ open }) => (open ? "red" : "#707070")};
     border-radius: 10px;

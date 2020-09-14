@@ -20,7 +20,7 @@ const StyledHeader = styled.header`
   border-bottom: 1.5px solid var(--color-darkgrayborder);
   background-color: var(--color-white);
 
-  div:last-child {
+  & > :last-child {
     margin-right: 25px;
   }
 `;
@@ -29,12 +29,10 @@ const Header = () => {
   return (
     <StyledHeader>
       <Hamburger />
-      <div>
-        <ImageHeader src={doichelivingSrc} alt="" />
-      </div>
-      <div>
-        <ImageHeader src={profileSrc} alt="" />
-      </div>
+
+      <ImageHeader src={doichelivingSrc} alt="" />
+
+      <ImageHeader src={profileSrc} alt="" />
     </StyledHeader>
   );
 };
