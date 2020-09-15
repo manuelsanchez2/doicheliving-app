@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import ReactMapGL from "react-map-gl";
+import ReactMapGL, { Marker } from "react-map-gl";
 // import { useHistory } from "react-router-dom";
 import { listSpots } from "../../api/spots";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import styled from "@emotion/styled";
+import mapMarker from "../../assets/icons/map-marker-yellow.svg";
 // import returnSrc from "../../assets/icons/arrow.svg";
 
 const StyledMapContainer = styled.div`
@@ -33,6 +34,7 @@ const StyledMapContainer = styled.div`
 
 const Map = () => {
   //   const history = useHistory();
+  const [spots, setSpots] = useState([]);
   const [viewport, setViewport] = useState({
     height: "88.5vh",
     width: "2000",
@@ -44,7 +46,7 @@ const Map = () => {
   useEffect(() => {
     (async () => {
       const spots = await listSpots();
-      console.log(spots);
+      setSpots(spots);
     })();
   }, []);
 
@@ -64,7 +66,27 @@ const Map = () => {
           //   mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
           mapStyle="mapbox://styles/manusanchez2/ckf3tjjnc10a619s7rnb6iqfa"
           onViewportChange={(nextViewport) => setViewport(nextViewport)}
-        />
+        >
+          {spots.map((spot) => (
+            <Marker
+              key={spot._id}
+              latitude={spot.latitude}
+              longitude={spot.longitude}
+              offsetLeft={-20}
+              offsetTop={-10}
+            >
+              <img
+                style={{
+                  height: `${4 * viewport.zoom}px`,
+                  width: `${4 * viewport.zoom}px`,
+                }}
+                src={mapMarker}
+                alt="map marker"
+              />
+              {/* <div>{spot.title}</div> */}
+            </Marker>
+          ))}
+        </ReactMapGL>
       </div>
       <Footer />
     </StyledMapContainer>
