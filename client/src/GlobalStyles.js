@@ -148,6 +148,7 @@ const GlobalStyles = () => {
           border-radius: 15px;
           background: var(--color-redgrad);
           margin: 0 auto;
+          margin-top: 6px;
           padding: 0.5rem 2rem;
           color: var(--color-white);
           font-family: var(--font-lato);
