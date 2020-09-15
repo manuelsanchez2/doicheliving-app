@@ -100,10 +100,11 @@ const Map = () => {
                 <Popup
                   latitude={spot.latitude}
                   longitude={spot.longitude}
-                  closeButton={true}
-                  closeOnClick={false}
+                  closeButton={false}
+                  closeOnClick={true}
+                  dynamicPosition={true}
                   onClose={() => setShowPopup({})}
-                  anchor="top"
+                  //   anchor="top"
                 >
                   <div className="popup">
                     <h3>{spot.title}</h3>
