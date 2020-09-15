@@ -72,13 +72,15 @@ const Map = () => {
               key={spot._id}
               latitude={spot.latitude}
               longitude={spot.longitude}
-              offsetLeft={-20}
-              offsetTop={-10}
+              offsetLeft={-12}
+              offsetTop={-24}
             >
               <img
                 style={{
-                  height: `${4 * viewport.zoom}px`,
-                  width: `${4 * viewport.zoom}px`,
+                  //   height: `${6 * viewport.zoom}px`,
+                  //   width: `${6 * viewport.zoom}px`,
+                  height: "24px",
+                  width: "24px",
                 }}
                 src={mapMarker}
                 alt="map marker"
