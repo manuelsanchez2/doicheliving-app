@@ -109,7 +109,14 @@ const GlobalStyles = () => {
           padding: 0 1em 0 1em;
         }
 
-        /* MAIN PAGE  */
+        /* MAIN PAGE MAP */
+
+        .main--map {
+          flex: 1;
+          padding: 0 1em 0 1em;
+        }
+
+        /* MAIN PAGE MAIN */
 
         .main--main {
           flex: 1;

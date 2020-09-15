@@ -31,7 +31,7 @@ const Footer = () => {
       <Link to="/home">
         <ImageFooter src={homeSrc} alt="Home" />
       </Link>
-      <Link to="/">
+      <Link to="/map">
         <ImageFooter src={mapSrc} alt="Map" />
       </Link>
       <Link to="/">
