@@ -16,14 +16,11 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "babel-loader": "^8.1.0",
-    "dotenv": "^8.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-is": "^16.13.1",
     "react-mailchimp-form": "^1.0.2",
-    "react-mailchimp-subscribe": "^2.1.0",
-    "react-owl-carousel": "^2.3.1",
     "react-query": "^2.15.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
@@ -50,5 +47,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:3001"
+  "proxy": "https://localhost:3001"
 }

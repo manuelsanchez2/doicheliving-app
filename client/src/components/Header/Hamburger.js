@@ -11,7 +11,6 @@ const Container = styled.div`
 const StyledBurger = styled.div`
   width: 2rem;
   height: 2rem;
-  /* position: fixed; */
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
