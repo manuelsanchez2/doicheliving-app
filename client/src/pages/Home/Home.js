@@ -5,9 +5,9 @@ import Mailchimp from "react-mailchimp-form";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import styled from "@emotion/styled";
-import PictureTest from "../../assets/images/picture-test-1.jpg";
-import PictureTest2 from "../../assets/images/picture-test-2.jpg";
-import PictureTest3 from "../../assets/images/picture-test-3.jpg";
+import pictureTest from "../../assets/images/picture-test-1.jpg";
+import pictureTest2 from "../../assets/images/picture-test-2.jpg";
+import pictureTest3 from "../../assets/images/picture-test-3.jpg";
 import instagramSrc from "../../assets/icons/social-instagram.svg";
 import facebookSrc from "../../assets/icons/social-facebook.svg";
 import mailSrc from "../../assets/icons/social-mail.svg";
@@ -64,57 +64,57 @@ const Login = () => {
         <CarouselContainer>
           <BigPictureContainer>
             <Link to="/login">
-              <img src={PictureTest} alt="" />
+              <img src={pictureTest} alt="" />
             </Link>
           </BigPictureContainer>
           <BigPictureContainer>
-            <img src={PictureTest} alt="" />
+            <img src={pictureTest} alt="" />
           </BigPictureContainer>
           <BigPictureContainer>
-            <img src={PictureTest} alt="" />
+            <img src={pictureTest} alt="" />
           </BigPictureContainer>
           <BigPictureContainer>
-            <img src={PictureTest} alt="" />
+            <img src={pictureTest} alt="" />
           </BigPictureContainer>
           <BigPictureContainer>
-            <img src={PictureTest} alt="" />
+            <img src={pictureTest} alt="" />
           </BigPictureContainer>
         </CarouselContainer>
 
         <h3>Destinos más populares</h3>
         <CarouselContainer>
           <SmallPictureContainer>
-            <img src={PictureTest2} alt="" />
+            <img src={pictureTest2} alt="" />
           </SmallPictureContainer>
           <SmallPictureContainer>
-            <img src={PictureTest2} alt="" />
+            <img src={pictureTest2} alt="" />
           </SmallPictureContainer>
           <SmallPictureContainer>
-            <img src={PictureTest2} alt="" />
+            <img src={pictureTest2} alt="" />
           </SmallPictureContainer>
           <SmallPictureContainer>
-            <img src={PictureTest2} alt="" />
+            <img src={pictureTest2} alt="" />
           </SmallPictureContainer>
           <SmallPictureContainer>
-            <img src={PictureTest2} alt="" />
+            <img src={pictureTest2} alt="" />
           </SmallPictureContainer>
         </CarouselContainer>
         <h3>Rutas por Alemania</h3>
         <CarouselContainer>
           <BigPictureContainer>
-            <img src={PictureTest3} alt="" />
+            <img src={pictureTest3} alt="" />
           </BigPictureContainer>
           <BigPictureContainer>
-            <img src={PictureTest3} alt="" />
+            <img src={pictureTest3} alt="" />
           </BigPictureContainer>
           <BigPictureContainer>
-            <img src={PictureTest3} alt="" />
+            <img src={pictureTest3} alt="" />
           </BigPictureContainer>
           <BigPictureContainer>
-            <img src={PictureTest3} alt="" />
+            <img src={pictureTest3} alt="" />
           </BigPictureContainer>
           <BigPictureContainer>
-            <img src={PictureTest3} alt="" />
+            <img src={pictureTest3} alt="" />
           </BigPictureContainer>
         </CarouselContainer>
 
