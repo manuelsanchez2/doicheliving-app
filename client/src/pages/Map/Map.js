@@ -80,7 +80,6 @@ const Map = () => {
                 <div
                   onClick={() =>
                     setShowPopup({
-                      ...showPopup,
                       [spot._id]: true,
                     })
                   }
@@ -103,15 +102,10 @@ const Map = () => {
                   longitude={spot.longitude}
                   closeButton={true}
                   closeOnClick={false}
-                  onClose={() =>
-                    setShowPopup({
-                      ...showPopup,
-                      [spot._id]: false,
-                    })
-                  }
+                  onClose={() => setShowPopup({})}
                   anchor="top"
                 >
-                  <div>
+                  <div className="popup">
                     <h3>{spot.title}</h3>
                     <p>{spot.description}</p>
                   </div>
