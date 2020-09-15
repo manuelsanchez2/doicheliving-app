@@ -112,8 +112,9 @@ const GlobalStyles = () => {
         /* MAIN PAGE MAP */
 
         .main--map {
+          height: 60%;
           flex: 1;
-          padding: 0 1em 0 1em;
+          overflow: hidden;
         }
 
         /* MAIN PAGE MAIN */

@@ -21,6 +21,7 @@
     "react-dom": "^16.13.1",
     "react-is": "^16.13.1",
     "react-mailchimp-form": "^1.0.2",
+    "react-map-gl": "^5.2.8",
     "react-query": "^2.15.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
@@ -47,5 +48,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://localhost:3001"
+  "proxy": "http://localhost:3001"
 }

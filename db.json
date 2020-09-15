@@ -1,3 +1,13 @@
 {
-  "test": [{ "test": "perro" }]
+  "spots": [
+    {
+      "title": "⭐️ Filarmónica del Elba",
+      "description": "Una de las maravillas arquitectónicas del país y símbolo de la ciudad desde su apertura en 2007.",
+      "latitude": 53.5574235,
+      "longitude": 9.9225019,
+      "image": "https://i.imgur.com/MmIwaMn.jpg",
+      "time": "2 horas",
+      "addInfo": ""
+    }
+  ]
 }
