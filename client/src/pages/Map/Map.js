@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
+import Geocoder from "react-map-gl-geocoder";
+import "react-map-gl-geocoder/dist/mapbox-gl-geocoder.css";
 // import { useHistory } from "react-router-dom";
 import { listSpots } from "../../api/spots";
 import Header from "../../components/Header";
@@ -16,7 +18,7 @@ const StyledMapContainer = styled.div`
   overflow: auto;
   background: var(--color-yellow);
 
-  img {
+  /* img {
     max-height: 5rem;
     max-width: 5rem;
   }
@@ -29,7 +31,7 @@ const StyledMapContainer = styled.div`
     height: 48px;
     margin: 10px 0 0 10px;
     z-index: 999;
-  }
+  } */
 `;
 
 const Map = () => {
@@ -43,6 +45,21 @@ const Map = () => {
     longitude: 9.9225019,
     zoom: 11,
   });
+
+  const mapRef = useRef();
+  const handleViewportChange = useCallback(
+    (newViewport) => setViewport(newViewport),
+    []
+  );
+
+  const handleGeocoderViewportChange = useCallback((newViewport) => {
+    const geocoderDefaultOverrides = { transitionDuration: 1000 };
+
+    return handleViewportChange({
+      ...newViewport,
+      ...geocoderDefaultOverrides,
+    });
+  }, []);
 
   useEffect(() => {
     (async () => {
@@ -60,6 +77,7 @@ const Map = () => {
 
       <div className="main--map">
         <ReactMapGL
+          ref={mapRef}
           {...viewport}
           mapboxApiAccessToken={
             "pk.eyJ1IjoibWFudXNhbmNoZXoyIiwiYSI6ImNrZDAyMGF6ajBwOGEzMW91YWhpaXBrd3IifQ.DxIOHXiZw3-rvAn5yC8QYw"
@@ -114,6 +132,20 @@ const Map = () => {
               ) : null}
             </>
           ))}
+          <div>
+            <Geocoder
+              mapRef={mapRef}
+              marker={false}
+              limit={3}
+              minLength={4}
+              placeholder={"Introduce tu destino"}
+              onViewportChange={handleGeocoderViewportChange}
+              mapboxApiAccessToken="pk.eyJ1IjoibWFudXNhbmNoZXoyIiwiYSI6ImNrZDAyMGF6ajBwOGEzMW91YWhpaXBrd3IifQ.DxIOHXiZw3-rvAn5yC8QYw"
+              position="top-right"
+              language="es, en"
+              countries="de"
+            />
+          </div>
         </ReactMapGL>
       </div>
       <Footer />
