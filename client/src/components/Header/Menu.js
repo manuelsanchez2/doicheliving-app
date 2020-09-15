@@ -2,13 +2,13 @@ import React from "react";
 import styled from "@emotion/styled";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import logoSrc from "../../assets/images/doicheliving-logo2.png";
-import homeSrc from "../../assets/images/menu-home.svg";
-import mapSrc from "../../assets/images/menu-map.svg";
-import searchSrc from "../../assets/images/menu-search.svg";
-import contactSrc from "../../assets/images/menu-contact.svg";
-import questionSrc from "../../assets/images/menu-question.svg";
-import logoDarkSrc from "../../assets/images/menu-logo.png";
+import logoSrc from "../../assets/icons/doicheliving-logo2.png";
+import homeSrc from "../../assets/icons/menu-home.svg";
+import mapSrc from "../../assets/icons/menu-map.svg";
+import searchSrc from "../../assets/icons/menu-search.svg";
+import contactSrc from "../../assets/icons/menu-contact.svg";
+import questionSrc from "../../assets/icons/menu-question.svg";
+import logoDarkSrc from "../../assets/icons/menu-logo.png";
 
 const MenuItemList = styled.ul`
   list-style: none;
@@ -27,6 +27,7 @@ const MenuItemList = styled.ul`
   height: 101vh;
   width: 85vw;
   padding-top: 5.5rem;
+  z-index: 50;
 `;
 
 const MenuImage = styled.img`

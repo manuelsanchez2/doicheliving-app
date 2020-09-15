@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
-import homeSrc from "../../assets/images/footer-home.svg";
-import mapSrc from "../../assets/images/footer-map.svg";
-import searchSrc from "../../assets/images/footer-search.svg";
-import profileSrc from "../../assets/images/footer-profile.svg";
+import homeSrc from "../../assets/icons/footer-home.svg";
+import mapSrc from "../../assets/icons/footer-map.svg";
+import searchSrc from "../../assets/icons/footer-search.svg";
+import profileSrc from "../../assets/icons/footer-profile.svg";
 
 const ImageFooter = styled.img`
   width: 2rem;
