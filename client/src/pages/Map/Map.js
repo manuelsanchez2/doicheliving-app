@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ReactMapGL, { Marker } from "react-map-gl";
+import ReactMapGL, { Marker, Popup } from "react-map-gl";
 // import { useHistory } from "react-router-dom";
 import { listSpots } from "../../api/spots";
 import Header from "../../components/Header";
@@ -35,6 +35,7 @@ const StyledMapContainer = styled.div`
 const Map = () => {
   //   const history = useHistory();
   const [spots, setSpots] = useState([]);
+  const [showPopup, setShowPopup] = useState({});
   const [viewport, setViewport] = useState({
     height: "88.5vh",
     width: "2000",
@@ -68,25 +69,55 @@ const Map = () => {
           onViewportChange={(nextViewport) => setViewport(nextViewport)}
         >
           {spots.map((spot) => (
-            <Marker
-              key={spot._id}
-              latitude={spot.latitude}
-              longitude={spot.longitude}
-              offsetLeft={-12}
-              offsetTop={-24}
-            >
-              <img
-                style={{
-                  //   height: `${6 * viewport.zoom}px`,
-                  //   width: `${6 * viewport.zoom}px`,
-                  height: "24px",
-                  width: "24px",
-                }}
-                src={mapMarker}
-                alt="map marker"
-              />
-              {/* <div>{spot.title}</div> */}
-            </Marker>
+            <>
+              <Marker
+                key={spot._id}
+                latitude={spot.latitude}
+                longitude={spot.longitude}
+                offsetLeft={-12}
+                offsetTop={-24}
+              >
+                <div
+                  onClick={() =>
+                    setShowPopup({
+                      ...showPopup,
+                      [spot._id]: true,
+                    })
+                  }
+                >
+                  <img
+                    style={{
+                      //   height: `${6 * viewport.zoom}px`,
+                      //   width: `${6 * viewport.zoom}px`,
+                      height: "24px",
+                      width: "24px",
+                    }}
+                    src={mapMarker}
+                    alt="map marker"
+                  />
+                </div>
+              </Marker>
+              {showPopup[spot._id] ? (
+                <Popup
+                  latitude={spot.latitude}
+                  longitude={spot.longitude}
+                  closeButton={true}
+                  closeOnClick={false}
+                  onClose={() =>
+                    setShowPopup({
+                      ...showPopup,
+                      [spot._id]: false,
+                    })
+                  }
+                  anchor="top"
+                >
+                  <div>
+                    <h3>{spot.title}</h3>
+                    <p>{spot.description}</p>
+                  </div>
+                </Popup>
+              ) : null}
+            </>
           ))}
         </ReactMapGL>
       </div>
