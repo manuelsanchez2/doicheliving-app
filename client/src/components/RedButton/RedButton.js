@@ -9,6 +9,7 @@ const RedButton = styled.button`
   font-family: var(--font-lato);
   font-size: 1rem;
   letter-spacing: 3px;
+  display: block;
 `;
 
 export default RedButton;
