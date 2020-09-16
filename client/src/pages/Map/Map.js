@@ -2,14 +2,72 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import Geocoder from "react-map-gl-geocoder";
 import "react-map-gl-geocoder/dist/mapbox-gl-geocoder.css";
-// import { useHistory } from "react-router-dom";
+import "mapbox-gl/dist/mapbox-gl.css";
 import { listSpots } from "../../api/spots";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import styled from "@emotion/styled";
 import mapMarkerYellow from "../../assets/icons/map-marker-yellow.svg";
 import mapMarkerRed from "../../assets/icons/map-marker-red.svg";
-// import returnSrc from "../../assets/icons/arrow.svg";
+import SpotEntryForm from "../../components/SpotEntryForm/SpotEntryForm";
+import MapMain from "../../components/MapMain/MapMain";
+
+const SpotEntryFormContainer = styled.div`
+  max-width: 350px;
+  padding: 0.5rem;
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid var(--color-darkgrayborder);
+  box-shadow: 0.5px 0px 20px 0px rgba(0, 0, 0, 0.3);
+`;
+
+const SpotPopupContainer = styled.div`
+  position: absolute;
+  bottom: 123px;
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid var(--color-darkgrayborder);
+  box-shadow: 0.5px 0px 20px 0px rgba(0, 0, 0, 0.3);
+
+  h3 {
+    font-size: 0.7rem;
+    font-family: var(--font-lato);
+    font-weight: bold;
+    width: 90%;
+    height: 10%;
+  }
+
+  button {
+    width: 10%;
+    height: 10%;
+    border-radius: 50px;
+  }
+
+  div {
+    width: 65%;
+  }
+
+  img {
+    max-height: 40%;
+    max-width: 35%;
+    border-radius: 5px;
+    border: 1px solid var(--color-grayborder);
+    box-shadow: 0.5px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+  small {
+    font-size: 0.6rem;
+    font-style: italic;
+  }
+  p {
+    font-size: 0.6rem;
+    font-family: var(--font-lato);
+    width: 65%;
+  }
+`;
 
 const StyledMapContainer = styled.div`
   height: 100vh;
@@ -25,12 +83,14 @@ const Map = () => {
   const [showPopup, setShowPopup] = useState({});
   const [addSpot, setAddSpot] = useState(null);
   const [viewport, setViewport] = useState({
-    height: "88.5vh",
-    width: "2000",
+    height: "100vh",
+    width: "100vw",
     latitude: 53.5574235,
     longitude: 9.9225019,
-    zoom: 11,
+    zoom: 10.5,
   });
+
+  // This code is used for the Geocoder
 
   const mapRef = useRef();
   const handleViewportChange = useCallback(
@@ -65,11 +125,7 @@ const Map = () => {
   return (
     <StyledMapContainer>
       <Header />
-      {/* <button onClick={() => history.goBack()}>
-        <img src={returnSrc} alt="return button" />
-      </button> */}
-
-      <div className="main--map">
+      <MapMain>
         <ReactMapGL
           ref={mapRef}
           {...viewport}
@@ -81,10 +137,11 @@ const Map = () => {
           onViewportChange={(nextViewport) => setViewport(nextViewport)}
           onDblClick={showAddMarkerPopup}
         >
+          {/* Display of the existing spots and their popups */}
+
           {spots.map((spot) => (
-            <>
+            <div key={spot._id}>
               <Marker
-                key={spot._id}
                 latitude={spot.latitude}
                 longitude={spot.longitude}
                 offsetLeft={-12}
@@ -108,23 +165,22 @@ const Map = () => {
                 </div>
               </Marker>
               {showPopup[spot._id] ? (
-                <Popup
-                  latitude={spot.latitude}
-                  longitude={spot.longitude}
-                  closeButton={false}
-                  closeOnClick={true}
-                  dynamicPosition={true}
-                  onClose={() => setShowPopup({})}
-                  anchor="top"
-                >
-                  <div className="popup">
-                    <h3>{spot.title}</h3>
+                <SpotPopupContainer>
+                  <h3>{spot.title}</h3>
+                  <button>X</button>
+                  <div>
                     <p>{spot.description}</p>
+                    <small>{spot.address}</small>
+                    {spot.addInfo && <p>{spot.addInfo}</p>}
                   </div>
-                </Popup>
+
+                  {spot.image && <img src={spot.image} alt={spot.title} />}
+                </SpotPopupContainer>
               ) : null}
-            </>
+            </div>
           ))}
+
+          {/* Add the search bar  */}
 
           <Geocoder
             mapRef={mapRef}
@@ -138,6 +194,9 @@ const Map = () => {
             language="es, en"
             countries="de"
           />
+
+          {/* Add the possibility of adding a new spot on the exact location of the screen */}
+
           {addSpot ? (
             <>
               <Marker
@@ -167,18 +226,19 @@ const Map = () => {
               <Popup
                 latitude={addSpot.latitude}
                 longitude={addSpot.longitude}
-                closeButton={false}
-                closeOnClick={true}
-                dynamicPosition={true}
+                closeButton={true}
+                closeOnClick={false}
                 anchor="top"
                 onClose={() => setAddSpot(null)}
               >
-                <h3>Add your shit</h3>
+                <SpotEntryFormContainer>
+                  <SpotEntryForm />
+                </SpotEntryFormContainer>
               </Popup>
             </>
           ) : null}
         </ReactMapGL>
-      </div>
+      </MapMain>
       <Footer />
     </StyledMapContainer>
   );
