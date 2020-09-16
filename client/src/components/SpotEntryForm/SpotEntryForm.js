@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import React from "react";
 import RedButton from "../RedButton/RedButton";
+import { useForm } from "react-hook-form";
 
 const EntryForm = styled.form`
   label,
@@ -18,14 +19,19 @@ const EntryForm = styled.form`
 `;
 
 const SpotEntryForm = () => {
+  const { register, handleSubmit } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+  };
   return (
-    <EntryForm>
+    <EntryForm onSubmit={handleSubmit(onSubmit)}>
       <label htmlFor="title">Título</label>
-      <input name="title" required />
+      <input name="title" required ref={register} />
       <label htmlFor="description"> Comentarios </label>
-      <textarea name="description" rows={3}></textarea>
+      <textarea name="description" rows={3} ref={register}></textarea>
       <label htmlFor="visitDate">Día de visita</label>
-      <input name="visitDate" type="date" />
+      <input name="visitDate" type="date" ref={register} />
       <RedButton>CREAR SPOT</RedButton>
     </EntryForm>
   );
