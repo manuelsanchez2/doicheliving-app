@@ -239,7 +239,7 @@ const Map = () => {
                 onClose={() => setAddSpot(null)}
               >
                 <SpotEntryFormContainer>
-                  <SpotEntryForm />
+                  <SpotEntryForm location={addSpot} />
                 </SpotEntryFormContainer>
               </Popup>
             </>
