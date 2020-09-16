@@ -22,7 +22,7 @@ const SpotEntryFormContainer = styled.div`
 
 const SpotPopupContainer = styled.div`
   position: absolute;
-  bottom: 123px;
+  bottom: 0px;
   width: inherit;
   display: flex;
   flex-direction: row;
@@ -32,6 +32,7 @@ const SpotPopupContainer = styled.div`
   border-radius: 10px 10px 10px 10px;
   border: 1px solid var(--color-darkgrayborder);
   box-shadow: 0.5px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  z-index: 20;
 
   h3 {
     font-size: 0.7rem;
@@ -83,8 +84,8 @@ const Map = () => {
   const [showPopup, setShowPopup] = useState({});
   const [addSpot, setAddSpot] = useState(null);
   const [viewport, setViewport] = useState({
-    height: "100vh",
-    width: "100vw",
+    height: "100%",
+    width: "100%",
     latitude: 53.5574235,
     longitude: 9.9225019,
     zoom: 10.5,
@@ -171,6 +172,12 @@ const Map = () => {
                   <div>
                     <p>{spot.description}</p>
                     <small>{spot.address}</small>
+                    {/* {spot.addInfo && (
+                      <div
+                        // eslint-disable-next-line react/no-danger
+                        dangerouslySetInnerHTML={{ __html: spot.addInfo }}
+                      />
+                    )} */}
                     {spot.addInfo && <p>{spot.addInfo}</p>}
                   </div>
 
