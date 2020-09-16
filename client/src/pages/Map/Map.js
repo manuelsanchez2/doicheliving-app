@@ -38,26 +38,32 @@ const SpotPopupContainer = styled.div`
     font-size: 0.7rem;
     font-family: var(--font-lato);
     font-weight: bold;
-    width: 90%;
+    width: 87%;
     height: 10%;
+    margin-left: 0.3rem;
   }
 
   button {
     width: 10%;
     height: 10%;
     border-radius: 50px;
+    margin-right: 2px;
   }
 
   div {
     width: 65%;
+    margin-left: 0.3rem;
+    padding-bottom: 0.1rem;
   }
 
   img {
     max-height: 40%;
-    max-width: 35%;
+    max-width: 33%;
     border-radius: 5px;
     border: 1px solid var(--color-grayborder);
     box-shadow: 0.5px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    margin-right: 1px;
+    margin-bottom: 5px;
   }
   small {
     font-size: 0.6rem;
@@ -66,7 +72,7 @@ const SpotPopupContainer = styled.div`
   p {
     font-size: 0.6rem;
     font-family: var(--font-lato);
-    width: 65%;
+    width: 90%;
   }
 `;
 
@@ -86,9 +92,9 @@ const Map = () => {
   const [viewport, setViewport] = useState({
     height: "100%",
     width: "100%",
-    latitude: 53.5574235,
-    longitude: 9.9225019,
-    zoom: 10.5,
+    latitude: 51.9565,
+    longitude: 10.2755,
+    zoom: 4.5,
   });
 
   // This code is used for the Geocoder

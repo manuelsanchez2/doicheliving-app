@@ -8,7 +8,7 @@
       "longitude": 9.984282000000011,
       "image": "https://i.imgur.com/MmIwaMn.jpg",
       "time": "2 horas",
-      "address": "Platz der Deutschen Einheit 4, 20457 Hamburg",
+      "address": "Platz der Deutschen Einheit 4, 20457 Hamburgo",
       "addInfo": ""
     },
     {
@@ -19,7 +19,7 @@
       "longitude": 9.992368599999994,
       "image": "https://i.imgur.com/e3Gc94o.jpg",
       "time": "1 hora",
-      "address": "Rathausmarkt 1, 20095 Hamburg",
+      "address": "Rathausmarkt 1, 20095 Hamburgo",
       "addInfo": "Ver tour aquí"
     },
     {
@@ -30,7 +30,29 @@
       "longitude": 9.966639099999982,
       "image": "https://i.imgur.com/S78LtUA.jpg",
       "time": "1 hora",
-      "address": "Bei den St. Pauli-Landungsbrücken, 20359 Hamburg",
+      "address": "Bei den St. Pauli-Landungsbrücken, 20359 Hamburgo",
+      "addInfo": ""
+    },
+    {
+      "title": "⭐️ Catedral de Colonia",
+      "_id": "4",
+      "description": "El monumento más visitado de todo el país y el lugar en el que se dice están enterrados los Reyes Magos. ¡Un imperdible sin duda!.",
+      "latitude": 50.941278400000016,
+      "longitude": 6.9582814000000015,
+      "image": "https://i.imgur.com/IZ1PJfv.jpg",
+      "time": "30 mins",
+      "address": "Domkloster 4, 50667 Colonia",
+      "addInfo": ""
+    },
+    {
+      "title": "🍫 Museo del Chocolate",
+      "_id": "5",
+      "description": "Descubre los más de 5000 años de historia del chocolate en uno de los lugares más populares de Colonia. .",
+      "latitude": 50.932245699999996,
+      "longitude": 6.9643738999999805,
+      "image": "https://i.imgur.com/7swnXnO.jpg",
+      "time": "90 mins",
+      "address": "Am Schokoladenmuseum 1A, 50678 Colonia",
       "addInfo": ""
     }
   ]
