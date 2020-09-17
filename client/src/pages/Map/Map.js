@@ -81,6 +81,11 @@ const Map = () => {
                   [spot._id]: true,
                 })
               }
+              onClose={() =>
+                setShowPopup({
+                  [spot._id]: false,
+                })
+              }
             />
           ))}
 

@@ -4,7 +4,7 @@ import { Marker } from "react-map-gl";
 import mapMarkerYellow from "../../assets/icons/map-marker-yellow.svg";
 import SpotPopupContainer from "../../components/SpotPopupContainer";
 
-const Spot = ({ spot, onMarkerClick, popup }) => {
+const Spot = ({ spot, onMarkerClick, onClose, popup }) => {
   return (
     <div>
       <Marker
@@ -27,7 +27,7 @@ const Spot = ({ spot, onMarkerClick, popup }) => {
       {popup ? (
         <SpotPopupContainer>
           <h3>{spot.title}</h3>
-          <button>X</button>
+          <button onClick={onClose}>X</button>
           <div>
             <p>{spot.description}</p>
             <small>{spot.address}</small>
@@ -51,6 +51,7 @@ Spot.propTypes = {
   children: PropTypes.node,
   spot: PropTypes.object,
   onMarkerClick: PropTypes.func,
+  onClose: PropTypes.func,
   popup: PropTypes.bool,
 };
 
