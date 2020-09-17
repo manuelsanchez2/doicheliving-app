@@ -109,19 +109,6 @@ const GlobalStyles = () => {
           padding: 0 1em 0 1em;
         }
 
-        /* MAP PAGE */
-
-        .main--map {
-          height: 60%;
-          flex: 1;
-          overflow: hidden;
-        }
-
-        .popup {
-          width: 50vw;
-          height: 20%;
-        }
-
         /* MAIN PAGE MAIN */
 
         .main--main {
