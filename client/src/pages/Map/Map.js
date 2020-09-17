@@ -25,9 +25,10 @@ const Map = () => {
     zoom: 4.5,
   });
   const mapboxApiAccessToken = process.env.REACT_APP_MAPBOX_API_ACCESS_TOKEN;
-  // This code is used for the Geocoder
+  // This code is used for the Geocoder. Instead of this I want to have a custom hook (useGeocoder)
 
   const mapRef = useRef();
+
   const handleViewportChange = useCallback(
     (newViewport) => setViewport(newViewport),
     []
@@ -64,7 +65,6 @@ const Map = () => {
           ref={mapRef}
           {...viewport}
           mapboxApiAccessToken={mapboxApiAccessToken}
-          // mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
           mapStyle="mapbox://styles/manusanchez2/ckf3tjjnc10a619s7rnb6iqfa"
           onViewportChange={(nextViewport) => setViewport(nextViewport)}
           onDblClick={showAddMarkerPopup}
@@ -98,7 +98,6 @@ const Map = () => {
             minLength={4}
             placeholder={"Introduce tu destino"}
             onViewportChange={handleGeocoderViewportChange}
-            // mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
             mapboxApiAccessToken={mapboxApiAccessToken}
             position="top-right"
             language="es, en"
