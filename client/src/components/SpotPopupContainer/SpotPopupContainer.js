@@ -39,8 +39,8 @@ const Container = styled.div`
   }
 
   img {
-    max-height: 40%;
-    max-width: 33%;
+    height: 40%;
+    width: 33%;
     border-radius: 5px;
     border: 1px solid var(--color-grayborder);
     box-shadow: 0.5px 0px 10px 0px rgba(0, 0, 0, 0.3);

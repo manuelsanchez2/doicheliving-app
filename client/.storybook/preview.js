@@ -1,20 +1,15 @@
 import GlobalStyles from "../src/GlobalStyles";
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-
+import { BrowserRouter } from "react-router-dom";
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
+  layout: "fullscreen",
 };
-
 const AppDecorator = (Story, context) => {
   return (
-    <>
-      <GlobalStyles />
-      <Router>
-        <Story {...context} />
-      </Router>
-    </>
+    <BrowserRouter>
+      <GlobalStyles /> <Story {...context} />
+    </BrowserRouter>
   );
 };
-
 export const decorators = [AppDecorator];
