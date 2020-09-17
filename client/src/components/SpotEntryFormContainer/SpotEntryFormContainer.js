@@ -1,8 +1,7 @@
 import styled from "@emotion/styled";
-import React from "react";
 import PropTypes from "prop-types";
 
-const Container = styled.div`
+const SpotEntryFormContainer = styled.div`
   max-width: 350px;
   padding: 0.5rem;
   border-radius: 10px 10px 10px 10px;
@@ -10,9 +9,6 @@ const Container = styled.div`
   box-shadow: 0.5px 0px 20px 0px rgba(0, 0, 0, 0.3);
 `;
 
-const SpotEntryFormContainer = ({ children }) => {
-  return <Container>{children}</Container>;
-};
 SpotEntryFormContainer.propTypes = {
   children: PropTypes.node,
 };

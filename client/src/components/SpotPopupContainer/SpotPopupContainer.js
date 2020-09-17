@@ -1,8 +1,7 @@
 import styled from "@emotion/styled";
-import React from "react";
 import PropTypes from "prop-types";
 
-const Container = styled.div`
+const SpotPopupContainer = styled.div`
   position: absolute;
   bottom: 0px;
   width: inherit;
@@ -58,9 +57,6 @@ const Container = styled.div`
   }
 `;
 
-const SpotPopupContainer = ({ children }) => {
-  return <Container>{children}</Container>;
-};
 SpotPopupContainer.propTypes = {
   children: PropTypes.node,
 };
