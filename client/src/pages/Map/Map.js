@@ -6,13 +6,12 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import { listSpots } from "../../api/spots";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import mapMarkerYellow from "../../assets/icons/map-marker-yellow.svg";
 import mapMarkerRed from "../../assets/icons/map-marker-red.svg";
 import SpotEntryForm from "../../components/SpotEntryForm/SpotEntryForm";
 import MapMain from "../../components/MapMain/MapMain";
 import StyledMapContainer from "../../components/StyledMapContainer";
 import SpotEntryFormContainer from "../../components/SpotEntryFormContainer";
-import SpotPopupContainer from "../../components/SpotPopupContainer";
+import Spot from "../../components/Spot";
 
 const Map = () => {
   const [spots, setSpots] = useState([]);
@@ -57,7 +56,6 @@ const Map = () => {
       longitude,
     });
   };
-
   return (
     <StyledMapContainer>
       <Header />
@@ -74,50 +72,16 @@ const Map = () => {
           {/* Display of the existing spots and their popups */}
 
           {spots.map((spot) => (
-            <div key={spot._id}>
-              <Marker
-                latitude={spot.latitude}
-                longitude={spot.longitude}
-                offsetLeft={-12}
-                offsetTop={-24}
-              >
-                <div
-                  onClick={() =>
-                    setShowPopup({
-                      [spot._id]: true,
-                    })
-                  }
-                >
-                  <img
-                    style={{
-                      height: "24px",
-                      width: "24px",
-                    }}
-                    src={mapMarkerYellow}
-                    alt="map marker"
-                  />
-                </div>
-              </Marker>
-              {showPopup[spot._id] ? (
-                <SpotPopupContainer>
-                  <h3>{spot.title}</h3>
-                  <button>X</button>
-                  <div>
-                    <p>{spot.description}</p>
-                    <small>{spot.address}</small>
-                    {/* {spot.addInfo && (
-                      <div
-                        // eslint-disable-next-line react/no-danger
-                        dangerouslySetInnerHTML={{ __html: spot.addInfo }}
-                      />
-                    )} */}
-                    {spot.addInfo && <p>{spot.addInfo}</p>}
-                  </div>
-
-                  {spot.image && <img src={spot.image} alt={spot.title} />}
-                </SpotPopupContainer>
-              ) : null}
-            </div>
+            <Spot
+              key={spot._id}
+              spot={spot}
+              popup={showPopup[spot._id]}
+              onMarkerClick={() =>
+                setShowPopup({
+                  [spot._id]: true,
+                })
+              }
+            />
           ))}
 
           {/* Add the search bar  */}
