@@ -25,7 +25,7 @@ const Map = () => {
     longitude: 10.2755,
     zoom: 4.5,
   });
-
+  const mapboxApiAccessToken = process.env.REACT_APP_MAPBOX_API_ACCESS_TOKEN;
   // This code is used for the Geocoder
 
   const mapRef = useRef();
@@ -65,10 +65,8 @@ const Map = () => {
         <ReactMapGL
           ref={mapRef}
           {...viewport}
-          mapboxApiAccessToken={
-            "pk.eyJ1IjoibWFudXNhbmNoZXoyIiwiYSI6ImNrZDAyMGF6ajBwOGEzMW91YWhpaXBrd3IifQ.DxIOHXiZw3-rvAn5yC8QYw"
-          }
-          //   mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+          mapboxApiAccessToken={mapboxApiAccessToken}
+          // mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
           mapStyle="mapbox://styles/manusanchez2/ckf3tjjnc10a619s7rnb6iqfa"
           onViewportChange={(nextViewport) => setViewport(nextViewport)}
           onDblClick={showAddMarkerPopup}
@@ -131,7 +129,8 @@ const Map = () => {
             minLength={4}
             placeholder={"Introduce tu destino"}
             onViewportChange={handleGeocoderViewportChange}
-            mapboxApiAccessToken="pk.eyJ1IjoibWFudXNhbmNoZXoyIiwiYSI6ImNrZDAyMGF6ajBwOGEzMW91YWhpaXBrd3IifQ.DxIOHXiZw3-rvAn5yC8QYw"
+            // mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+            mapboxApiAccessToken={mapboxApiAccessToken}
             position="top-right"
             language="es, en"
             countries="de"
