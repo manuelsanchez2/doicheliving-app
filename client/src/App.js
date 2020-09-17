@@ -14,11 +14,11 @@ function App() {
           <Route path="/home">
             <Home />
           </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
           <Route path="/map">
             <Map />
+          </Route>
+          <Route path="/login">
+            <Login />
           </Route>
           <Route path="/">
             <Home />

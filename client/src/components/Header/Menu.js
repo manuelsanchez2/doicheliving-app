@@ -76,14 +76,14 @@ const Menu = ({ open }) => {
     <MenuItemList open={open}>
       <MenuImage src={logoSrc} alt="logo Doiche Living" />
       <MenuItem>
-        <Link to="/">
+        <Link to="/home">
           <MenuItemImage src={homeSrc} alt="Home" />
           <MenuItemtext>Inicio</MenuItemtext>
         </Link>
       </MenuItem>
       <MenuItem>
-        <Link to="/">
-          <MenuItemImage src={mapSrc} alt="Home" />
+        <Link to="/map">
+          <MenuItemImage src={mapSrc} alt="Map" />
           <MenuItemtext>Mapa de Alemania</MenuItemtext>
         </Link>
       </MenuItem>
