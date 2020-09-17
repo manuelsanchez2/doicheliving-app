@@ -36,12 +36,20 @@ const SpotEntryForm = ({ location }) => {
   };
   return (
     <EntryForm onSubmit={handleSubmit(onSubmit)}>
-      <label htmlFor="title">Título</label>
-      <input name="title" required ref={register} />
-      <label htmlFor="description"> Comentarios </label>
-      <textarea name="description" rows={3} ref={register}></textarea>
-      <label htmlFor="visitDate">Día de visita</label>
-      <input name="visitDate" type="date" ref={register} />
+      <label>
+        Título
+        <input name="title" required ref={register} />
+      </label>
+
+      <label>
+        Comentarios
+        <textarea name="description" rows={3} ref={register}></textarea>
+      </label>
+
+      <label>
+        Día de visita <input name="visitDate" type="date" ref={register} />
+      </label>
+
       <RedButton>CREAR SPOT</RedButton>
     </EntryForm>
   );
