@@ -24,7 +24,6 @@ const SpotEntryForm = ({ location }) => {
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
     try {
       data.latitude = location.latitude;
       data.longitude = location.longitude;

@@ -31,13 +31,13 @@ const Spot = ({ spot, onMarkerClick, onClose, popup }) => {
           <div>
             <p>{spot.description}</p>
             <small>{spot.address}</small>
-            {/* {spot.addInfo && (
+            {spot.addInfo && (
               <div
                 // eslint-disable-next-line react/no-danger
                 dangerouslySetInnerHTML={{ __html: spot.addInfo }}
               />
-            )} */}
-            {spot.addInfo && <p>{spot.addInfo}</p>}
+            )}
+            {/* {spot.addInfo && <p>{spot.addInfo}</p>} */}
           </div>
 
           {spot.image && <img src={spot.image} alt={spot.title} />}

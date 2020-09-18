@@ -37,6 +37,12 @@ const SpotPopupContainer = styled.div`
     padding-bottom: 0.1rem;
   }
 
+  div > div {
+    font-size: 0.6rem;
+    font-family: var(--font-lato);
+    margin: 0 auto 6px 0;
+  }
+
   img {
     height: 40%;
     width: 33%;
