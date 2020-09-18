@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import PropTypes from "prop-types";
 
-const SignupFormInputWrapper = styled.div`
+const LoginFormInputWrapper = styled.div`
   display: flex;
   padding-bottom: 0.5rem;
   align-items: center;
@@ -18,13 +18,13 @@ const SignupFormInputWrapper = styled.div`
     border: 1px solid var(--color-grayborder);
     background: #f0f4f5;
     border-radius: 4px 4px 4px 4px;
-    padding: 0.5rem 0.5rem 0.2rem 3.1rem;
-    max-width: 65%;
+    padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+    max-width: 62%;
   }
 `;
 
-SignupFormInputWrapper.propTypes = {
+LoginFormInputWrapper.propTypes = {
   children: PropTypes.node,
 };
 
-export default SignupFormInputWrapper;
+export default LoginFormInputWrapper;

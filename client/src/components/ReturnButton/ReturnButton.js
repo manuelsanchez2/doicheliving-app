@@ -9,6 +9,9 @@ const Button = styled.button`
   width: 48px;
   height: 48px;
   margin: 10px 0 0 10px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
 
   & > img {
     width: 1.5em;

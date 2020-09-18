@@ -4,37 +4,37 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import logo2Src from "../../assets/icons/doicheliving-logo2.png";
 import returnSrc from "../../assets/icons/arrow.svg";
-import MainFlex from "../../components/MainFlex";
 import FullLoginRegisterContainer from "../../components/FullLoginRegisterContainer";
 import SignupForm from "../../components/SignupForm";
 import ReturnButton from "../../components/ReturnButton/ReturnButton";
-import SignupFormContainer from "../../components/SignupFormContainer/SignupFormContainer";
-import SignupFormInputWrapper from "../../components/SignupFormInputWrapper/SignupFormInputWrapper";
+import MainFlex from "../../components/MainFlex";
+import LoginFormContainer from "../../components/LoginFormContainer";
+import LoginFormInputWrapper from "../../components/LoginFormInputWrapper";
 
 const Login = () => {
   const history = useHistory();
   return (
     <FullLoginRegisterContainer>
       <Header />
-      <ReturnButton
-        onClick={() => history.goBack()}
-        src={returnSrc}
-        alt={"returnbutton"}
-      />
 
       <MainFlex>
-        <SignupFormContainer>
+        <ReturnButton
+          onClick={() => history.goBack()}
+          src={returnSrc}
+          alt={"returnbutton"}
+        />
+        <LoginFormContainer>
           <img src={logo2Src} alt="doicheliving logo" />
           <h2>INICIAR SESIÓN</h2>
           <SignupForm>
-            <SignupFormInputWrapper>
+            <LoginFormInputWrapper>
               <label>Email</label>
               <input type="email" id="email" name="email" />
-            </SignupFormInputWrapper>
-            <SignupFormInputWrapper>
+            </LoginFormInputWrapper>
+            <LoginFormInputWrapper>
               <label>Contraseña</label>
               <input type="password" id="password" name="password" />
-            </SignupFormInputWrapper>
+            </LoginFormInputWrapper>
             <input
               className="button__login"
               type="submit"
@@ -49,7 +49,7 @@ const Login = () => {
             </Link>
             {` `}para crear una en cuestión de segundos.
           </small>
-        </SignupFormContainer>
+        </LoginFormContainer>
       </MainFlex>
       <Footer />
     </FullLoginRegisterContainer>

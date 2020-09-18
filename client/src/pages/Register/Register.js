@@ -16,13 +16,13 @@ const Register = () => {
   return (
     <FullLoginRegisterContainer>
       <Header />
-      <ReturnButton
-        onClick={() => history.goBack()}
-        src={returnSrc}
-        alt={"returnbutton"}
-      />
 
       <MainFlex>
+        <ReturnButton
+          onClick={() => history.goBack()}
+          src={returnSrc}
+          alt={"returnbutton"}
+        />
         <SignupFormContainer>
           <img src={logo2Src} alt="doicheliving logo" />
           <h2>OBTENER UNA CUENTA</h2>

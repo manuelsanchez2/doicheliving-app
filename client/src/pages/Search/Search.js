@@ -8,7 +8,9 @@ const Search = () => {
     <>
       <Header />
 
-      <Main>Próximamente... ¡Estamos trabajando en esto!</Main>
+      <Main>
+        <div>Próximamente... ¡Estamos trabajando en esto!</div>
+      </Main>
 
       <Footer />
     </>

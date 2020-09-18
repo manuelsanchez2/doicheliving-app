@@ -3,11 +3,12 @@ import PropTypes from "prop-types";
 
 const MainFlex = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex: 1;
   padding: 0 1em 0 1em;
-  height: 85vh;
+  position: relative;
 `;
 
 MainFlex.propTypes = {
