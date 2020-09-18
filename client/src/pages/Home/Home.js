@@ -12,23 +12,10 @@ import instagramSrc from "../../assets/icons/social-instagram.svg";
 import facebookSrc from "../../assets/icons/social-facebook.svg";
 import mailSrc from "../../assets/icons/social-mail.svg";
 import shareSrc from "../../assets/icons/social-share.svg";
-import { Link } from "react-router-dom";
+import BigPictureContainer from "../../components/BigPictureContainer/BigPictureContainer";
 
 const url =
   "https://doicheliving.us20.list-manage.com/subscribe/post?u=9cdf1aa6dc72fdfd1cda13b58&amp;id=aba90a6fa5";
-
-const BigPictureContainer = styled.div`
-  background: white;
-
-  img {
-    object-fit: cover;
-    border-radius: 20px;
-    width: 8.5rem;
-    height: 12.5rem;
-    border: 1px solid var(--color-darkgrayborder);
-    box-shadow: 0.5px 0px 20px 0px rgba(0, 0, 0, 0.3);
-  }
-`;
 
 const SmallPictureContainer = styled.div`
   img {
@@ -37,7 +24,7 @@ const SmallPictureContainer = styled.div`
     width: 7rem;
     height: 5.5rem;
     border: 1px solid var(--color-darkgrayborder);
-    box-shadow: 0.5px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0.5px 0px 5px 0px rgba(0, 0, 0, 0.01);
   }
 `;
 const CarouselContainer = styled.div`
@@ -50,7 +37,7 @@ const CarouselContainer = styled.div`
     display: none;
   }
   > * {
-    margin-right: 0.15rem;
+    margin-right: 0.3rem;
   }
 `;
 
@@ -62,23 +49,11 @@ const Login = () => {
         <h2>¿Qué quieres descubrir de Alemania?</h2>
         <h3>Organiza tu viaje</h3>
         <CarouselContainer>
-          <BigPictureContainer>
-            <Link to="/login">
-              <img src={pictureTest} alt="" />
-            </Link>
-          </BigPictureContainer>
-          <BigPictureContainer>
-            <img src={pictureTest} alt="" />
-          </BigPictureContainer>
-          <BigPictureContainer>
-            <img src={pictureTest} alt="" />
-          </BigPictureContainer>
-          <BigPictureContainer>
-            <img src={pictureTest} alt="" />
-          </BigPictureContainer>
-          <BigPictureContainer>
-            <img src={pictureTest} alt="" />
-          </BigPictureContainer>
+          <BigPictureContainer to={"/login"} src={pictureTest} alt="" />
+          <BigPictureContainer to={"/login"} src={pictureTest} alt="" />
+          <BigPictureContainer to={"/login"} src={pictureTest} alt="" />
+          <BigPictureContainer to={"/login"} src={pictureTest} alt="" />
+          <BigPictureContainer to={"/login"} src={pictureTest} alt="" />
         </CarouselContainer>
 
         <h3>Destinos más populares</h3>
@@ -101,21 +76,11 @@ const Login = () => {
         </CarouselContainer>
         <h3>Rutas por Alemania</h3>
         <CarouselContainer>
-          <BigPictureContainer>
-            <img src={pictureTest3} alt="" />
-          </BigPictureContainer>
-          <BigPictureContainer>
-            <img src={pictureTest3} alt="" />
-          </BigPictureContainer>
-          <BigPictureContainer>
-            <img src={pictureTest3} alt="" />
-          </BigPictureContainer>
-          <BigPictureContainer>
-            <img src={pictureTest3} alt="" />
-          </BigPictureContainer>
-          <BigPictureContainer>
-            <img src={pictureTest3} alt="" />
-          </BigPictureContainer>
+          <BigPictureContainer to={"/login"} src={pictureTest3} alt="slawo" />
+          <BigPictureContainer src={pictureTest3} alt="" />
+          <BigPictureContainer src={pictureTest3} alt="" />
+          <BigPictureContainer src={pictureTest3} alt="" />
+          <BigPictureContainer src={pictureTest3} alt="" />
         </CarouselContainer>
 
         {/* SUBSCRIBE SECTION  */}
