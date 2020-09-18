@@ -13,20 +13,11 @@ import facebookSrc from "../../assets/icons/social-facebook.svg";
 import mailSrc from "../../assets/icons/social-mail.svg";
 import shareSrc from "../../assets/icons/social-share.svg";
 import BigPictureContainer from "../../components/BigPictureContainer/BigPictureContainer";
+import SmallPictureContainer from "../../components/SmallPictureContainer/SmallPictureContainer";
 
 const url =
   "https://doicheliving.us20.list-manage.com/subscribe/post?u=9cdf1aa6dc72fdfd1cda13b58&amp;id=aba90a6fa5";
 
-const SmallPictureContainer = styled.div`
-  img {
-    object-fit: cover;
-    border-radius: 20px;
-    width: 7rem;
-    height: 5.5rem;
-    border: 1px solid var(--color-darkgrayborder);
-    box-shadow: 0.5px 0px 5px 0px rgba(0, 0, 0, 0.01);
-  }
-`;
 const CarouselContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -58,21 +49,11 @@ const Login = () => {
 
         <h3>Destinos más populares</h3>
         <CarouselContainer>
-          <SmallPictureContainer>
-            <img src={pictureTest2} alt="" />
-          </SmallPictureContainer>
-          <SmallPictureContainer>
-            <img src={pictureTest2} alt="" />
-          </SmallPictureContainer>
-          <SmallPictureContainer>
-            <img src={pictureTest2} alt="" />
-          </SmallPictureContainer>
-          <SmallPictureContainer>
-            <img src={pictureTest2} alt="" />
-          </SmallPictureContainer>
-          <SmallPictureContainer>
-            <img src={pictureTest2} alt="" />
-          </SmallPictureContainer>
+          <SmallPictureContainer to={"/login"} src={pictureTest2} alt="" />
+          <SmallPictureContainer to={"/login"} src={pictureTest2} alt="" />
+          <SmallPictureContainer to={"/login"} src={pictureTest2} alt="" />
+          <SmallPictureContainer to={"/login"} src={pictureTest2} alt="" />
+          <SmallPictureContainer to={"/login"} src={pictureTest2} alt="" />
         </CarouselContainer>
         <h3>Rutas por Alemania</h3>
         <CarouselContainer>
