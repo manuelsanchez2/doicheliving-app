@@ -1,3 +1,224 @@
 {
-  "test": [{ "test": "perro" }]
+  "spots": [
+    {
+      "title": "⭐️ Filarmónica del Elba",
+      "_id": "1",
+      "description": "Una de las maravillas arquitectónicas del país y símbolo de la ciudad desde su apertura en 2007.",
+      "latitude": 53.54129400000003,
+      "longitude": 9.984282000000011,
+      "image": "https://i.imgur.com/MmIwaMn.jpg",
+      "time": "2 horas",
+      "address": "Platz der Deutschen Einheit 4, 20457 Hamburgo",
+      "addInfo": "Ver tour <a href='https://www.getyourguide.es/hamburgo-l23/filarmonica-del-elba-tour-guiado-sin-salas-de-conciertos-t92790/?partner_id=AUS9KHH&utm_medium=online_publisher&placement=other&cmp=ES_Filar' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "⭐️ Ayuntamiento de Hamburgo",
+      "_id": "2",
+      "description": "El Altes Rathaus de Hamburgo es la sede de la vida política de la ciudad. Su majestuosa fachada es solo un adelanto de lo que esconde en su interior: más de 600 salas en 17.000 metros cuadrados.",
+      "latitude": 53.55038339999999,
+      "longitude": 9.992368599999994,
+      "image": "https://i.imgur.com/e3Gc94o.jpg",
+      "time": "1 hora",
+      "address": "Rathausmarkt 1, 20095 Hamburgo",
+      "addInfo": "Ver tour <a href='https://www.civitatis.com/es/hamburgo/free-tour-hamburgo/?aid=5815' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "⭐️ Túnel del Elba",
+      "_id": "3",
+      "description": "El túnel del Elba, también llamado St. Pauli-Elbtunnel u Old Elbe Tunnel, es un trayecto de casi 430 metros que comunica la parte de la ciudad con la parte en la que está el puerto de mercancías.",
+      "latitude": 53.5459887,
+      "longitude": 9.966639099999982,
+      "image": "https://i.imgur.com/S78LtUA.jpg",
+      "time": "1 hora",
+      "address": "Bei den St. Pauli-Landungsbrücken, 20359 Hamburgo",
+      "addInfo": ""
+    },
+    {
+      "title": "⭐️ Catedral de Colonia",
+      "_id": "4",
+      "description": "El monumento más visitado de todo el país y el lugar en el que se dice están enterrados los Reyes Magos. ¡Un imperdible sin duda!",
+      "latitude": 50.941278400000016,
+      "longitude": 6.9582814000000015,
+      "image": "https://i.imgur.com/IZ1PJfv.jpg",
+      "time": "30 mins",
+      "address": "Domkloster 4, 50667 Colonia",
+      "addInfo": "Entradas y horarios <a href='https://www.koelner-dom.de/en/informationen/translate-to-englisch-oeffnungszeiten2019' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "🍫 Museo del Chocolate",
+      "_id": "5",
+      "description": "Descubre los más de 5000 años de historia del chocolate en uno de los lugares más populares de Colonia.",
+      "latitude": 50.932245699999996,
+      "longitude": 6.9643738999999805,
+      "image": "https://i.imgur.com/7swnXnO.jpg",
+      "time": "90 mins",
+      "address": "Am Schokoladenmuseum 1A, 50678 Colonia",
+      "addInfo": "Entradas y horarios <a href='https://www.schokoladenmuseum.de/en/plan-your-visit#eintrittspreise' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "🚈 Estación Central de Frankfurt",
+      "_id": "6",
+      "description": "Es la mayor estación de ferrocarril de Fráncfort del Meno y una de las principales de Alemania. Conecta toda la ciudad tanto con la red del U-Bahn y S-Bahn.",
+      "latitude": 50.1065289999999,
+      "longitude": 8.66216179999999,
+      "image": "https://i.imgur.com/wQR4fmj.jpg?1",
+      "time": "1 hora",
+      "address": "Am Hauptbahnhof, 60329 Frankfurt am Main",
+      "addInfo": ""
+    },
+    {
+      "title": "🛩 Aeropuerto de Frankfurt",
+      "_id": "7",
+      "description": "El aeropuerto de Frankfurt es el aeropuerto más grande de toda Alemania. Hay diversas formas de ir desde el aeropuerto de Frankfurt a la estación central o al centro de la ciudad: utilizando el transporte público (S-Bahn) con las líneas S8 o S9, con un traslado privado o en taxi.",
+      "latitude": 50.0379325999999,
+      "longitude": 8.56215179999998,
+      "image": "https://i.imgur.com/u9Jx3SS.jpg",
+      "time": "1 hora",
+      "address": "60547 Frankfurt am Main, Alemania",
+      "addInfo": ""
+    },
+    {
+      "title": "🏰 Castillo de Heidelberg",
+      "_id": "8",
+      "description": "Uno de los imprescindibles de Heidelberg es sin duda su castillo, denominado Schloss Heidelber.",
+      "latitude": 49.4106196,
+      "longitude": 8.715309199999982,
+      "image": "https://i.imgur.com/Z7QiyGJ.jpg?1",
+      "time": "2-3 horas",
+      "address": "Schlosshof 1, 69117 Heidelberg",
+      "addInfo": ""
+    },
+    {
+      "title": "🐒 Puente del Mono",
+      "_id": "9",
+      "description": "La Estatua del Mono del Puente de Carlos Teodoro, denominada Brückeaffe, es uno de los puntos más fotografiados de Heidelberg. Y no es para menos, se pueden hacer fotos muy buenas desde aquí (exceptuando la mía de arriba). Hay una leyenda que dice que si tocas al mono volverás a la ciudad de Heidelberg algún día, así que ya sabes.",
+      "latitude": 49.41314678615803,
+      "longitude": 8.709489747385906,
+      "image": "https://i.imgur.com/NUQy8YL.jpg",
+      "time": "15 mins",
+      "address": "Neckarstaden 66, 69117 Heidelberg",
+      "addInfo": ""
+    },
+    {
+      "title": "🚈 Estación Central de Heidelberg",
+      "_id": "10",
+      "description": "En una posicion de lo más envidiable tienes la estación de Heidelberg, desde la cual llegarás en cuestión de unos 15 minutos al centro de la ciudad.",
+      "latitude": 49.40393820000003,
+      "longitude": 8.6758142999999876,
+      "image": "https://i.imgur.com/cFiaR3a.jpg",
+      "time": "1-2 horas",
+      "address": "Willy-Brandt-Platz 5, 69115 Heidelberg",
+      "addInfo": ""
+    },
+    {
+      "title": "⭐️ Puerta de Brandeburgo",
+      "_id": "11",
+      "description": "Simbolo de la ciudad de Berlin y de la reunificacion alemana, la Puerta de Brandenburgo es uno de los imprescindibles en la capital y punto de partida de tus aventuras en Berlín.",
+      "latitude": 52.51627460000003,
+      "longitude": 13.37770410000001,
+      "image": "https://i.imgur.com/D6NTRjt.jpg",
+      "time": "20 mins",
+      "address": "Pariser Platz, 10117 Berlín",
+      "addInfo": "Ver tour <a href='https://www.civitatis.com/es/berlin/free-tour-berlin/?aid=5815' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "⭐️ Alexanderplatz",
+      "_id": "12",
+      "description": "Bievenido a la plaza mas importante de Berlin. Aqui hallaras algunos de los edificios mas emblematicos de la ciudad, entre los que se encuentra la Torre de Television.",
+      "latitude": 52.5219814,
+      "longitude": 13.413306,
+      "image": "https://i.imgur.com/H4B4DEA.jpg",
+      "time": "15 mins",
+      "address": "Alexander Platz 10178 Berlín",
+      "addInfo": "Ver tour de la Torre de Televisión <a href='https://www.getyourguide.com/berlin-l17/skip-the-line-berlin-tv-tower-ticket-t141648/?cmp=BE_Alexanderplatz&partner_id=AUS9KHH&placement=%22other%22&utm_medium=online_publisher&utm_source=doicheliving' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "🥙 Mustafa's Gemüse Kebap",
+      "_id": "13",
+      "description": "Situado en el barrio de Kreuzberg, es el kebap más famoso de Alemania y uno de los sitios para comer más concurridos de Berlín, tanto que a veces hay largas colas para comprar un kebap. ¡Será por algo!",
+      "latitude": 52.493962900000014,
+      "longitude": 13.387956599999983,
+      "image": "https://i.imgur.com/Mi4uVYd.png",
+      "time": "1-2 horas",
+      "address": "Mehringdamm 32, 10961 Berlín",
+      "addInfo": ""
+    },
+    {
+      "title": "⭐️ Ayuntamiento Nuevo de Múnich",
+      "_id": "14",
+      "description": "El Neues Rathaus de Marienplatz es un imprescindible en la ciudad de Múnich. Intenta ver el espectáculo diario del carillón de su torre principal a las 11:00, 12:00 o a las 17:00 horas si vas de marzo a octubre.",
+      "latitude": 48.137579799999982,
+      "longitude": 11.5758153,
+      "image": "https://i.imgur.com/cTl3qGC.jpg",
+      "time": "30 mins",
+      "address": "Marienplatz 8, 80331 Múnich",
+      "addInfo": "Ver tour <a href='https://www.civitatis.com/es/munich/free-tour-munich/?aid=5815' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "🍻 Cervecería Hofbräuhaus",
+      "_id": "15",
+      "description": "Tu visita a Múnich no puede pasar por alto una parada en su cervecería más famosa, la Hofbräuhaus. Ubicada en la parte histórica de la ciudad y también en la zona céntrica (cerca de Marienplatz), esta cervecería cuenta con más de 400 años de historia. Pídete una buena cerveza y un codillo (Schweinaxe)",
+      "latitude": 48.13760980000003,
+      "longitude": 11.579925300000017,
+      "image": "https://i.imgur.com/sUU9AEb.jpg",
+      "time": "2-3 horas",
+      "address": "Platzl 9, 80331 Múnich",
+      "addInfo": ""
+    },
+    {
+      "title": "🏰 Castillo de Neuschwanstein",
+      "_id": "16",
+      "description": "El Castillo de Neuschwanstein, también conocido como el castillo del Rey Loco, es una de las principales atracciones turísticas de Alemania, no solo por su grandiosidad, sino también por la belleza del paisaje que lo rodea.",
+      "latitude": 47.557574000000045,
+      "longitude": 10.749800399999993,
+      "image": "https://i.imgur.com/S053mhX.jpg",
+      "time": "2-3 horas",
+      "address": "Neuschwansteinstraße 20, 87645 Schwangau",
+      "addInfo": "Ver tour desde Múnich <a href='https://www.getyourguide.es/activity/mnich-l26/castillo-de-neuschwanstein-desde-mnich-tour-de-1-da-t23715?partner_id=AUS9KHH&utm_medium=online_publisher&utm_source=doicheliving&placement=content-top&cmp=ES_MU_Castillo' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "⭐️ Porta Nigra",
+      "_id": "17",
+      "description": "La Porta Nigra de Trier, o Tréveris en español, es uno de los monumentos más antiguos de toda Alemania, y un imprescindible si visitas la ciudad. Datada de hace más de 1850 años de antigüedad, la Porta Nigra es la puerta romana que daba acceso a la ciudad. A día de hoy, es el punto de encuentro de muchos de los que viven en la ciudad.",
+      "latitude": 49.75962309999999,
+      "longitude": 6.644165900000019,
+      "image": "https://i.imgur.com/LJVfWaf.jpg",
+      "time": "15 mins",
+      "address": "Porta-Nigra-Platz, 54290 Tréveris",
+      "addInfo": ""
+    },
+    {
+      "title": "⭐️ Estatua de Karl Marx",
+      "_id": "18",
+      "description": "¿Sabías que este político revolucionario nació en Trier? ¡Pues sí! La Estatua de Marx fue un regalo que le hizo la República Popular China en 2018 a la ciudad y ahora es uno de los símbolos de Trier.",
+      "latitude": 49.75959370000002,
+      "longitude": 6.642667300000005,
+      "image": "https://i.imgur.com/H6RMVq8.jpg",
+      "time": "10 mins",
+      "address": "Nordallee 1, 54290 Tréveris",
+      "addInfo": ""
+    },
+    {
+      "title": "🏰 Castillo de Cochem",
+      "_id": "19",
+      "description": "El castillo de Cochem, también conocido como Reichsburg Cochem, es un antiguo castillo feudal que se erige en una colina que domina todo el valle del río Mosela.",
+      "latitude": 50.142260000000014,
+      "longitude": 7.167048000000005,
+      "image": "https://i.imgur.com/ArtsluO.jpg",
+      "time": "1 hora",
+      "address": "Schlossstraße 36, 56812 Cochem",
+      "addInfo": ""
+    },
+    {
+      "title": "⭐  East Side Gallery",
+      "_id": "20",
+      "description": "El Muro de Berlín es la atracción turística más visitada de la capital alemana, ¡y con razón! Este monumento es un símbolo muy importante de la historia de Alemania y, a pesar de que el trozo de muro más famoso sea el East Side Gallery, aún quedan otros restos por toda la ciudad. ¿Te animas a descubrirlos?.",
+      "latitude": 52.50502239999999,
+      "longitude": 13.4396952,
+      "image": "https://i.imgur.com/L2bsjbG.jpg",
+      "time": "1 hora",
+      "address": "Mühlenstraße 3-100, 10243 Berlín",
+      "addInfo": ""
+    }
+  ]
 }

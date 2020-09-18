@@ -16,7 +16,7 @@ const ImageFooter = styled.img`
 
 const StyledFooter = styled.nav`
   box-shadow: var(--shadow-up);
-  max-height: 15%;
+  max-height: 20%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -31,7 +31,7 @@ const Footer = () => {
       <Link to="/home">
         <ImageFooter src={homeSrc} alt="Home" />
       </Link>
-      <Link to="/">
+      <Link to="/map">
         <ImageFooter src={mapSrc} alt="Map" />
       </Link>
       <Link to="/">
