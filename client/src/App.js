@@ -8,6 +8,7 @@ import Search from "./pages/Search/Search";
 import Questions from "./pages/Questions/Questions";
 import Contact from "./pages/Contact/Contact";
 import About from "./pages/About/About";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/register">
+            <Register />
           </Route>
           <Route path="/">
             <Home />

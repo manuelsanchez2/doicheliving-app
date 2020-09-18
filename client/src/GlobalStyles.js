@@ -250,7 +250,8 @@ const GlobalStyles = () => {
 
         .form__field input[type="password"],
         .form__field input[type="email"],
-        .form__field input[type="text"] {
+        .form__field input[type="text"],
+        .form__field input[type="name"] {
           border: 1px solid var(--color-grayborder);
           background: #f0f4f5;
           border-radius: 4px 4px 4px 4px;

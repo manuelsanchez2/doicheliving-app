@@ -6,7 +6,7 @@ import styled from "@emotion/styled";
 import logo2Src from "../../assets/icons/doicheliving-logo2.png";
 import returnSrc from "../../assets/icons/arrow.svg";
 
-const StyledLoginContainer = styled.div`
+const StyledRegisterContainer = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,10 +35,10 @@ const StyledLoginContainer = styled.div`
   }
 `;
 
-const Login = () => {
+const Register = () => {
   const history = useHistory();
   return (
-    <StyledLoginContainer>
+    <StyledRegisterContainer>
       <Header />
       <button onClick={() => history.goBack()}>
         <img src={returnSrc} alt="return button" />
@@ -50,49 +50,46 @@ const Login = () => {
             <div className="form__image">
               <img src={logo2Src} alt="doicheliving logo" />
             </div>
-            <h2>INICIAR SESIÓN</h2>
+            <h2>OBTENER UNA CUENTA</h2>
             <form>
               <div className="form__field">
+                <label htmlFor="name">Nombre</label>
+                <input type="name" id="name" name="name" />
+              </div>
+              <div className="form__field">
                 <label htmlFor="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Inserta tu email aquí "
-                />
+                <input type="email" id="email" name="email" />
               </div>
               <div className="form__field">
                 <label htmlFor="password">Contraseña</label>
-                <input
-                  type="password"
-                  id="password"
-                  name="password"
-                  placeholder="Inserta tu contraseña aquí "
-                />
+                <input type="password" id="password" name="password" />
+              </div>
+              <div className="form__field">
+                <label htmlFor="password">Confirmar Contraseña</label>
+                <input type="password" id="password" name="password" />
               </div>
               <div className="form__field">
                 <input
                   className="button__login"
                   type="submit"
-                  value="ACCEDER A LA CUENTA"
+                  value="REGISTRARME"
                 />
               </div>
             </form>
             <div className="form__text">
               <small>
-                ¿No tienes una cuenta? Haz click{` `}
-                <Link to="/register">
-                  <strong>aquí</strong>
+                Volver a{` `}
+                <Link to="/login">
+                  <strong>Iniciar Sesión</strong>.
                 </Link>
-                {` `}para crear una en cuestión de segundos.
               </small>
             </div>
           </div>
         </div>
       </div>
       <Footer />
-    </StyledLoginContainer>
+    </StyledRegisterContainer>
   );
 };
 
-export default Login;
+export default Register;
