@@ -41,6 +41,7 @@ const Map = () => {
       ...newViewport,
       ...geocoderDefaultOverrides,
     });
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
