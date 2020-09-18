@@ -5,6 +5,9 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Map from "./pages/Map";
 import Search from "./pages/Search/Search";
+import Questions from "./pages/Questions/Questions";
+import Contact from "./pages/Contact/Contact";
+import About from "./pages/About/About";
 
 function App() {
   return (
@@ -23,6 +26,15 @@ function App() {
           </Route>
           <Route path="/search">
             <Search />
+          </Route>
+          <Route path="/questions">
+            <Questions />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/about">
+            <About />
           </Route>
           <Route path="/">
             <Home />

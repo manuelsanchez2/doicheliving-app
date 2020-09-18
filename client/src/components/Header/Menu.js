@@ -94,20 +94,20 @@ const Menu = ({ open }) => {
         </Link>
       </MenuItem>
       <MenuItem>
-        <Link to="/">
+        <Link to="/questions">
           <MenuItemImage src={questionSrc} alt="Home" />
           <MenuItemtext>Preguntas Frecuentes</MenuItemtext>
         </Link>
       </MenuItem>
 
       <MenuItem>
-        <Link to="/">
+        <Link to="/contact">
           <MenuItemImage src={contactSrc} alt="Home" />
           <MenuItemtext>Contacta con nosotros</MenuItemtext>
         </Link>
       </MenuItem>
       <MenuItem>
-        <Link to="/">
+        <Link to="/about">
           <MenuItemImage src={logoDarkSrc} alt="Home" />
           <MenuItemtext>Sobre Doiche Living</MenuItemtext>
         </Link>
