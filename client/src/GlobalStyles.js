@@ -52,7 +52,6 @@ const GlobalStyles = () => {
         code {
         }
 
-        /* @media (max-width: 375px) { */
         h2 {
           font-size: 1.6rem;
           font-family: var(--font-nunito);
@@ -199,42 +198,6 @@ const GlobalStyles = () => {
         .social__item__container small {
           font-size: 0.6rem;
           margin-left: 0.5rem;
-        }
-
-        /* LOGIN PAGE  */
-
-        .form__field {
-          display: flex;
-          padding-bottom: 0.5rem;
-          align-items: center;
-        }
-
-        .form__field label {
-          flex: 0 0 80px;
-          font-family: var(--font-lato);
-          font-size: 0.7rem;
-        }
-
-        .form__field input[type="password"],
-        .form__field input[type="email"],
-        .form__field input[type="text"],
-        .form__field input[type="name"] {
-          border: 1px solid var(--color-grayborder);
-          background: #f0f4f5;
-          border-radius: 4px 4px 4px 4px;
-          padding: 0.5rem 0.5rem 0.5rem 2.5rem;
-          max-width: 70%;
-        }
-
-        .button__login {
-          border: 1px solid var(--color-yellow);
-          background: var(--color-yellow);
-          border-radius: 10px;
-          color: var(--color-white);
-          font-family: var(--font-lato);
-          font-size: 1rem;
-          letter-spacing: 2px;
-          padding: 0.3rem 1.5rem;
         }
       `}
     />

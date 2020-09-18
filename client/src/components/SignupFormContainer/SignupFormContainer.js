@@ -19,7 +19,9 @@ const SignupFormContainer = styled.div`
   }
 
   small {
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
+    line-height: 0.9rem;
+    margin-left: 0.5rem;
   }
 `;
 

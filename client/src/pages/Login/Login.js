@@ -2,97 +2,57 @@ import React from "react";
 import { Link, useHistory } from "react-router-dom";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import styled from "@emotion/styled";
 import logo2Src from "../../assets/icons/doicheliving-logo2.png";
 import returnSrc from "../../assets/icons/arrow.svg";
 import MainFlex from "../../components/MainFlex";
-
-const StyledLoginContainer = styled.div`
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: auto;
-  background: var(--color-yellow);
-
-  img {
-    max-height: 5rem;
-    max-width: 5rem;
-  }
-
-  h2 {
-    text-align: center;
-    margin-bottom: 17px;
-    margin-top: 12px;
-  }
-
-  button {
-    background: var(--color-white);
-    border: 1px solid var(--color-darkgrayborder);
-    border-radius: 50px;
-    width: 48px;
-    height: 48px;
-    margin: 10px 0 0 10px;
-  }
-`;
+import FullLoginRegisterContainer from "../../components/FullLoginRegisterContainer";
+import SignupForm from "../../components/SignupForm";
+import ReturnButton from "../../components/ReturnButton/ReturnButton";
+import SignupFormContainer from "../../components/SignupFormContainer/SignupFormContainer";
+import SignupFormInputWrapper from "../../components/SignupFormInputWrapper/SignupFormInputWrapper";
 
 const Login = () => {
   const history = useHistory();
   return (
-    <StyledLoginContainer>
+    <FullLoginRegisterContainer>
       <Header />
-      <button onClick={() => history.goBack()}>
-        <img src={returnSrc} alt="return button" />
-      </button>
+      <ReturnButton
+        onClick={() => history.goBack()}
+        src={returnSrc}
+        alt={"returnbutton"}
+      />
 
       <MainFlex>
-        <div className="form__high__container">
-          <div className="form__width__container">
-            <div className="form__image">
-              <img src={logo2Src} alt="doicheliving logo" />
-            </div>
-            <h2>INICIAR SESIÓN</h2>
-            <form>
-              <div className="form__field">
-                <label htmlFor="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Inserta tu email aquí "
-                />
-              </div>
-              <div className="form__field">
-                <label htmlFor="password">Contraseña</label>
-                <input
-                  type="password"
-                  id="password"
-                  name="password"
-                  placeholder="Inserta tu contraseña aquí "
-                />
-              </div>
-              <div className="form__field">
-                <input
-                  className="button__login"
-                  type="submit"
-                  value="ACCEDER A LA CUENTA"
-                />
-              </div>
-            </form>
-            <div className="form__text">
-              <small>
-                ¿No tienes una cuenta? Haz click{` `}
-                <Link to="/register">
-                  <strong>aquí</strong>
-                </Link>
-                {` `}para crear una en cuestión de segundos.
-              </small>
-            </div>
-          </div>
-        </div>
+        <SignupFormContainer>
+          <img src={logo2Src} alt="doicheliving logo" />
+          <h2>INICIAR SESIÓN</h2>
+          <SignupForm>
+            <SignupFormInputWrapper>
+              <label>Email</label>
+              <input type="email" id="email" name="email" />
+            </SignupFormInputWrapper>
+            <SignupFormInputWrapper>
+              <label>Contraseña</label>
+              <input type="password" id="password" name="password" />
+            </SignupFormInputWrapper>
+            <input
+              className="button__login"
+              type="submit"
+              value="ACCEDER A LA CUENTA"
+            />
+          </SignupForm>
+
+          <small>
+            ¿No tienes una cuenta? Haz click{` `}
+            <Link to="/register">
+              <strong>aquí</strong>
+            </Link>
+            {` `}para crear una en cuestión de segundos.
+          </small>
+        </SignupFormContainer>
       </MainFlex>
       <Footer />
-    </StyledLoginContainer>
+    </FullLoginRegisterContainer>
   );
 };
 
