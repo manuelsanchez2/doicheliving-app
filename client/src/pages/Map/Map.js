@@ -8,7 +8,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import mapMarkerRed from "../../assets/icons/map-marker-red.svg";
 import SpotEntryForm from "../../components/SpotEntryForm/SpotEntryForm";
-import MapMain from "../../components/MapMain/MapMain";
+import MainMap from "../../components/MainMap/MainMap";
 import StyledMapContainer from "../../components/StyledMapContainer";
 import SpotEntryFormContainer from "../../components/SpotEntryFormContainer";
 import Spot from "../../components/Spot";
@@ -61,7 +61,7 @@ const Map = () => {
   return (
     <StyledMapContainer>
       <Header />
-      <MapMain>
+      <MainMap>
         <ReactMapGL
           ref={mapRef}
           {...viewport}
@@ -148,7 +148,7 @@ const Map = () => {
             </>
           ) : null}
         </ReactMapGL>
-      </MapMain>
+      </MainMap>
       <Footer />
     </StyledMapContainer>
   );

@@ -202,13 +202,6 @@ const GlobalStyles = () => {
         }
 
         /* LOGIN PAGE  */
-        .main--login {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex: 1;
-          padding: 0em 1em 0 1em;
-        }
 
         .form__image {
           align-items: center;

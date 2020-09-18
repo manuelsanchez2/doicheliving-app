@@ -5,6 +5,7 @@ import Footer from "../../components/Footer";
 import styled from "@emotion/styled";
 import logo2Src from "../../assets/icons/doicheliving-logo2.png";
 import returnSrc from "../../assets/icons/arrow.svg";
+import MainFlex from "../../components/MainFlex";
 
 const StyledLoginContainer = styled.div`
   height: 100vh;
@@ -44,7 +45,7 @@ const Login = () => {
         <img src={returnSrc} alt="return button" />
       </button>
 
-      <div className="main--login">
+      <MainFlex>
         <div className="form__high__container">
           <div className="form__width__container">
             <div className="form__image">
@@ -89,7 +90,7 @@ const Login = () => {
             </div>
           </div>
         </div>
-      </div>
+      </MainFlex>
       <Footer />
     </StyledLoginContainer>
   );
