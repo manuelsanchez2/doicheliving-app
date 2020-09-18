@@ -88,8 +88,8 @@ const Menu = ({ open }) => {
         </Link>
       </MenuItem>
       <MenuItem>
-        <Link to="/">
-          <MenuItemImage src={searchSrc} alt="Home" />
+        <Link to="/search">
+          <MenuItemImage src={searchSrc} alt="Search" />
           <MenuItemtext>Buscador de Artículos</MenuItemtext>
         </Link>
       </MenuItem>
