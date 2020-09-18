@@ -203,42 +203,16 @@ const GlobalStyles = () => {
 
         /* LOGIN PAGE  */
 
-        .form__image {
-          align-items: center;
-          justify-content: center;
-          display: flex;
-        }
-
-        .form__high__container {
-          background: var(--color-white);
-          border-radius: 10px 10px 10px 10px;
-          border: 1px solid var(--color-darkgrayborder);
-          box-shadow: 0.5px 0px 20px 0px rgba(0, 0, 0, 0.3);
-          align-items: center;
-          justify-content: center;
-          display: flex;
-          max-height: 80%;
-        }
-
-        .form__width__container {
-          max-width: 320px;
-          width: 100%;
-          padding: 3.5rem 1.5rem;
-        }
-
         .form__field {
           display: flex;
-          padding-bottom: 0.9rem;
+          padding-bottom: 0.5rem;
           align-items: center;
-        }
-
-        .form__field:last-child {
-          justify-content: center;
         }
 
         .form__field label {
           flex: 0 0 80px;
           font-family: var(--font-lato);
+          font-size: 0.7rem;
         }
 
         .form__field input[type="password"],
@@ -248,8 +222,8 @@ const GlobalStyles = () => {
           border: 1px solid var(--color-grayborder);
           background: #f0f4f5;
           border-radius: 4px 4px 4px 4px;
-          padding: 0.5rem;
-          flex: 1;
+          padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+          max-width: 70%;
         }
 
         .button__login {

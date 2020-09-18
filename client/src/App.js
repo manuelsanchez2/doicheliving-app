@@ -12,7 +12,7 @@ import Register from "./pages/Register";
 
 function App() {
   return (
-    <div className="container">
+    <>
       <GlobalStyles />
       <Router>
         <Switch>
@@ -45,7 +45,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-    </div>
+    </>
   );
 }
 
