@@ -16,7 +16,7 @@ const Container = styled.div`
   }
 `;
 
-const BigPictureContainer = ({ to, src, alt, children }) => {
+const HomeBigPictureContainer = ({ to, src, alt, children }) => {
   return (
     <Container>
       <Link to={to}>
@@ -26,11 +26,11 @@ const BigPictureContainer = ({ to, src, alt, children }) => {
   );
 };
 
-BigPictureContainer.propTypes = {
+HomeBigPictureContainer.propTypes = {
   children: PropTypes.node,
   to: PropTypes.any,
   src: PropTypes.string,
   alt: PropTypes.string,
 };
 
-export default BigPictureContainer;
+export default HomeBigPictureContainer;

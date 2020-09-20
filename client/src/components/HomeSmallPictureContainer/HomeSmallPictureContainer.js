@@ -16,7 +16,7 @@ const Container = styled.div`
   }
 `;
 
-const SmallPictureContainer = ({ to, src, alt, children }) => {
+const HomeSmallPictureContainer = ({ to, src, alt, children }) => {
   return (
     <Container>
       <Link to={to}>
@@ -26,11 +26,11 @@ const SmallPictureContainer = ({ to, src, alt, children }) => {
   );
 };
 
-SmallPictureContainer.propTypes = {
+HomeSmallPictureContainer.propTypes = {
   children: PropTypes.node,
   to: PropTypes.any,
   src: PropTypes.string,
   alt: PropTypes.string,
 };
 
-export default SmallPictureContainer;
+export default HomeSmallPictureContainer;
