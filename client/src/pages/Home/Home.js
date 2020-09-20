@@ -14,6 +14,7 @@ import mailSrc from "../../assets/icons/social-mail.svg";
 import shareSrc from "../../assets/icons/social-share.svg";
 import BigPictureContainer from "../../components/BigPictureContainer/BigPictureContainer";
 import SmallPictureContainer from "../../components/SmallPictureContainer/SmallPictureContainer";
+import HomeSocialSection from "../../components/HomeSocialSection/HomeSocialSection";
 
 const url =
   "https://doicheliving.us20.list-manage.com/subscribe/post?u=9cdf1aa6dc72fdfd1cda13b58&amp;id=aba90a6fa5";
@@ -102,7 +103,7 @@ const Login = () => {
           </div>
         </section>
 
-        <section className="social__section">
+        <HomeSocialSection>
           <h3>¿Te gusta Doiche Living?</h3>
           <div className="social__section__container">
             <div className="social__item__container">
@@ -122,7 +123,7 @@ const Login = () => {
               <small>Comparte la aplicación</small>
             </div>
           </div>
-        </section>
+        </HomeSocialSection>
       </div>
       <Footer />
     </div>

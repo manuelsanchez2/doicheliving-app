@@ -153,16 +153,6 @@ const GlobalStyles = () => {
 
         /* MAIN SOCIAL SECTION  */
 
-        .social__section {
-          height: 30vh;
-          display: flex;
-          flex-flow: column nowrap;
-        }
-
-        .social__section h3 {
-          margin: 0 auto;
-        }
-
         .social__section__container {
           padding: 1rem 0;
           margin-top: 1rem;
