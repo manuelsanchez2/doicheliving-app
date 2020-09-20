@@ -16,7 +16,6 @@ const ImageFooter = styled.img`
 
 const StyledFooter = styled.nav`
   box-shadow: var(--shadow-up);
-  max-height: 20%;
   display: flex;
   justify-content: space-around;
   align-items: center;
