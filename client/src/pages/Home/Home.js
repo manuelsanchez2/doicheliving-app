@@ -15,6 +15,8 @@ import shareSrc from "../../assets/icons/social-share.svg";
 import BigPictureContainer from "../../components/BigPictureContainer/BigPictureContainer";
 import SmallPictureContainer from "../../components/SmallPictureContainer/SmallPictureContainer";
 import HomeSocialSection from "../../components/HomeSocialSection/HomeSocialSection";
+import HomeSocialSectionContainer from "../../components/HomeSocialSectionContainer/HomeSocialSectionContainer";
+import HomeSocialSectionItemContainer from "../../components/HomeSocialSectionItemContainer/HomeSocialSectionItemContainer";
 
 const url =
   "https://doicheliving.us20.list-manage.com/subscribe/post?u=9cdf1aa6dc72fdfd1cda13b58&amp;id=aba90a6fa5";
@@ -105,24 +107,28 @@ const Login = () => {
 
         <HomeSocialSection>
           <h3>¿Te gusta Doiche Living?</h3>
-          <div className="social__section__container">
-            <div className="social__item__container">
-              <img src={instagramSrc} alt="" />
-              <small>Síguenos en Instagram</small>
-            </div>
-            <div className="social__item__container">
-              <img src={mailSrc} alt="" />
-              <small>Contacta con nosotros</small>
-            </div>
-            <div className="social__item__container">
-              <img src={facebookSrc} alt="" />
-              <small>Síguenos en Facebook</small>
-            </div>
-            <div className="social__item__container">
-              <img src={shareSrc} alt="" />
-              <small>Comparte la aplicación</small>
-            </div>
-          </div>
+          <HomeSocialSectionContainer>
+            <HomeSocialSectionItemContainer
+              src={instagramSrc}
+              alt=""
+              small={"Síguenos en Instagram"}
+            />
+            <HomeSocialSectionItemContainer
+              src={mailSrc}
+              alt=""
+              small={"Contacta con nosotros"}
+            />
+            <HomeSocialSectionItemContainer
+              src={facebookSrc}
+              alt=""
+              small={"Síguenos en Instagram"}
+            />
+            <HomeSocialSectionItemContainer
+              src={shareSrc}
+              alt=""
+              small={"Comparte la aplicación"}
+            />
+          </HomeSocialSectionContainer>
         </HomeSocialSection>
       </div>
       <Footer />

@@ -150,45 +150,6 @@ const GlobalStyles = () => {
           letter-spacing: 3px;
           display: block;
         }
-
-        /* MAIN SOCIAL SECTION  */
-
-        .social__section__container {
-          padding: 1rem 0;
-          margin-top: 1rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-wrap: wrap;
-          background: var(--color-yellow);
-          border-radius: 10px 10px 10px 10px;
-          border: 1px solid var(--color-darkgrayborder);
-          box-shadow: 0.5px 0px 20px 0px rgba(0, 0, 0, 0.3);
-        }
-
-        .social__item__container {
-          width: 42vw;
-          background: var(--color-white);
-          border-radius: 10px 10px 10px 10px;
-          border: 1px solid var(--color-darkgrayborder);
-          box-shadow: 0.5px 0px 10px 0px rgba(0, 0, 0, 0.3);
-          display: flex;
-          align-items: center;
-          margin-top: 0.5rem;
-          padding-top: 0.3rem;
-          margin-right: 0.1rem;
-        }
-
-        .social__item__container img {
-          height: 2.3vh;
-          margin-bottom: 0.2rem;
-          margin-left: 0.6rem;
-        }
-
-        .social__item__container small {
-          font-size: 0.6rem;
-          margin-left: 0.5rem;
-        }
       `}
     />
   );
