@@ -37,7 +37,7 @@ const MenuImage = styled.img`
   border-radius: 50%;
   margin-bottom: 2rem;
 
-  :first-child {
+  :first-of-type {
     margin-right: 15px;
   }
 `;
