@@ -4,7 +4,6 @@ import Mailchimp from "react-mailchimp-form";
 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import styled from "@emotion/styled";
 import pictureTest from "../../assets/images/picture-test-1.jpg";
 import pictureTest2 from "../../assets/images/picture-test-2.jpg";
 import pictureTest3 from "../../assets/images/picture-test-3.jpg";
@@ -12,122 +11,61 @@ import instagramSrc from "../../assets/icons/social-instagram.svg";
 import facebookSrc from "../../assets/icons/social-facebook.svg";
 import mailSrc from "../../assets/icons/social-mail.svg";
 import shareSrc from "../../assets/icons/social-share.svg";
-import { Link } from "react-router-dom";
+import HomeBigPictureContainer from "../../components/HomeBigPictureContainer/HomeBigPictureContainer";
+import HomeSmallPictureContainer from "../../components/HomeSmallPictureContainer/HomeSmallPictureContainer";
+import HomeSocialSection from "../../components/HomeSocialSection/HomeSocialSection";
+import HomeSocialSectionContainer from "../../components/HomeSocialSectionContainer/HomeSocialSectionContainer";
+import HomeSocialSectionItemContainer from "../../components/HomeSocialSectionItemContainer/HomeSocialSectionItemContainer";
+import Main from "../../components/Main/Main";
+import HomeSubscribeSection from "../../components/HomeSubscribeSection";
+import HomeSubscribeSectionText from "../../components/HomeSubscribeSectionText";
+import HomeSubscribeSectionField from "../../components/HomeSubscribeSectionField/HomeSubscribeSectionField";
+import HomeCarouselContainer from "../../components/HomeCarouselContainer";
 
-const url =
-  "https://doicheliving.us20.list-manage.com/subscribe/post?u=9cdf1aa6dc72fdfd1cda13b58&amp;id=aba90a6fa5";
+const mailchimpUrl = process.env.REACT_APP_MAILCHIMP_URL;
 
-const BigPictureContainer = styled.div`
-  background: white;
-
-  img {
-    object-fit: cover;
-    border-radius: 20px;
-    width: 8.5rem;
-    height: 12.5rem;
-    border: 1px solid var(--color-darkgrayborder);
-    box-shadow: 0.5px 0px 20px 0px rgba(0, 0, 0, 0.3);
-  }
-`;
-
-const SmallPictureContainer = styled.div`
-  img {
-    object-fit: cover;
-    border-radius: 20px;
-    width: 7rem;
-    height: 5.5rem;
-    border: 1px solid var(--color-darkgrayborder);
-    box-shadow: 0.5px 0px 20px 0px rgba(0, 0, 0, 0.3);
-  }
-`;
-const CarouselContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  ::-webkit-scrollbar {
-    display: none;
-  }
-  > * {
-    margin-right: 0.15rem;
-  }
-`;
-
-const Login = () => {
+const Home = () => {
   return (
     <div className="container">
       <Header />
-      <div className="main--main">
+      <Main>
         <h2>¿Qué quieres descubrir de Alemania?</h2>
         <h3>Organiza tu viaje</h3>
-        <CarouselContainer>
-          <BigPictureContainer>
-            <Link to="/login">
-              <img src={pictureTest} alt="" />
-            </Link>
-          </BigPictureContainer>
-          <BigPictureContainer>
-            <img src={pictureTest} alt="" />
-          </BigPictureContainer>
-          <BigPictureContainer>
-            <img src={pictureTest} alt="" />
-          </BigPictureContainer>
-          <BigPictureContainer>
-            <img src={pictureTest} alt="" />
-          </BigPictureContainer>
-          <BigPictureContainer>
-            <img src={pictureTest} alt="" />
-          </BigPictureContainer>
-        </CarouselContainer>
+        <HomeCarouselContainer>
+          <HomeBigPictureContainer to={"/login"} src={pictureTest} alt="" />
+          <HomeBigPictureContainer to={"/login"} src={pictureTest} alt="" />
+          <HomeBigPictureContainer to={"/login"} src={pictureTest} alt="" />
+          <HomeBigPictureContainer to={"/login"} src={pictureTest} alt="" />
+          <HomeBigPictureContainer to={"/login"} src={pictureTest} alt="" />
+        </HomeCarouselContainer>
 
         <h3>Destinos más populares</h3>
-        <CarouselContainer>
-          <SmallPictureContainer>
-            <img src={pictureTest2} alt="" />
-          </SmallPictureContainer>
-          <SmallPictureContainer>
-            <img src={pictureTest2} alt="" />
-          </SmallPictureContainer>
-          <SmallPictureContainer>
-            <img src={pictureTest2} alt="" />
-          </SmallPictureContainer>
-          <SmallPictureContainer>
-            <img src={pictureTest2} alt="" />
-          </SmallPictureContainer>
-          <SmallPictureContainer>
-            <img src={pictureTest2} alt="" />
-          </SmallPictureContainer>
-        </CarouselContainer>
+        <HomeCarouselContainer>
+          <HomeSmallPictureContainer to={"/login"} src={pictureTest2} alt="" />
+          <HomeSmallPictureContainer to={"/login"} src={pictureTest2} alt="" />
+          <HomeSmallPictureContainer to={"/login"} src={pictureTest2} alt="" />
+          <HomeSmallPictureContainer to={"/login"} src={pictureTest2} alt="" />
+          <HomeSmallPictureContainer to={"/login"} src={pictureTest2} alt="" />
+        </HomeCarouselContainer>
         <h3>Rutas por Alemania</h3>
-        <CarouselContainer>
-          <BigPictureContainer>
-            <img src={pictureTest3} alt="" />
-          </BigPictureContainer>
-          <BigPictureContainer>
-            <img src={pictureTest3} alt="" />
-          </BigPictureContainer>
-          <BigPictureContainer>
-            <img src={pictureTest3} alt="" />
-          </BigPictureContainer>
-          <BigPictureContainer>
-            <img src={pictureTest3} alt="" />
-          </BigPictureContainer>
-          <BigPictureContainer>
-            <img src={pictureTest3} alt="" />
-          </BigPictureContainer>
-        </CarouselContainer>
+        <HomeCarouselContainer>
+          <HomeBigPictureContainer to={"/login"} src={pictureTest3} alt="" />
+          <HomeBigPictureContainer to={"/login"} src={pictureTest3} alt="" />
+          <HomeBigPictureContainer to={"/login"} src={pictureTest3} alt="" />
+          <HomeBigPictureContainer to={"/login"} src={pictureTest3} alt="" />
+          <HomeBigPictureContainer to={"/login"} src={pictureTest3} alt="" />
+        </HomeCarouselContainer>
 
         {/* SUBSCRIBE SECTION  */}
 
-        <section className="subscribe__section">
-          <p className="subscribe__section__text">
+        <HomeSubscribeSection>
+          <HomeSubscribeSectionText>
             ¡Suscríbete a nuestra newsletter y estate al tanto de todas nuestras
             novedades!
-          </p>
-          <div className="subscribe__section__field">
+          </HomeSubscribeSectionText>
+          <HomeSubscribeSectionField>
             <Mailchimp
-              action={url}
+              action={mailchimpUrl}
               fields={[
                 {
                   name: "FNAME",
@@ -153,34 +91,38 @@ const Login = () => {
                 button: "ENVIAR",
               }}
             />
-          </div>
-        </section>
+          </HomeSubscribeSectionField>
+        </HomeSubscribeSection>
 
-        <section className="social__section">
+        <HomeSocialSection>
           <h3>¿Te gusta Doiche Living?</h3>
-          <div className="social__section__container">
-            <div className="social__item__container">
-              <img src={instagramSrc} alt="" />
-              <small>Síguenos en Instagram</small>
-            </div>
-            <div className="social__item__container">
-              <img src={mailSrc} alt="" />
-              <small>Contacta con nosotros</small>
-            </div>
-            <div className="social__item__container">
-              <img src={facebookSrc} alt="" />
-              <small>Síguenos en Facebook</small>
-            </div>
-            <div className="social__item__container">
-              <img src={shareSrc} alt="" />
-              <small>Comparte la aplicación</small>
-            </div>
-          </div>
-        </section>
-      </div>
+          <HomeSocialSectionContainer>
+            <HomeSocialSectionItemContainer
+              src={instagramSrc}
+              alt=""
+              small={"Síguenos en Instagram"}
+            />
+            <HomeSocialSectionItemContainer
+              src={mailSrc}
+              alt=""
+              small={"Contacta con nosotros"}
+            />
+            <HomeSocialSectionItemContainer
+              src={facebookSrc}
+              alt=""
+              small={"Síguenos en Instagram"}
+            />
+            <HomeSocialSectionItemContainer
+              src={shareSrc}
+              alt=""
+              small={"Comparte la aplicación"}
+            />
+          </HomeSocialSectionContainer>
+        </HomeSocialSection>
+      </Main>
       <Footer />
     </div>
   );
 };
 
-export default Login;
+export default Home;

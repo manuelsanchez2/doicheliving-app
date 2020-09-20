@@ -37,7 +37,7 @@ const MenuImage = styled.img`
   border-radius: 50%;
   margin-bottom: 2rem;
 
-  :first-child {
+  :first-of-type {
     margin-right: 15px;
   }
 `;
@@ -88,26 +88,26 @@ const Menu = ({ open }) => {
         </Link>
       </MenuItem>
       <MenuItem>
-        <Link to="/">
-          <MenuItemImage src={searchSrc} alt="Home" />
+        <Link to="/search">
+          <MenuItemImage src={searchSrc} alt="Search" />
           <MenuItemtext>Buscador de Artículos</MenuItemtext>
         </Link>
       </MenuItem>
       <MenuItem>
-        <Link to="/">
+        <Link to="/questions">
           <MenuItemImage src={questionSrc} alt="Home" />
           <MenuItemtext>Preguntas Frecuentes</MenuItemtext>
         </Link>
       </MenuItem>
 
       <MenuItem>
-        <Link to="/">
+        <Link to="/contact">
           <MenuItemImage src={contactSrc} alt="Home" />
           <MenuItemtext>Contacta con nosotros</MenuItemtext>
         </Link>
       </MenuItem>
       <MenuItem>
-        <Link to="/">
+        <Link to="/about">
           <MenuItemImage src={logoDarkSrc} alt="Home" />
           <MenuItemtext>Sobre Doiche Living</MenuItemtext>
         </Link>

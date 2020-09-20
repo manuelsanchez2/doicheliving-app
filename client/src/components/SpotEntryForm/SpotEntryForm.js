@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
-import RedButton from "../RedButton/RedButton";
+import SubmitButton from "../SubmitButton/SubmitButton";
 import { useForm } from "react-hook-form";
 import { createSpot } from "../../api/spots";
 import PropTypes from "prop-types";
@@ -49,7 +49,7 @@ const SpotEntryForm = ({ location }) => {
         Día de visita <input name="visitDate" type="date" ref={register} />
       </label>
 
-      <RedButton>CREAR SPOT</RedButton>
+      <SubmitButton>CREAR SPOT</SubmitButton>
     </EntryForm>
   );
 };

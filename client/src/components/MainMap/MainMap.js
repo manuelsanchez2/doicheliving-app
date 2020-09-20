@@ -1,15 +1,15 @@
 import styled from "@emotion/styled";
 import PropTypes from "prop-types";
 
-const MapMain = styled.main`
+const MainMap = styled.main`
   height: 60%;
   flex: 1;
   overflow: hidden;
   position: relative;
 `;
 
-export default MapMain;
+export default MainMap;
 
-MapMain.propTypes = {
+MainMap.propTypes = {
   children: PropTypes.node,
 };

@@ -219,6 +219,248 @@
       "time": "1 hora",
       "address": "Mühlenstraße 3-100, 10243 Berlín",
       "addInfo": ""
+    },
+    {
+      "title": "💀 Barrio de Sankt Pauli",
+      "_id": "21",
+      "description": "Conocido por su equipo de fútbol, por su barrio rojo, por su vida nocturna y por haber sido testigo de los inicios de la carrera musical de The Beatles, Sankt Pauli es el barrio más famoso de Hamburgo. Pero además de todo esto, hay otras muchas cosas que visitar. ¡Te aseguramos que no te dejará indiferente!",
+      "latitude": 53.549737513187615,
+      "longitude": 9.96240184999999,
+      "image": "https://i.imgur.com/f1EpoTh.jpg?1",
+      "time": "2 - 3 horas",
+      "address": "Reeperbahn / Sankt Pauli 20359 Hamburgo",
+      "addInfo": "Ver tour <a href='https://www.civitatis.com/es/hamburgo/visita-guiada-barrio-rojo-puerto/?aid=5815' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "🚢  El puerto de Hamburgo",
+      "_id": "22",
+      "description": "Hamburger Hafen, en alemán, es una de las principales atracciones de esta ciudad. Se ubica en la desembocadura del río Elba y se le conoce también como «la puerta al mundo de Alemania», puesto que se trata del puerto más grande del país germano y el tercero más grande de Europa.",
+      "latitude": 53.543599999999984,
+      "longitude": 9.979555599999994,
+      "image": "https://i.imgur.com/QygDeg2.jpg",
+      "time": "1-2 horas",
+      "address": "Vorsetzen 1, 20459 Hamburgo",
+      "addInfo": "Ver tour <a href='https://www.getyourguide.es/activity/hamburgo-l23/tour-filarmonica-del-elba-speicherstadt-y-hafencity-t88097?cmp=HA_tour-puerto-de-hamburgo&partner_id=AUS9KHH&placement=other&utm_medium=online_publisher&utm_source=doicheliving%40gmail.com' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "🛏 Hotel Superbude St. Georg (€€)",
+      "_id": "23",
+      "description": "Este hotel situado en el centro de Hamburgo es una muy buena opción si quieres un hotel barato que incluya un desayuno tipo buffet. Es ideal si no quieres un hotel convencional pero sigues queriendo mantener calidad.",
+      "latitude": 53.5505615999999009,
+      "longitude": 10.0217733,
+      "image": "https://i.imgur.com/J8XRoOI.png",
+      "time": "1-2 noches",
+      "address": "Spaldingstraße 152, 20097 Hamburg",
+      "addInfo": "Ver disponibilidad <a href='https://www.booking.com/hotel/de/superbude.es.html?aid=1884131' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "⭐️ Plaza Römerberg",
+      "_id": "24",
+      "description": "En pleno centro de Frankfurt tienes esta plaza tan popular que destaca entre muchas cosas por sus casas tan especiales.",
+      "latitude": 50.11028790000001,
+      "longitude": 8.682154700000012,
+      "image": "https://i.imgur.com/RqHqG9D.jpg",
+      "time": "30 mins",
+      "address": "Römerberg 26, 60311 Frankfurt am Main",
+      "addInfo": "Ver tour <a href=' https://www.civitatis.com/es/frankfurt/free-tour-frankfurt?aid=5815' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "⭐️ Antigua Ópera",
+      "_id": "25",
+      "description": "La Alte Oper de Frankfurt es un edificio renacentista restaurada con la ayuda de la gente tras los incendios de la Segunda Guerra Mundial. A día de hoy es sede de muchísimos eventos y actuaciones.",
+      "latitude": 50.1160319,
+      "longitude": 8.671915999999982,
+      "image": "https://i.imgur.com/5o3AT7m.jpg",
+      "time": "30 mins",
+      "address": "Opernplatz 1, 60313 Frankfurt am Main",
+      "addInfo": ""
+    },
+    {
+      "title": "🛏 Hotel Paulaner am Dom (€€)",
+      "_id": "26",
+      "description": "El Hotel Paulaner am Dom de Frankfurt recibe su nombre por estar situada al lado de la catedral (Dom) de San Bartolomé. Además, tienes muchísimos museos al lado. ¡Muy recomendable!",
+      "latitude": 50.110915,
+      "longitude": 8.68612999999999,
+      "image": "https://i.imgur.com/htZLVMn.jpg",
+      "time": "1-4 noches",
+      "address": "Domplatz 6, 60311 Frankfurt am Main",
+      "addInfo": "Ver disponibilidad <a href='https://www.booking.com/hotel/de/paulaner-am-dom-wirtshaus-und.es.html?aid=1884131' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "🛏  Hotel Kommerz (€)",
+      "_id": "27",
+      "description": "A tan solo 200 metros de la Catedral de Colonia tienes este hotel con habitaciones amplias, saunas y un buen buffet diario. Relación calidad-precio increíble.",
+      "latitude": 50.9433333,
+      "longitude": 6.9583669,
+      "image": "https://i.imgur.com/GgYiVy0.jpg",
+      "time": "1-2 noches",
+      "address": "Johannisstraße 30-34, 50668 Colonia",
+      "addInfo": "Ver disponibilidad <a href='https://www.booking.com/hotel/de/gunnewig-kommerz.es.html?aid=1884131' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "🛩  Aeropuerto de Colonia/Bonn",
+      "_id": "28",
+      "description": "La cuarta ciudad más grande de todo el país comparte aeropuerto con la ciudad de los Haribos y no son pocas las personas que pasan por el a diario.",
+      "latitude": 50.87071680000001,
+      "longitude": 7.140734399999986,
+      "image": "https://i.imgur.com/CylCERH.jpg",
+      "time": "2-3 horas",
+      "address": "Kennedystraße, 51147 Colonia",
+      "addInfo": "Ver vuelos <a href=' http://clk.tradedoubler.com/click?p(224466)a(3127979)g(20638346)' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "🚂 Estación principal (Hauptbahnhof Köln)",
+      "_id": "29",
+      "description": "En una posición céntrica envidiable, es casi imposible no pasar por la estación principal de Colonia en tu visita a la ciudad.",
+      "latitude": 50.94321410000002,
+      "longitude": 6.958601700000004,
+      "image": "https://i.imgur.com/wf1eRFK.jpg",
+      "time": "1-2 horas",
+      "address": "Trankgasse 11, 50667 Colonia",
+      "addInfo": "Ver combinaciones <a href='https://www.anrdoezrs.net/click-9248017-13628207' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "🛩  Aeropuerto Internacional de Múnich-Franz Josef Strauss",
+      "_id": "30",
+      "description": "Situado a 28 km al noroeste de Múnich. Es el segundo aeropuerto con más tráfico de Alemania y el noveno de Europa. Tiene conexión directa a la ciudad de Múnich a través de la línea de tren S8.",
+      "latitude": 48.3536972,
+      "longitude": 11.775110999999994,
+      "image": "https://i.imgur.com/9UYeyPU.jpg",
+      "time": "1-2 horas",
+      "address": "Nordallee 25, 85356 Múnich",
+      "addInfo": "Ver vuelos <a href=' http://clk.tradedoubler.com/click?p(224466)a(3127979)g(20638346)' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "🚍 Estación de autobuses (ZOB München)",
+      "_id": "31",
+      "description": "Es la estación central de autobuses ubicada en el barrio de Maxvorstadt de Múnich. La estación de S-Bahn más cercana es la estación Munich Hackerbrücke.",
+      "latitude": 48.142276,
+      "longitude": 11.54984800000002,
+      "image": "https://i.imgur.com/5perrjm.jpg",
+      "time": "1 hora",
+      "address": "Arnulfstraße 21, 80335 Múnich",
+      "addInfo": "Ver combinaciones <a href='https://www.anrdoezrs.net/click-9248017-13628207' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "🚂 Estación principal (Hauptbahnhof München)",
+      "_id": "32",
+      "description": "Es la principal estación de ferrocarril de la ciudad de Múnich. Tiene conexiones con las líneas de metro U1, U2, U4, U5, U7 y U8.",
+      "latitude": 48.14026689999999,
+      "longitude": 11.559997999999986,
+      "image": "https://i.imgur.com/YeAFJqr.jpg",
+      "time": "1 hora",
+      "address": "80335 Múnich",
+      "addInfo": "Ver combinaciones <a href='https://www.anrdoezrs.net/click-9248017-13628207' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "🛩  Aeropuerto de Berlín-Tegel (TXL)",
+      "_id": "33",
+      "description": "Está localizado a ocho kilómetros del centro de Berlín y es el principal aeropuerto de la ciudad.",
+      "latitude": 52.5588327,
+      "longitude": 13.288437399999982,
+      "image": "https://i.imgur.com/9UYeyPU.jpg",
+      "time": "1 hora",
+      "address": "Saatwinkler Damm, 13405 BBerlín",
+      "addInfo": "Ver vuelos <a href=' http://clk.tradedoubler.com/click?p(224466)a(3127979)g(20638346)' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "🛩 Aeropuerto de Berlín-Schonefeld (SXF)",
+      "_id": "34",
+      "description": "Este aeropuerto se encuentra a 24 kilómetros al sureste de Berlín. Durante la época del Muro de Berlín, fue el mayor aeropuerto civil de la RDA y el único que daba servicio a Berlín Este.",
+      "latitude": 52.373315299999994,
+      "longitude": 13.506449699999989,
+      "image": "https://i.imgur.com/9UYeyPU.jpg",
+      "time": "1 hora",
+      "address": "12529 Schönefeld",
+      "addInfo": "Ver vuelos <a href=' http://clk.tradedoubler.com/click?p(224466)a(3127979)g(20638346)' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "🚂 Estación principal (Hauptbahnhof Berlin)",
+      "_id": "35",
+      "description": "La Estación Central de Berlín es la mayor estación ferroviaria de paso de la Unión Europea. Está ubicada en el centro de la ciudad, cerca de la Cancillería, del Reichstag (edificio del Parlamento de Alemania) y de la Puerta de Brandeburgo.",
+      "latitude": 52.52508389999999,
+      "longitude": 13.369401999999981,
+      "image": "https://i.imgur.com/LOOF1ty.jpg",
+      "time": "1 hora",
+      "address": "Europaplatz 1, 10557 Berlín",
+      "addInfo": "Ver combinaciones <a href='https://www.anrdoezrs.net/click-9248017-13628207' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "🚂 Estación principal (Hauptbahnhof Hamburg)",
+      "_id": "36",
+      "description": "Es la estación principal de la ciudad. Se inauguró en 1906 con el propósito de reemplazar las 4 terminales con las que contaba Hamburgo en aquel entonces. Con una media de 550.000 pasajeros al día, es la estación de tren más transitada de Alemania y la segunda más transitada de Europa después de la de Gare du Nord en París.",
+      "latitude": 53.55292599,
+      "longitude": 10.0066044999999,
+      "image": "https://i.imgur.com/l2hLvv2.jpg",
+      "time": "1 hora",
+      "address": "Hachmannplatz 16, 20099 Hamburgo",
+      "addInfo": "Ver combinaciones <a href='https://www.anrdoezrs.net/click-9248017-13628207' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "🛩 Aeropuerto de Hamburgo",
+      "_id": "37",
+      "description": "El aeropuerto de Hamburgo (HAM) es el aeropuerto internacional de la ciudad hanseática de Hamburgo. Se encuentra a aprox. 10 kilómetros del centro de la ciudad, lo que se traduce en media hora de trayecto, tanto en vehículo privado como en transporte público. La línea de metro que te llevará a la Estación Central de Hamburgo desde el aeropuerto es la S1.",
+      "latitude": 53.633622,
+      "longitude": 9.9974128,
+      "image": "https://i.imgur.com/YiRp0Rj.jpg",
+      "time": "1-2 horas",
+      "address": "Flughafenstr. 1-3, 22335 Hamburgo",
+      "addInfo": "Ver vuelos <a href=' http://clk.tradedoubler.com/click?p(224466)a(3127979)g(20638346)' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "🚂 Estación principal (Hauptbahnhof Bremen)",
+      "_id": "38",
+      "description": "La estación principal de Bremen se encuentra en una posición muy céntrica. Desde allí podrás llegar al centro de la ciudad en cuestión de 10-15 minutos a pie. Además, en el camino podrás ver el famoso Molino de Bremen.",
+      "latitude": 53.08165250000002,
+      "longitude": 8.81390279999998,
+      "image": "https://i.imgur.com/xuTvQYG.jpg",
+      "time": "1 hora",
+      "address": "Bremen Hauptbahnhof, 28195 Bremen",
+      "addInfo": "Ver combinaciones <a href='https://www.anrdoezrs.net/click-9248017-13628207' target='_blank'>aquí</a>"
+    },
+    {
+      "title": "⭐️ Molino de Bremen",
+      "_id": "39",
+      "description": "Este popular molino, que puede ser perfectamente el punto más fotografiado de la ciudad, es a día de hoy una cafetería-restaurante. ¡A nosotros nos encanta, ya que significa de alguna forma la entrada a la ciudad!",
+      "latitude": 53.08017010000001,
+      "longitude": 8.806884000000016,
+      "image": "https://i.imgur.com/cIL3Liw.jpg",
+      "time": "5 mins",
+      "address": "Am Wall 212, 28195 Bremen",
+      "addInfo": ""
+    },
+    {
+      "title": "⭐️ Estatua de Los Músicos de Bremen",
+      "_id": "40",
+      "description": "Justo al lado del Ayuntamiento tienes esta peculiar estatua que rinde homenaje a la obra Los Músicos de Bremen, de los hermanos Grimm",
+      "latitude": 53.076227000000024,
+      "longitude": 8.807576100000007,
+      "image": "https://i.imgur.com/b31dl5x.jpg",
+      "time": "10 mins",
+      "address": "Schoppensteel 1, 28195 Bremen, Germany",
+      "addInfo": ""
+    },
+    {
+      "title": "⭐️ Escultura de los Cerdos de Bremen",
+      "_id": "41",
+      "description": "En la Sögestrasse encontrarás a estos simpáticos animales. Se encuentran precisamente en esta calle porque este era el camino de los pastores hacia el prado municipal",
+      "latitude": 53.07819908278097,
+      "longitude": 8.808165279449275,
+      "image": "https://i.imgur.com/tOxSmRs.jpg",
+      "time": "5 mins",
+      "address": "Sögestraße 64, 28195 Bremen",
+      "addInfo": ""
+    },
+    {
+      "title": "🍗 Schüttinger",
+      "_id": "42",
+      "description": "Dicen que fue el primer pub/restaurante de Bremen en tener su propia cerveza. La comida está simplemente deliciosa. ¡Si podéis probar el Schnitzel nos lo agradeceréis!",
+      "latitude": 53.07509250000001,
+      "longitude": 8.806762700000013,
+      "image": "https://i.imgur.com/9Aiauzw.jpg",
+      "time": "2-3 horas",
+      "address": "Hinter dem Schütting 12-13, 28195 Bremen",
+      "addInfo": ""
     }
   ]
 }

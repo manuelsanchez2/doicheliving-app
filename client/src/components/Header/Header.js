@@ -13,7 +13,6 @@ const ImageHeader = styled.img`
 
 const StyledHeader = styled.header`
   box-shadow: var(--shadow-down);
-  max-height: 20%;
   display: flex;
   justify-content: space-between;
   border-radius: 0px 0px 10px 10px;

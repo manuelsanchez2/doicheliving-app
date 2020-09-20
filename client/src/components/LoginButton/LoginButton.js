@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
-import RedButton from "../RedButton/RedButton";
+import SubmitButton from "../SubmitButton/SubmitButton";
 
-const YellowButton = styled(RedButton)`
+const LoginButton = styled(SubmitButton)`
   border: 1px solid var(--color-yellow);
   background: var(--color-yellow);
   border-radius: 10px;
 `;
 
-export default YellowButton;
+export default LoginButton;
