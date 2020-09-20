@@ -22,8 +22,7 @@ import HomeSubscribeSectionText from "../../components/HomeSubscribeSectionText"
 import HomeSubscribeSectionField from "../../components/HomeSubscribeSectionField/HomeSubscribeSectionField";
 import HomeCarouselContainer from "../../components/HomeCarouselContainer";
 
-const url =
-  "https://doicheliving.us20.list-manage.com/subscribe/post?u=9cdf1aa6dc72fdfd1cda13b58&amp;id=aba90a6fa5";
+const mailchimpUrl = process.env.REACT_APP_MAILCHIMP_URL;
 
 const Home = () => {
   return (
@@ -70,7 +69,7 @@ const Home = () => {
           </HomeSubscribeSectionText>
           <HomeSubscribeSectionField>
             <Mailchimp
-              action={url}
+              action={mailchimpUrl}
               fields={[
                 {
                   name: "FNAME",

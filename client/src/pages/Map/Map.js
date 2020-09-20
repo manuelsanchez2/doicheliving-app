@@ -25,7 +25,6 @@ const Map = () => {
     zoom: 4.5,
   });
   const mapboxApiAccessToken = process.env.REACT_APP_MAPBOX_API_ACCESS_TOKEN;
-  // This code is used for the Geocoder. Instead of this I want to have a custom hook (useGeocoder)
 
   const mapRef = useRef();
 
