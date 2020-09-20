@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const RedButton = styled.button`
+const SubmitButton = styled.button`
   border: 1px solid var(--color-redgrad);
   border-radius: 15px;
   background: var(--color-redgrad);
@@ -12,4 +12,4 @@ const RedButton = styled.button`
   display: block;
 `;
 
-export default RedButton;
+export default SubmitButton;
