@@ -17,6 +17,10 @@ import SmallPictureContainer from "../../components/SmallPictureContainer/SmallP
 import HomeSocialSection from "../../components/HomeSocialSection/HomeSocialSection";
 import HomeSocialSectionContainer from "../../components/HomeSocialSectionContainer/HomeSocialSectionContainer";
 import HomeSocialSectionItemContainer from "../../components/HomeSocialSectionItemContainer/HomeSocialSectionItemContainer";
+import Main from "../../components/Main/Main";
+import HomeSubscribeSection from "../../components/HomeSubscribeSection";
+import HomeSubscribeSectionText from "../../components/HomeSubscribeSectionText";
+import HomeSubscribeSectionField from "../../components/HomeSubscribeSectionField/HomeSubscribeSectionField";
 
 const url =
   "https://doicheliving.us20.list-manage.com/subscribe/post?u=9cdf1aa6dc72fdfd1cda13b58&amp;id=aba90a6fa5";
@@ -39,7 +43,7 @@ const Login = () => {
   return (
     <div className="container">
       <Header />
-      <div className="main--main">
+      <Main>
         <h2>¿Qué quieres descubrir de Alemania?</h2>
         <h3>Organiza tu viaje</h3>
         <CarouselContainer>
@@ -69,12 +73,12 @@ const Login = () => {
 
         {/* SUBSCRIBE SECTION  */}
 
-        <section className="subscribe__section">
-          <p className="subscribe__section__text">
+        <HomeSubscribeSection>
+          <HomeSubscribeSectionText>
             ¡Suscríbete a nuestra newsletter y estate al tanto de todas nuestras
             novedades!
-          </p>
-          <div className="subscribe__section__field">
+          </HomeSubscribeSectionText>
+          <HomeSubscribeSectionField>
             <Mailchimp
               action={url}
               fields={[
@@ -102,8 +106,8 @@ const Login = () => {
                 button: "ENVIAR",
               }}
             />
-          </div>
-        </section>
+          </HomeSubscribeSectionField>
+        </HomeSubscribeSection>
 
         <HomeSocialSection>
           <h3>¿Te gusta Doiche Living?</h3>
@@ -130,7 +134,7 @@ const Login = () => {
             />
           </HomeSocialSectionContainer>
         </HomeSocialSection>
-      </div>
+      </Main>
       <Footer />
     </div>
   );

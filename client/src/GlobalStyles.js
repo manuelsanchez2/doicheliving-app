@@ -102,54 +102,6 @@ const GlobalStyles = () => {
           flex-direction: column;
           overflow: auto;
         }
-
-        /* MAIN PAGE MAIN */
-
-        .main--main {
-          flex: 1;
-          padding: 0 1em 0 1em;
-        }
-
-        /* MAIN SUBSCRIBE SECTION  */
-
-        .subscribe__section {
-          height: 20%;
-          justify-content: center;
-          align-items: center;
-          display: flex;
-          flex-flow: column nowrap;
-        }
-
-        .subscribe__section__text {
-          margin-top: 0.5rem;
-          font-family: var(--font-lato);
-          font-size: 1rem;
-          text-align: center;
-        }
-
-        .subscribe__section__field input {
-          border: 1px solid var(--color-grayborder);
-          background: #f0f4f5;
-          border-radius: 4px 4px 4px 4px;
-          padding: 0.5rem;
-          margin: 0.3rem 0;
-          flex: 1;
-          width: 90vw;
-        }
-
-        .subscribe__section__field button {
-          border: 1px solid var(--color-redgrad);
-          border-radius: 15px;
-          background: var(--color-redgrad);
-          margin: 0 auto;
-          margin-top: 6px;
-          padding: 0.5rem 2rem;
-          color: var(--color-white);
-          font-family: var(--font-lato);
-          font-size: 1rem;
-          letter-spacing: 3px;
-          display: block;
-        }
       `}
     />
   );
