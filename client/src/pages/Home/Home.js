@@ -49,11 +49,7 @@ const Home = () => {
         </HomeCarouselContainer>
         <h3>Rutas por Alemania</h3>
         <HomeCarouselContainer>
-          <HomeBigPictureContainer
-            to={"/login"}
-            src={pictureTest3}
-            alt="slawo"
-          />
+          <HomeBigPictureContainer to={"/login"} src={pictureTest3} alt="" />
           <HomeBigPictureContainer to={"/login"} src={pictureTest3} alt="" />
           <HomeBigPictureContainer to={"/login"} src={pictureTest3} alt="" />
           <HomeBigPictureContainer to={"/login"} src={pictureTest3} alt="" />
