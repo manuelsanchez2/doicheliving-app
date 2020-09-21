@@ -8,6 +8,7 @@
     "test": "npm run lint && cd client && npm test",
     "server": "nodemon server.js",
     "lint": "eslint . --ext .js",
+    "start": "node server.js",
     "build": "cd client && npm run build && npm run build-storybook",
     "prettify": "prettier --write .",
     "postinstall": "cd client && npm install",

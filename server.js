@@ -18,13 +18,12 @@ app.use(
   express.static(path.join(__dirname, "client/storybook-static"))
 );
 
-app.use(
-  jsonServer.rewriter({
-    "/api/*": "/$1",
-  })
-);
-app.use(router);
+app.use("/api", router);
 app.use(middlewares);
+// Handle React routing, return all requests to React app
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client/build", "index.html"));
+});
 
 app.listen(port, () => {
   console.log(`Doiche Living App listening at http://localhost:${port}`);
