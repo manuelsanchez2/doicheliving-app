@@ -11,6 +11,7 @@ import questionSrc from "../../assets/icons/menu-question.svg";
 import logoDarkSrc from "../../assets/icons/menu-logo.png";
 
 const MenuItemList = styled.ul`
+  margin: 0;
   list-style: none;
   display: flex;
 
@@ -22,11 +23,11 @@ const MenuItemList = styled.ul`
   flex-flow: column nowrap;
   background-color: var(--color-yellow);
 
-  top: -2vh;
+  top: 0;
   right: 0;
-  height: 101vh;
-  width: 85vw;
-  padding-top: 5.5rem;
+  height: 100%;
+  width: 85%;
+
   z-index: 50;
 `;
 
@@ -36,6 +37,7 @@ const MenuImage = styled.img`
   border: 2.5px solid var(--color-white);
   border-radius: 50%;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 
   :first-of-type {
     margin-right: 15px;
