@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import PropTypes from "prop-types";
 
 const LoginFormContainer = styled.div`
   display: flex;
@@ -24,9 +23,5 @@ const LoginFormContainer = styled.div`
     margin-left: 0.5rem;
   }
 `;
-
-LoginFormContainer.propTypes = {
-  children: PropTypes.node,
-};
 
 export default LoginFormContainer;

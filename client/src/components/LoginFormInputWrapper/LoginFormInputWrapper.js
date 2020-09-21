@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import PropTypes from "prop-types";
 
 const LoginFormInputWrapper = styled.div`
   display: flex;
@@ -22,9 +21,5 @@ const LoginFormInputWrapper = styled.div`
     max-width: 62%;
   }
 `;
-
-LoginFormInputWrapper.propTypes = {
-  children: PropTypes.node,
-};
 
 export default LoginFormInputWrapper;

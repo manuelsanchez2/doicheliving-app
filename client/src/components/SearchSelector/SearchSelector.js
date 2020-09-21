@@ -1,8 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
 import styled from "@emotion/styled";
 
-const StyledSearchSelector = styled.div`
+const SearchSelector = styled.div`
   label {
     opacity: 0.6;
   }
@@ -16,13 +14,5 @@ const StyledSearchSelector = styled.div`
     margin-top: 0.3rem;
   }
 `;
-
-const SearchSelector = ({ children }) => {
-  return <StyledSearchSelector>{children}</StyledSearchSelector>;
-};
-
-SearchSelector.propTypes = {
-  children: PropTypes.node,
-};
 
 export default SearchSelector;

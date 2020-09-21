@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import PropTypes from "prop-types";
 
 const SignupFormContainer = styled.div`
   display: flex;
@@ -24,9 +23,5 @@ const SignupFormContainer = styled.div`
     margin-left: 0.5rem;
   }
 `;
-
-SignupFormContainer.propTypes = {
-  children: PropTypes.node,
-};
 
 export default SignupFormContainer;

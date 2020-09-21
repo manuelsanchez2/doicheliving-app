@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import PropTypes from "prop-types";
 
 const SignupFormInputWrapper = styled.div`
   display: flex;
@@ -22,9 +21,5 @@ const SignupFormInputWrapper = styled.div`
     max-width: 65%;
   }
 `;
-
-SignupFormInputWrapper.propTypes = {
-  children: PropTypes.node,
-};
 
 export default SignupFormInputWrapper;

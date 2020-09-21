@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import PropTypes from "prop-types";
 
 const SpotPopupContainer = styled.div`
   position: absolute;
@@ -63,9 +62,5 @@ const SpotPopupContainer = styled.div`
     width: 90%;
   }
 `;
-
-SpotPopupContainer.propTypes = {
-  children: PropTypes.node,
-};
 
 export default SpotPopupContainer;
