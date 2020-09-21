@@ -32,15 +32,15 @@ const MenuItemList = styled.ul`
 `;
 
 const MenuImage = styled.img`
-  align-self: center;
-  width: 27vw;
+  width: 6rem;
   border: 2.5px solid var(--color-white);
   border-radius: 50%;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 5rem;
+  align-self: center;
 
   :first-of-type {
-    margin-right: 15px;
+    margin-right: 22px;
   }
 `;
 
@@ -49,8 +49,8 @@ const MenuItem = styled.li`
 
   > a {
     display: flex;
-    padding: 0.8rem 0rem;
-    max-width: 70vw;
+    padding: 0.6rem 0rem;
+    max-width: 90%;
     align-items: center;
     text-decoration: none;
     color: var(--color-black);
@@ -62,14 +62,15 @@ const MenuItem = styled.li`
 `;
 
 const MenuItemImage = styled.img`
-  width: 32px;
-  height: 32px;
-  margin-left: 6vw;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-left: 0.5rem;
 `;
 
 const MenuItemtext = styled.span`
   padding-right: 10%;
   font-family: var(--font-lato);
+  font-size: 0.7rem;
   margin-left: 6vw;
 `;
 
