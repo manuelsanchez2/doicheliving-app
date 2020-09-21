@@ -18,7 +18,7 @@ const LoadingScreenWrapper = styled.div`
     width: 10rem;
     border: 0.5px solid var(--color-white);
     border-radius: 50%;
-    animation: spin 3s linear ease-in infinite;
+    animation: spin 7s infinite linear;
     margin-bottom: 0.5rem;
   }
 
