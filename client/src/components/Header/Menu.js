@@ -15,13 +15,13 @@ const MenuItemList = styled.ul`
   list-style: none;
   display: flex;
 
-  border-right: 1.5px solid var(--color-darkgrayborder);
+  border-right: 1.5px solid var(--color-dark-border);
 
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => (open ? "translateX(-20%)" : "translateX(-130%)")};
   position: absolute;
   flex-flow: column nowrap;
-  background-color: var(--color-yellow);
+  background-color: var(--color-primary);
 
   top: 0;
   right: 0;
@@ -53,9 +53,9 @@ const MenuItem = styled.li`
     max-width: 90%;
     align-items: center;
     text-decoration: none;
-    color: var(--color-black);
+    color: var(--color-secondary);
     border-radius: 10px;
-    border: 1.5px solid var(--color-darkgrayborder);
+    border: 1.5px solid var(--color-dark-border);
     background-color: var(--color-white);
     box-shadow: 0.5px 0px 20px 0px rgba(0, 0, 0, 0.3);
   }

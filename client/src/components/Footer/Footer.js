@@ -21,7 +21,7 @@ const StyledFooter = styled.nav`
   align-items: center;
   background-color: var(--color-white);
   border-radius: 10px 10px 0px 0px;
-  border-top: 1.5px solid var(--color-darkgrayborder);
+  border-top: 1.5px solid var(--color-dark-border);
 `;
 
 const Footer = () => {

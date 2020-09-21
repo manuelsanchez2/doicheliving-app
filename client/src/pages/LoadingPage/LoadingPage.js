@@ -7,7 +7,7 @@ const LoadingScreenWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-yellow);
+  background-color: var(--color-primary);
   height: 100vh;
   h2 {
     font-family: var(--font-lato);

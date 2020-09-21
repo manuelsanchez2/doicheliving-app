@@ -7,7 +7,7 @@ const StyledMapContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   overflow: auto;
-  background: var(--color-yellow);
+  background: var(--color-primary);
 `;
 
 StyledMapContainer.propTypes = {

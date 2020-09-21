@@ -11,9 +11,8 @@ const StyledSearchSelector = styled.div`
     display: block;
     width: 100%;
     padding: 10px 8px;
-    background-color: var(--color-grayinput);
+    background-color: var(--color-input);
     border-radius: 10px;
-    background-color: var(--color-grayinput);
     margin-top: 0.3rem;
   }
 `;
