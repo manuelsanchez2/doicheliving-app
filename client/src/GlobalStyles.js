@@ -45,8 +45,21 @@ const GlobalStyles = () => {
 
           --shadow-up: 0 -2.8px 2.2px rgba(0, 0, 0, 0.034),
             0 -2px 6px rgba(0, 0, 0, 0.2);
+        }
 
+        body {
           height: 100vh;
+          button:active,
+          button:focus,
+          input:focus,
+          input:active {
+            outline: none;
+          }
+        }
+
+        button,
+        a {
+          cursor: pointer;
         }
 
         code {
@@ -94,13 +107,6 @@ const GlobalStyles = () => {
 
         body {
           background-color: var(--color-white);
-        }
-
-        .container {
-          height: 100vh;
-          display: flex;
-          flex-direction: column;
-          overflow: auto;
         }
       `}
     />

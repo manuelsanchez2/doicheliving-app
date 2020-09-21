@@ -16,11 +16,6 @@ const StyledBurger = styled.button`
   border: none;
   transition: all 0.5s linear;
 
-  :active,
-  :focus {
-    outline: none;
-  }
-
   div {
     width: 2rem;
     height: 0.25rem;
