@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import PropTypes from "prop-types";
 
 const MainFlex = styled.div`
   display: flex;
@@ -10,9 +9,5 @@ const MainFlex = styled.div`
   padding: 0 1em 0 1em;
   position: relative;
 `;
-
-MainFlex.propTypes = {
-  children: PropTypes.node,
-};
 
 export default MainFlex;

@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import PropTypes from "prop-types";
 
 const SingupForm = styled.form`
   display: flex;
@@ -7,8 +6,8 @@ const SingupForm = styled.form`
 
   input[type="submit"] {
     margin: 0.3rem auto 0.5rem auto;
-    border: 1px solid var(--color-yellow);
-    background: var(--color-yellow);
+    border: 1px solid var(--color-primary);
+    background: var(--color-primary);
     border-radius: 10px;
     color: var(--color-white);
     font-family: var(--font-lato);
@@ -17,9 +16,5 @@ const SingupForm = styled.form`
     padding: 0.3rem 1.5rem;
   }
 `;
-
-SingupForm.propTypes = {
-  children: PropTypes.node,
-};
 
 export default SingupForm;

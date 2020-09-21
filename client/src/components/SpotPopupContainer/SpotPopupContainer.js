@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import PropTypes from "prop-types";
 
 const SpotPopupContainer = styled.div`
   position: absolute;
@@ -11,7 +10,7 @@ const SpotPopupContainer = styled.div`
   align-items: center;
   background-color: white;
   border-radius: 10px 10px 10px 10px;
-  border: 1px solid var(--color-darkgrayborder);
+  border: 1px solid var(--color-dark-border);
   box-shadow: 0.5px 0px 20px 0px rgba(0, 0, 0, 0.3);
   z-index: 20;
 
@@ -48,7 +47,7 @@ const SpotPopupContainer = styled.div`
     height: 40%;
     width: 33%;
     border-radius: 5px;
-    border: 1px solid var(--color-grayborder);
+    border: 1px solid var(--color-light-border);
     box-shadow: 0.5px 0px 10px 0px rgba(0, 0, 0, 0.3);
     margin-right: 1px;
     margin-bottom: 5px;
@@ -63,9 +62,5 @@ const SpotPopupContainer = styled.div`
     width: 90%;
   }
 `;
-
-SpotPopupContainer.propTypes = {
-  children: PropTypes.node,
-};
 
 export default SpotPopupContainer;

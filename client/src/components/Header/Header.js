@@ -16,7 +16,7 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   border-radius: 0px 0px 10px 10px;
-  border-bottom: 1.5px solid var(--color-darkgrayborder);
+  border-bottom: 1.5px solid var(--color-dark-border);
   background-color: var(--color-white);
 
   & > :last-child {

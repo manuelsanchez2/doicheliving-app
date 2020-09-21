@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import PropTypes from "prop-types";
 
 const StyledMapContainer = styled.div`
   height: 100vh;
@@ -7,11 +6,7 @@ const StyledMapContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   overflow: auto;
-  background: var(--color-yellow);
+  background: var(--color-primary);
 `;
-
-StyledMapContainer.propTypes = {
-  children: PropTypes.node,
-};
 
 export default StyledMapContainer;

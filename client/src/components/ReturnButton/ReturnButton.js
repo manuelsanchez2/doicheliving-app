@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const Button = styled.button`
   background: var(--color-white);
-  border: 1px solid var(--color-darkgrayborder);
+  border: 1px solid var(--color-dark-border);
   border-radius: 50px;
   width: 48px;
   height: 48px;

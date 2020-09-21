@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import PropTypes from "prop-types";
 
 const LoginFormInputWrapper = styled.div`
   display: flex;
@@ -15,16 +14,12 @@ const LoginFormInputWrapper = styled.div`
   input[type="email"],
   input[type="text"],
   input[type="name"] {
-    border: 1px solid var(--color-grayborder);
+    border: 1px solid var(--color-light-border);
     background: #f0f4f5;
     border-radius: 4px 4px 4px 4px;
     padding: 0.5rem 0.5rem 0.5rem 2.5rem;
     max-width: 62%;
   }
 `;
-
-LoginFormInputWrapper.propTypes = {
-  children: PropTypes.node,
-};
 
 export default LoginFormInputWrapper;

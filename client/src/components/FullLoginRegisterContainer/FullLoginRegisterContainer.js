@@ -7,7 +7,7 @@ const FullLoginRegisterContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   overflow: auto;
-  background: var(--color-yellow);
+  background: var(--color-primary);
 
   img {
     max-width: 5rem;

@@ -11,7 +11,7 @@ const Container = styled.div`
     border-radius: 20px;
     width: 8.5rem;
     height: 12.5rem;
-    border: 0.2px solid var(--color-darkgrayborder);
+    border: 0.2px solid var(--color-dark-border);
     box-shadow: 0.5px 0px 5px 0px rgba(0, 0, 0, 0.01);
   }
 `;

@@ -25,16 +25,16 @@ const GlobalStyles = () => {
           --font-lato: "Lato-Regular";
           --font-nunito: "Nunito-Regular";
 
-          --color-yellow: #ffce00;
-          --color-black: #000000;
+          --color-primary: #ffce00;
+          --color-secondary: #000000;
           --color-white: #ffffff;
-          --color-grayplace: #9b9b9b;
-          --color-grayinput: #f0f4f5;
-          --color-grayborder: #d5d5d5;
-          --color-darkgrayborder: #707070;
-          --color-graytrans: #c9c8c8;
-          --color-red: #ff0000;
-          --color-redgrad: linear-gradient(
+          --color-placeholder: #9b9b9b;
+          --color-input: #f0f4f5;
+          --color-light-border: #d5d5d5;
+          --color-dark-border: #707070;
+          --color-transparent: #c9c8c8;
+          --color-submit: #ff0000;
+          --color-gradient-submit: linear-gradient(
             175deg,
             rgba(238, 0, 0, 1) 48%,
             rgba(159, 25, 25, 1) 96%
@@ -45,8 +45,21 @@ const GlobalStyles = () => {
 
           --shadow-up: 0 -2.8px 2.2px rgba(0, 0, 0, 0.034),
             0 -2px 6px rgba(0, 0, 0, 0.2);
+        }
 
+        body {
           height: 100vh;
+          button:active,
+          button:focus,
+          input:focus,
+          input:active {
+            outline: none;
+          }
+        }
+
+        button,
+        a {
+          cursor: pointer;
         }
 
         code {
@@ -94,13 +107,6 @@ const GlobalStyles = () => {
 
         body {
           background-color: var(--color-white);
-        }
-
-        .container {
-          height: 100vh;
-          display: flex;
-          flex-direction: column;
-          overflow: auto;
         }
       `}
     />

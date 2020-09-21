@@ -7,7 +7,7 @@ const LoadingScreenWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-yellow);
+  background-color: var(--color-primary);
   height: 100vh;
   h2 {
     font-family: var(--font-lato);
@@ -18,7 +18,7 @@ const LoadingScreenWrapper = styled.div`
     width: 10rem;
     border: 0.5px solid var(--color-white);
     border-radius: 50%;
-    animation: spin 3s linear ease-in infinite;
+    animation: spin 7s infinite linear;
     margin-bottom: 0.5rem;
   }
 

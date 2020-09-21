@@ -14,19 +14,19 @@ const ImageFooter = styled.img`
   padding-bottom: 2.5px;
 `;
 
-const StyledFooter = styled.nav`
+const FooterNav = styled.nav`
   box-shadow: var(--shadow-up);
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: var(--color-white);
   border-radius: 10px 10px 0px 0px;
-  border-top: 1.5px solid var(--color-darkgrayborder);
+  border-top: 1.5px solid var(--color-dark-border);
 `;
 
 const Footer = () => {
   return (
-    <StyledFooter>
+    <FooterNav>
       <Link to="/home">
         <ImageFooter src={homeSrc} alt="Home" />
       </Link>
@@ -39,7 +39,7 @@ const Footer = () => {
       <Link to="/login">
         <ImageFooter src={profileSrc} alt="Profile icon" />
       </Link>
-    </StyledFooter>
+    </FooterNav>
   );
 };
 
