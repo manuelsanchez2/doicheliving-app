@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 import PropTypes from "prop-types";
 import ReturnButton from "../ReturnButton";
-import returnSrc from "../../assets/icons/arrow.svg";
+import returnSrc from "../../assets/icons/arrow-contrast.svg";
 
 const Container = styled.div`
   position: relative;
