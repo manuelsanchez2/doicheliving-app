@@ -14,6 +14,10 @@ const ContentContainer = styled.section`
     margin: 0.5rem 0;
   }
 
+  h2 {
+    margin-top: 1.5rem;
+  }
+
   h4 {
     margin: 0.5rem 0;
   }

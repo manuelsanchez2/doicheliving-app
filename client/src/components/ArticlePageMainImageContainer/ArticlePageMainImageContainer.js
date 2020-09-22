@@ -12,6 +12,7 @@ const Container = styled.div`
 
   img:nth-child(2) {
     width: 100%;
+    height: 13.5rem;
     object-fit: cover;
     border-radius: 10px;
 
@@ -28,8 +29,8 @@ const Container = styled.div`
   }
   button:last-of-type {
     position: absolute;
-    top: 80%;
-    left: 85%;
+    top: 85%;
+    left: 80%;
     z-index: 30;
   }
 
