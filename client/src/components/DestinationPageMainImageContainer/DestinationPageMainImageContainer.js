@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import styled from "@emotion/styled";
 import PropTypes from "prop-types";
 import ReturnButton from "../ReturnButton";
@@ -24,10 +25,16 @@ const Container = styled.div`
   }
 `;
 
-const DestinationPageMainImageContainer = ({ src, alt, children }) => {
+const DestinationPageMainImageContainer = ({ src, alt, onClick, children }) => {
+  const history = useHistory();
+
   return (
     <Container>
-      <ReturnButton src={returnSrc} alt="return button" />
+      <ReturnButton
+        onClick={() => history.goBack()}
+        src={returnSrc}
+        alt="return button"
+      />
       <img src={src} alt={alt} />
     </Container>
   );
@@ -37,6 +44,7 @@ DestinationPageMainImageContainer.propTypes = {
   children: PropTypes.node,
   src: PropTypes.string,
   alt: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 export default DestinationPageMainImageContainer;

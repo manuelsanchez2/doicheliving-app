@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import styled from "@emotion/styled";
 import PropTypes from "prop-types";
 import ReturnButton from "../ReturnButton/ReturnButton";
@@ -39,9 +40,14 @@ const Container = styled.div`
 `;
 
 const ArticlePageMainImageContainer = ({ src, alt, children, inactive }) => {
+  const history = useHistory();
   return (
     <Container>
-      <ReturnButton src={returnSrc} alt="return button" />
+      <ReturnButton
+        onClick={() => history.goBack()}
+        src={returnSrc}
+        alt="return button"
+      />
       <img src={src} alt={alt} />
       <FavButton onClick={() => !inactive} />
     </Container>
