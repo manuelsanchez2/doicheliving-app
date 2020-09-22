@@ -11,7 +11,7 @@ const Menu = styled.ul`
 
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => (open ? "translateX(-20%)" : "translateX(-130%)")};
-  position: absolute;
+  position: fixed;
   flex-flow: column nowrap;
   background-color: var(--color-primary);
 
@@ -20,7 +20,7 @@ const Menu = styled.ul`
   height: 100%;
   width: 85%;
 
-  z-index: 50;
+  z-index: 900;
 `;
 
 const MenuItemList = ({ open, children }) => {
