@@ -27,8 +27,6 @@ const ContentContainer = styled.section`
     width: 90%;
     margin: 0.5rem 0;
     border-radius: 10px;
-
-    border-bottom: 0.2px solid var(--color-dark-border);
     box-shadow: 0.5px 0px 5px 0px rgba(0, 0, 0, 0.01);
   }
 
@@ -44,7 +42,7 @@ const ContentContainer = styled.section`
     border-radius: 15px;
     max-width: 70%;
     background: var(--color-gradient-submit);
-    padding: 0.3rem 2rem;
+    padding: 0.5rem 2rem;
     color: var(--color-white);
     font-family: var(--font-lato);
     font-size: 0.7rem;
@@ -122,7 +120,7 @@ const ArticlePageMainContent = ({ src, alt, children }) => {
         <a
           href="https://www.elbphilharmonie.de/de/konzerte/"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           enlace
         </a>
@@ -141,7 +139,7 @@ const ArticlePageMainContent = ({ src, alt, children }) => {
         <a
           href="https://www.getyourguide.es/hamburgo-l23/filarmonica-del-elba-tour-guiado-sin-salas-de-conciertos-t92790/?partner_id=AUS9KHH&utm_medium=online_publisher&placement=other&cmp=ES_Filar"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           VER TOUR POR LA FILARMÓNICA
         </a>
@@ -183,7 +181,7 @@ const ArticlePageMainContent = ({ src, alt, children }) => {
         <a
           href="https://www.getyourguide.es/hamburgo-l23/filarmonica-del-elba-tour-guiado-sin-salas-de-conciertos-t92790/?partner_id=AUS9KHH&utm_medium=online_publisher&placement=other&cmp=ES_Filar"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           VER TOUR POR LA FILARMÓNICA
         </a>
