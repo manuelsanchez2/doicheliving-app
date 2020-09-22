@@ -1,20 +1,18 @@
 import React from "react";
 import styled from "@emotion/styled";
 import PropTypes from "prop-types";
-import pictureTest from "../../pages/destinations/assets/hamburg.jpeg";
 
-const ImageMapContainer = styled.div`
+const DestinationImageMapContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  direction: row;
   flex-wrap: wrap;
-  align-items: center;
-
   justify-content: space-around;
+  align-items: center;
 
   img {
     width: 45%;
+    margin-bottom: 1.2rem;
     border-radius: 5px;
-    margin-bottom: 0.5rem;
   }
 `;
 
@@ -55,16 +53,16 @@ const DestinationPageMainContent = ({
       <h2>{title}</h2>
       <p>{description}</p>
       <h3>{subtitle}</h3>
-      <ImageMapContainer>
-        <img src={pictureTest} alt={alt} />
-        <img src={pictureTest} alt={alt} />
-        <img src={pictureTest} alt={alt} />
-        <img src={pictureTest} alt={alt} />
-        <img src={pictureTest} alt={alt} />
-        <img src={pictureTest} alt={alt} />
-        <img src={pictureTest} alt={alt} />
-        <img src={pictureTest} alt={alt} />
-      </ImageMapContainer>
+      <DestinationImageMapContainer>
+        <img src={src} alt={alt} />
+        <img src={src} alt={alt} />
+        <img src={src} alt={alt} />
+        <img src={src} alt={alt} />
+        <img src={src} alt={alt} />
+        <img src={src} alt={alt} />
+        <img src={src} alt={alt} />
+        <img src={src} alt={alt} />
+      </DestinationImageMapContainer>
     </Container>
   );
 };

@@ -19,6 +19,8 @@ const Hamburg = () => {
           title="Hamburgo"
           description="Hamburgo es una ciudad a la que no le falta de nada. Tiene diversión y cultura para dar y regalar. Seguramente habrás escuchado que el puerto de Hamburgo es uno de los más famosos de Europa, o que tiene un barrio rojo de fiesta muy famoso (Sankt Pauli). Cualquier cosa que se diga se queda corta para describir la ciudad más bonita del norte de Alemania, ¡te lo aseguramos!"
           subtitle="Todo lo que debes saber sobre Hamburgo"
+          src={hamburgSrc}
+          alt=""
         />
       </div>
       <Footer />

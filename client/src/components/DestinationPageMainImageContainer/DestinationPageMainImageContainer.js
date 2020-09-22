@@ -23,7 +23,7 @@ const Container = styled.div`
   }
 `;
 
-const ArticlePageMainImageContainer = ({ src, alt, children }) => {
+const DestinationPageMainImageContainer = ({ src, alt, children }) => {
   return (
     <Container>
       <ReturnButton src={returnSrc} alt="return button" />
@@ -32,10 +32,10 @@ const ArticlePageMainImageContainer = ({ src, alt, children }) => {
   );
 };
 
-ArticlePageMainImageContainer.propTypes = {
+DestinationPageMainImageContainer.propTypes = {
   children: PropTypes.node,
   src: PropTypes.string,
   alt: PropTypes.string,
 };
 
-export default ArticlePageMainImageContainer;
+export default DestinationPageMainImageContainer;
