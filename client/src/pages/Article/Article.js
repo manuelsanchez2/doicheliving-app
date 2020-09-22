@@ -5,11 +5,12 @@ import ArticlePageMainImageContainer from "../../components/ArticlePageMainImage
 import ReturnButton from "../../components/ReturnButton/ReturnButton";
 import pictureTest from "../../assets/images/picture-test-1.jpg";
 import MainArticlePage from "../../components/MainArticlePage/MainArticlePage";
-import returnSrc from "../../assets/icons/arrow.svg";
+import returnSrc from "../../assets/icons/arrow-contrast.svg";
+import GridContainer from "../../components/GridContainer";
 
-const ArticlePage = () => {
+const Article = () => {
   return (
-    <>
+    <GridContainer>
       <Header />
 
       <MainArticlePage>
@@ -18,8 +19,8 @@ const ArticlePage = () => {
       </MainArticlePage>
 
       <Footer />
-    </>
+    </GridContainer>
   );
 };
 
-export default ArticlePage;
+export default Article;

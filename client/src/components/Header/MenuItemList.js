@@ -20,7 +20,7 @@ const Menu = styled.ul`
   height: 100%;
   width: 85%;
 
-  z-index: 50;
+  z-index: 900;
 `;
 
 const MenuItemList = ({ open, children }) => {
