@@ -4,9 +4,9 @@ const MainArticlePage = styled.div`
   position: relative;
 
   button {
-    top: 1.5%;
+    top: 0.5%;
     left: 3%;
-    z-index: 50;
+    z-index: 30;
     background: var(--color-primary);
   }
 `;

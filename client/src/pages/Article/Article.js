@@ -7,6 +7,7 @@ import pictureTest from "../../assets/images/picture-test-1.jpg";
 import MainArticlePage from "../../components/MainArticlePage/MainArticlePage";
 import returnSrc from "../../assets/icons/arrow-contrast.svg";
 import GridContainer from "../../components/GridContainer";
+import ArticlePageMainContent from "../../components/ArticlePageMainContent/ArticlePageMainContent";
 
 const Article = () => {
   return (
@@ -16,6 +17,7 @@ const Article = () => {
       <MainArticlePage>
         <ReturnButton src={returnSrc} alt="return button" />
         <ArticlePageMainImageContainer src={pictureTest} alt="picturetest" />
+        <ArticlePageMainContent />
       </MainArticlePage>
 
       <Footer />
