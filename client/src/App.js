@@ -48,6 +48,15 @@ function App() {
           <Route path="/destinations/cologne">
             <Cologne />
           </Route>
+          <Route path="/destinations/berlin">
+            <Cologne />
+          </Route>
+          <Route path="/destinations/munich">
+            <Cologne />
+          </Route>
+          <Route path="/destinations/frankfurt">
+            <Cologne />
+          </Route>
           <Route path="/">
             <Home />
           </Route>
