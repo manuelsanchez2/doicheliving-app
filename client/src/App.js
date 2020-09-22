@@ -11,6 +11,7 @@ import About from "./pages/About/About";
 import Register from "./pages/Register";
 import Hamburg from "./pages/destinations/Hamburg/Hamburg";
 import Cologne from "./pages/destinations/Cologne/Cologne";
+import Article from "./pages/Article/Article";
 
 function App() {
   return (
@@ -56,6 +57,8 @@ function App() {
           </Route>
           <Route path="/destinations/frankfurt">
             <Cologne />
+          <Route path="/article">
+            <Article />
           </Route>
           <Route path="/">
             <Home />
