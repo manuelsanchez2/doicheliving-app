@@ -21,6 +21,7 @@ import HomeSubscribeSection from "../../components/HomeSubscribeSection";
 import HomeSubscribeSectionText from "../../components/HomeSubscribeSectionText";
 import HomeSubscribeSectionField from "../../components/HomeSubscribeSectionField/HomeSubscribeSectionField";
 import HomeCarouselContainer from "../../components/HomeCarouselContainer";
+import hamburgSrc from "../destinations/assets/hamburg.jpeg";
 
 const mailchimpUrl = process.env.REACT_APP_MAILCHIMP_URL;
 
@@ -41,7 +42,11 @@ const Home = () => {
 
         <h3>Destinos más populares</h3>
         <HomeCarouselContainer>
-          <HomeSmallPictureContainer to={"/login"} src={pictureTest2} alt="" />
+          <HomeSmallPictureContainer
+            to={"/destinations/hamburg"}
+            src={hamburgSrc}
+            alt=""
+          />
           <HomeSmallPictureContainer to={"/login"} src={pictureTest2} alt="" />
           <HomeSmallPictureContainer to={"/login"} src={pictureTest2} alt="" />
           <HomeSmallPictureContainer to={"/login"} src={pictureTest2} alt="" />

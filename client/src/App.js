@@ -9,6 +9,7 @@ import Questions from "./pages/Questions/Questions";
 import Contact from "./pages/Contact/Contact";
 import About from "./pages/About/About";
 import Register from "./pages/Register";
+import Hamburg from "./pages/destinations/Hamburg/Hamburg";
 
 function App() {
   return (
@@ -39,6 +40,9 @@ function App() {
           </Route>
           <Route path="/register">
             <Register />
+          </Route>
+          <Route path="/destinations/hamburg">
+            <Hamburg />
           </Route>
           <Route path="/">
             <Home />

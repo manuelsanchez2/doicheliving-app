@@ -9,7 +9,6 @@ const Container = styled.div`
   background: white;
   img:nth-child(2) {
     width: 100%;
-    height: 30%;
     object-fit: cover;
     border-radius: 10px;
     border-bottom: 0.2px solid var(--color-dark-border);
