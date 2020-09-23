@@ -4,12 +4,8 @@ import Footer from "../../components/Footer";
 import Main from "../../components/Main";
 import GridContainer from "../../components/GridContainer";
 import SearchSelector from "../../components/SearchSelector";
-import doichelivingSrc from "../../assets/icons/doicheliving-logo.png";
-import styled from "@emotion/styled";
-
-const ImgTest = styled.img`
-  width: 6rem;
-`;
+import SearchResultList from "../../components/SearchResultList/SearchResultList";
+import SearchResultListItem from "../../components/SearchResultListItem/SearchResultListItem";
 
 const Search = () => {
   return (
@@ -29,7 +25,7 @@ const Search = () => {
             <option value="frankfurt">Frankfurt</option>
             <option value="hamburg">Hamburg</option>
             <option value="munich">Múnich</option>
-            <option value="germany">Alemania</option>
+            <option value="all">Todas</option>
           </select>
         </SearchSelector>
         <br />
@@ -50,7 +46,12 @@ const Search = () => {
 
         <h3>Resultados de búsqueda</h3>
         <p>Todavía no has realizado ninguna búsqueda.</p>
-        <ImgTest src={doichelivingSrc} alt="" />
+        <SearchResultList>
+          <SearchResultListItem></SearchResultListItem>
+          <SearchResultListItem></SearchResultListItem>
+          <SearchResultListItem></SearchResultListItem>
+          <SearchResultListItem></SearchResultListItem>
+        </SearchResultList>
       </Main>
 
       <Footer />
