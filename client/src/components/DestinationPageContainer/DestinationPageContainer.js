@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 const DestinationPageContainer = styled.div`
-  padding: 0 1em 0 1em;
+  padding: 0 1em;
   display: flex;
   flex-direction: column;
 

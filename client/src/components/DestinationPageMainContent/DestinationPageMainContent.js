@@ -14,7 +14,7 @@ const DestinationImageMapContainer = styled.div`
     width: 45%;
     height: 5.8rem;
     margin-bottom: 1.2rem;
-    border-radius: 5px;
+    border-radius: 0.5rem;
   }
 `;
 

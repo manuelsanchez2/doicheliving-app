@@ -13,7 +13,7 @@ const ArticlePageMainImageContainer = ({ src, alt, children, inactive }) => {
       <ReturnButton
         onClick={() => history.goBack()}
         src={returnSrc}
-        alt="return button"
+        alt="return"
       />
       <img src={src} alt={alt} />
       <FavButton onClick={() => !inactive} />
