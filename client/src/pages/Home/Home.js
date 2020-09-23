@@ -49,26 +49,31 @@ const Home = () => {
             to={"/destinations/hamburg"}
             src={hamburgSrc}
             alt=""
+            imageTitle="Hamburgo"
           />
           <HomeSmallPictureContainer
             to={"/destinations/berlin"}
             src={berlinSrc}
             alt=""
+            imageTitle="Berlín"
           />
           <HomeSmallPictureContainer
             to={"/destinations/cologne"}
             src={cologneSrc}
             alt=""
+            imageTitle="Colonia"
           />
           <HomeSmallPictureContainer
             to={"/destinations/frankfurt"}
             src={frankfurtSrc}
             alt=""
+            imageTitle="Frankfurt"
           />
           <HomeSmallPictureContainer
             to={"/destinations/munich"}
             src={munichSrc}
             alt=""
+            imageTitle="Múnich"
           />
         </HomeCarouselContainer>
         <h3>Rutas por Alemania</h3>
