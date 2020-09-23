@@ -5,7 +5,6 @@ import Mailchimp from "react-mailchimp-form";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import pictureTest from "../../assets/images/picture-test-1.jpg";
-import pictureTest2 from "../../assets/images/picture-test-2.jpg";
 import pictureTest3 from "../../assets/images/picture-test-3.jpg";
 import instagramSrc from "../../assets/icons/social-instagram.svg";
 import facebookSrc from "../../assets/icons/social-facebook.svg";
@@ -21,6 +20,11 @@ import HomeSubscribeSection from "../../components/HomeSubscribeSection";
 import HomeSubscribeSectionText from "../../components/HomeSubscribeSectionText";
 import HomeSubscribeSectionField from "../../components/HomeSubscribeSectionField/HomeSubscribeSectionField";
 import HomeCarouselContainer from "../../components/HomeCarouselContainer";
+import hamburgSrc from "../destinations/assets/hamburg.jpeg";
+import berlinSrc from "../destinations/assets/berlin.jpg";
+import cologneSrc from "../destinations/assets/cologne.jpg";
+import munichSrc from "../destinations/assets/munich.jpg";
+import frankfurtSrc from "../destinations/assets/frankfurt.jpg";
 
 const mailchimpUrl = process.env.REACT_APP_MAILCHIMP_URL;
 
@@ -41,11 +45,36 @@ const Home = () => {
 
         <h3>Destinos más populares</h3>
         <HomeCarouselContainer>
-          <HomeSmallPictureContainer to={"/login"} src={pictureTest2} alt="" />
-          <HomeSmallPictureContainer to={"/login"} src={pictureTest2} alt="" />
-          <HomeSmallPictureContainer to={"/login"} src={pictureTest2} alt="" />
-          <HomeSmallPictureContainer to={"/login"} src={pictureTest2} alt="" />
-          <HomeSmallPictureContainer to={"/login"} src={pictureTest2} alt="" />
+          <HomeSmallPictureContainer
+            to={"/destinations/hamburg"}
+            src={hamburgSrc}
+            alt=""
+            imageTitle="Hamburgo"
+          />
+          <HomeSmallPictureContainer
+            to={"/destinations/berlin"}
+            src={berlinSrc}
+            alt=""
+            imageTitle="Berlín"
+          />
+          <HomeSmallPictureContainer
+            to={"/destinations/cologne"}
+            src={cologneSrc}
+            alt=""
+            imageTitle="Colonia"
+          />
+          <HomeSmallPictureContainer
+            to={"/destinations/frankfurt"}
+            src={frankfurtSrc}
+            alt=""
+            imageTitle="Frankfurt"
+          />
+          <HomeSmallPictureContainer
+            to={"/destinations/munich"}
+            src={munichSrc}
+            alt=""
+            imageTitle="Múnich"
+          />
         </HomeCarouselContainer>
         <h3>Rutas por Alemania</h3>
         <HomeCarouselContainer>

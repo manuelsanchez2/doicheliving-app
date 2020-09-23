@@ -6,7 +6,7 @@ const MainFlex = styled.div`
   justify-content: center;
   align-items: center;
   flex: 1;
-  padding: 0 1em 0 1em;
+  padding: 0 1em;
   position: relative;
 `;
 
