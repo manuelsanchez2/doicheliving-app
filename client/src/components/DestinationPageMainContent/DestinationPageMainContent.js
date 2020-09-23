@@ -21,6 +21,7 @@ const DestinationImageMapContainer = styled.div`
   img {
     height: 5rem;
     border-radius: 0.5rem;
+    width: 95%;
   }
 
   small {
