@@ -10,11 +10,22 @@ const DestinationImageMapContainer = styled.div`
   justify-content: space-around;
   align-items: center;
 
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+  }
+
   img {
-    width: 45%;
-    height: 5.8rem;
-    margin-bottom: 1.2rem;
+    height: 5rem;
+    margin-bottom: 0.3rem;
     border-radius: 0.5rem;
+  }
+
+  small {
+    margin-bottom: 1.2rem;
   }
 `;
 
@@ -24,6 +35,7 @@ const DestinationPageMainContent = ({
   subtitle,
   src,
   alt,
+  imageTitle,
   children,
 }) => {
   return (
@@ -32,14 +44,30 @@ const DestinationPageMainContent = ({
       <p>{description}</p>
       <h3>{subtitle}</h3>
       <DestinationImageMapContainer>
-        <img src={src} alt={alt} />
-        <img src={src} alt={alt} />
-        <img src={src} alt={alt} />
-        <img src={src} alt={alt} />
-        <img src={src} alt={alt} />
-        <img src={src} alt={alt} />
-        <img src={src} alt={alt} />
-        <img src={src} alt={alt} />
+        <div>
+          <img src={src} alt={alt} />
+          <small>{imageTitle}</small>
+        </div>
+        <div>
+          <img src={src} alt={alt} />
+          <small>{imageTitle}</small>
+        </div>
+        <div>
+          <img src={src} alt={alt} />
+          <small>{imageTitle}</small>
+        </div>
+        <div>
+          <img src={src} alt={alt} />
+          <small>{imageTitle}</small>
+        </div>
+        <div>
+          <img src={src} alt={alt} />
+          <small>{imageTitle}</small>
+        </div>
+        <div>
+          <img src={src} alt={alt} />
+          <small>{imageTitle}</small>
+        </div>
       </DestinationImageMapContainer>
     </DestinationPageContainer>
   );
@@ -50,6 +78,7 @@ DestinationPageMainContent.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   subtitle: PropTypes.string,
+  imageTitle: PropTypes.string,
   src: PropTypes.string,
   alt: PropTypes.string,
 };

@@ -21,6 +21,7 @@ const Hamburg = () => {
           subtitle="Todo lo que debes saber sobre Hamburgo"
           src={hamburgSrc}
           alt=""
+          imageTitle="Speicherstadt"
         />
       </div>
       <Footer />
