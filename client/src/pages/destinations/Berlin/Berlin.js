@@ -21,6 +21,7 @@ const Berlin = () => {
           subtitle="Todo lo que debes saber sobre Berlín"
           src={berlinSrc}
           alt=""
+          imageTitle="Imprescindibles de Berlín"
         />
       </div>
       <Footer />

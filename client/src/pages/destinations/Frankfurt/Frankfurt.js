@@ -23,6 +23,7 @@ const Frankfurt = () => {
           subtitle="Todo lo que debes saber sobre Frankfurt"
           src={frankfurtSrc}
           alt=""
+          imageTitle="Descubre Frankfurt"
         />
       </div>
       <Footer />

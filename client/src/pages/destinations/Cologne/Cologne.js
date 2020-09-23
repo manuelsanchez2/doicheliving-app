@@ -21,6 +21,7 @@ const Cologne = () => {
           subtitle="Todo lo que debes saber sobre Colonia"
           src={cologneSrc}
           alt=""
+          imageTitle="Puente de Colonia"
         />
       </div>
       <Footer />

@@ -15,7 +15,7 @@ const DestinationImageMapContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 45%;
   }
 
   img {

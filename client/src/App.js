@@ -11,6 +11,9 @@ import About from "./pages/About/About";
 import Register from "./pages/Register";
 import Hamburg from "./pages/destinations/Hamburg/Hamburg";
 import Cologne from "./pages/destinations/Cologne/Cologne";
+import Munich from "./pages/destinations/Munich/Munich";
+import Frankfurt from "./pages/destinations/Frankfurt/Frankfurt";
+import Berlin from "./pages/destinations/Berlin/Berlin";
 import Article from "./pages/Article/Article";
 
 function App() {
@@ -50,13 +53,13 @@ function App() {
             <Cologne />
           </Route>
           <Route path="/destinations/berlin">
-            <Cologne />
+            <Berlin />
           </Route>
           <Route path="/destinations/munich">
-            <Cologne />
+            <Munich />
           </Route>
           <Route path="/destinations/frankfurt">
-            <Cologne />
+            <Frankfurt />
           </Route>
           <Route path="/article">
             <Article />
