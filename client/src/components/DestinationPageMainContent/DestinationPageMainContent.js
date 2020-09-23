@@ -20,12 +20,11 @@ const DestinationImageMapContainer = styled.div`
 
   img {
     height: 5rem;
-    margin-bottom: 0.3rem;
     border-radius: 0.5rem;
   }
 
   small {
-    margin-bottom: 1.2rem;
+    margin: 0.7rem 0;
   }
 `;
 
