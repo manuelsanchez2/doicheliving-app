@@ -1,13 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Main from "../../components/Main";
+import { getArticles } from "../../api/articles";
+
 import GridContainer from "../../components/GridContainer";
 import SearchSelector from "../../components/SearchSelector";
 import SearchResultList from "../../components/SearchResultList/SearchResultList";
 import SearchResultListItem from "../../components/SearchResultListItem/SearchResultListItem";
+import SearchResultListItemImage from "../../components/SearchResultListItemImage/SearchResultListItemImage";
+import SearchResultListItemText from "../../components/SearchResultListItemText/SearchResultListItemText";
 
 const Search = () => {
+  const [articles, setArticles] = useState(null);
+
+  useEffect(() => {
+    async function fetchArticles() {
+      try {
+        const fetchedArticles = await getArticles();
+        console.log(fetchedArticles);
+        setArticles(fetchedArticles);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    fetchArticles();
+  }, []);
+  console.log(articles);
   return (
     <GridContainer>
       <Header />
@@ -35,9 +54,9 @@ const Search = () => {
             <option value="restaurants">Dónde comer</option>
             <option value="transport">Cómo moverse</option>
             <option value="parks">Zonas verdes</option>
-            <option value="routes">Rutas (Solo Alemania)</option>
+            <option value="routes">Rutas (Elige Todas arriba)</option>
             <option value="organization">
-              Organiza tu viaje (Solo Alemania)
+              Organiza tu viaje (Elige Todas arriba)
             </option>
           </select>
         </SearchSelector>
@@ -45,13 +64,18 @@ const Search = () => {
         <h3>Resultados de búsqueda</h3>
         <p>Todavía no has realizado ninguna búsqueda.</p>
         <SearchResultList>
-          <SearchResultListItem></SearchResultListItem>
-          <SearchResultListItem></SearchResultListItem>
-          <SearchResultListItem></SearchResultListItem>
-          <SearchResultListItem></SearchResultListItem>
-          <SearchResultListItem></SearchResultListItem>
-          <SearchResultListItem></SearchResultListItem>
-          <SearchResultListItem></SearchResultListItem>
+          {articles?.map((article) => (
+            <SearchResultListItem key={article._id} to="/destinations/hamburg">
+              <SearchResultListItemImage
+                src={article.image}
+                alt={article.title}
+              />
+              <SearchResultListItemText
+                title={article.title}
+                description={article.description}
+              />
+            </SearchResultListItem>
+          ))}
         </SearchResultList>
       </Main>
 
