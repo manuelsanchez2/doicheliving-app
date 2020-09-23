@@ -13,8 +13,6 @@ const Search = () => {
       <Header />
 
       <Main>
-        <button>VOLVER</button>
-
         <h2>¿Qué estás buscando?</h2>
 
         <SearchSelector>
@@ -47,6 +45,9 @@ const Search = () => {
         <h3>Resultados de búsqueda</h3>
         <p>Todavía no has realizado ninguna búsqueda.</p>
         <SearchResultList>
+          <SearchResultListItem></SearchResultListItem>
+          <SearchResultListItem></SearchResultListItem>
+          <SearchResultListItem></SearchResultListItem>
           <SearchResultListItem></SearchResultListItem>
           <SearchResultListItem></SearchResultListItem>
           <SearchResultListItem></SearchResultListItem>

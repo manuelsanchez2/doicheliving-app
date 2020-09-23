@@ -1,8 +1,6 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import styled from "@emotion/styled";
-// si no importamos React no podemos hacer un componente
 
 const Container = styled.div`
   width: 100%;
@@ -38,10 +36,10 @@ const Container = styled.div`
   }
 `;
 
-function SearchResultListItem({ to }) {
+function SearchResultListItem() {
   return (
     <Container>
-      <Link to={to}>
+      <Link to="/destinations/hamburg">
         <img src="https://i.imgur.com/Jycf1xG.jpg" alt="" />
         <div>
           <h4>Alojamiento en Hamburgo</h4>
@@ -56,8 +54,5 @@ function SearchResultListItem({ to }) {
     </Container>
   );
 }
-SearchResultListItem.propTypes = {
-  to: PropTypes.any,
-};
 
 export default SearchResultListItem;
