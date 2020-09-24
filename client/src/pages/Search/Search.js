@@ -19,15 +19,12 @@ const Search = () => {
     category: "",
   });
 
-  const updateState = (e) => {
-    setSearch({
-      ...search,
-      [e.target.name]: e.target.value,
-    });
-  };
-
   const searchInfo = (e) => {
     e.preventDefault();
+    setSearch({
+      city: e.target.city.value,
+      category: e.target.category.value,
+    });
   };
 
   useEffect(() => {
@@ -41,7 +38,14 @@ const Search = () => {
     }
     fetchArticles();
   }, []);
-  console.log(articles);
+
+  const filteredArticles = articles
+    ? articles.filter(
+        (article) =>
+          article.city === search.city && article.category === search.category
+      )
+    : null;
+
   return (
     <GridContainer>
       <Header />
@@ -51,7 +55,7 @@ const Search = () => {
         <SearchSelectorForm onSubmit={searchInfo}>
           <SearchSelector>
             <label>Ciudad</label>
-            <select name="city" id="city" onChange={updateState}>
+            <select name="city" id="city">
               <option value="berlin">Berlín</option>
               <option value="cologne">Colonia</option>
               <option value="frankfurt">Frankfurt</option>
@@ -63,7 +67,7 @@ const Search = () => {
 
           <SearchSelector>
             <label>Categoría</label>
-            <select name="category" id="category" onChange={updateState}>
+            <select name="category" id="category">
               <option value="accommodation">Dónde dormir</option>
               <option value="restaurants">Dónde comer</option>
               <option value="transport">Cómo moverse</option>
@@ -78,9 +82,9 @@ const Search = () => {
           <input type="submit" value="BUSCAR" />
         </SearchSelectorForm>
         <h3>Resultados de búsqueda</h3>
-        {articles ? (
+        {filteredArticles ? (
           <SearchResultList>
-            {articles?.map((article) => (
+            {filteredArticles.map((article) => (
               <SearchResultListItem
                 key={article._id}
                 to="/destinations/hamburg"
