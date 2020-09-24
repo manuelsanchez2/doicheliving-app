@@ -4,7 +4,7 @@ import Footer from "../../../components/Footer";
 import GridContainer from "../../../components/GridContainer";
 import DestinationPageMainImageContainer from "../../../components/DestinationPageMainImageContainer";
 import DestinationPageMainContent from "../../../components/DestinationPageMainContent";
-import hamburgSrc from "../assets/hamburg.jpeg";
+import hamburgSrc from "../assets/hamburg.jpg";
 
 const Hamburg = () => {
   return (

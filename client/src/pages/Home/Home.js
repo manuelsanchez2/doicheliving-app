@@ -20,7 +20,7 @@ import HomeSubscribeSection from "../../components/HomeSubscribeSection";
 import HomeSubscribeSectionText from "../../components/HomeSubscribeSectionText";
 import HomeSubscribeSectionField from "../../components/HomeSubscribeSectionField/HomeSubscribeSectionField";
 import HomeCarouselContainer from "../../components/HomeCarouselContainer";
-import hamburgSrc from "../destinations/assets/hamburg.jpeg";
+import hamburgSrc from "../destinations/assets/hamburg.jpg";
 import berlinSrc from "../destinations/assets/berlin.jpg";
 import cologneSrc from "../destinations/assets/cologne.jpg";
 import munichSrc from "../destinations/assets/munich.jpg";
