@@ -41,13 +41,9 @@ const Register = () => {
             </SignupFormInputWrapper>
             <SignupFormInputWrapper>
               <label>Confirmar Contraseña</label>
-              <input type="password" id="password" name="password" />
+              <input type="password" id="password2" name="password2" />
             </SignupFormInputWrapper>
-            <input
-              className="button__login"
-              type="submit"
-              value="REGISTRARME"
-            />
+            <input type="submit" value="REGISTRARME" />
           </SignupForm>
 
           <small>
