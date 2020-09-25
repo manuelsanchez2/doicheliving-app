@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Map from "./pages/Map";
-import Search from "./pages/Search/Search";
 import Questions from "./pages/Questions/Questions";
 import Contact from "./pages/Contact/Contact";
 import About from "./pages/About/About";
@@ -14,7 +13,7 @@ import Cologne from "./pages/destinations/Cologne/Cologne";
 import Munich from "./pages/destinations/Munich/Munich";
 import Frankfurt from "./pages/destinations/Frankfurt/Frankfurt";
 import Berlin from "./pages/destinations/Berlin/Berlin";
-import Article from "./pages/Article/Article";
+import SearchRouter from "./SearchRouter";
 
 function App() {
   return (
@@ -32,7 +31,7 @@ function App() {
             <Login />
           </Route>
           <Route path="/search">
-            <Search />
+            <SearchRouter />
           </Route>
           <Route path="/questions">
             <Questions />
@@ -60,9 +59,6 @@ function App() {
           </Route>
           <Route path="/destinations/frankfurt">
             <Frankfurt />
-          </Route>
-          <Route path="/article">
-            <Article />
           </Route>
           <Route path="/">
             <Home />
