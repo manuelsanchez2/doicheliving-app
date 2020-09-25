@@ -2,6 +2,7 @@
   "articles": [
     {
       "title": "Alojamiento en Alemania",
+      "title-url": "alojamiento-alemania",
       "_id": "1",
       "description": "El tema de cómo llegar en avión o cómo moverse por la ciudad o el país es importante, está claro, pero queremos tener la certeza de que descansaremos sobre techo firme y de que nuestras maletas estarán a salvo en algún lugar.",
       "image": "https://i.imgur.com/Fk7whfK.jpg",
@@ -11,6 +12,7 @@
     },
     {
       "title": "Vuelos a Alemania",
+      "title-url": "vuelo-alemania",
       "_id": "2",
       "description": "Para conseguir el mejor vuelo necesitas dedicarle algo de tiempo y pensar bien cuánto te quieres gastar y las posibilidades que tienes. Aquí te contamos a través de unos simples consejos cómo conseguir billetes al mejor precio.",
       "image": "https://i.imgur.com/q014RKD.jpg",
@@ -20,6 +22,7 @@
     },
     {
       "title": "Moverse por Alemania",
+      "title-url": "transporte-alemania",
       "_id": "3",
       "description": "Si quieres saber cuáles son las mejores formas de moverse por Alemania, ¡necesitas leer nuestra guía detallada!",
       "image": "https://i.imgur.com/DM0dqtV.jpg",
@@ -29,6 +32,7 @@
     },
     {
       "title": "Seguro de viaje para Alemania",
+      "title-url": "seguro-viaje-alemania",
       "_id": "4",
       "description": "Después de mucho estudiar el tema, te traemos el mejor seguro de viaje para Alemania en cuanto a coberturas.",
       "image": "https://i.imgur.com/SgTGca3.jpg",
@@ -38,6 +42,7 @@
     },
     {
       "title": "Documentación para Alemania",
+      "title-url": "documentacion-alemania",
       "_id": "5",
       "description": "¿Sabes qué se necesita para venir a Alemania? Como el tema puede ser algo tedioso, te dejamos este artículo de ayuda.",
       "image": "https://i.imgur.com/1kyKKJZ.jpg",
@@ -47,6 +52,7 @@
     },
     {
       "title": "Ruta de la Selva Negra",
+      "title-url": "ruta-selva-negra",
       "_id": "6",
       "description": "En este artículo te contamos todo lo que necesitas saber para organizar la ruta por la Selva Negra en Alemania: qué ver, cómo llegar, qué pueblos visitar, dónde alojarse, cómo moverse, etc.",
       "image": "https://i.imgur.com/KKQHImK.jpg",
@@ -56,6 +62,7 @@
     },
     {
       "title": "Ruta de los Castillos",
+      "title-url": "ruta-castillos",
       "_id": "7",
       "description": "La Ruta de los Castillos de Alemania es una de las más turísticas y conocidas. A lo largo de su recorrido, atravesarás paisajes de ensueño y visitarás los castillos más importantes e impresionantes de Alemania.",
       "image": "https://i.imgur.com/Tryt2xQ.jpg",
@@ -65,6 +72,7 @@
     },
     {
       "title": "Ruta Romántica de Alemania",
+      "title-url": "ruta-romantica-alemania",
       "_id": "8",
       "description": "La ruta romántica de Alemania es uno de los recorridos más famosos de Europa. Cargada de castillos y ciudades con un espíritu de cuento, ¡esta es una ruta que no te puedes perder!",
       "image": "https://i.imgur.com/uljAxlp.jpg",
@@ -74,6 +82,7 @@
     },
     {
       "title": "Ruta de los Cuentos de Hadas",
+      "title-url": "ruta-cuentos-hadas",
       "_id": "9",
       "description": "¿Te apetece descubrir Alemania de una forma diferente, original y que guste a toda la familia? ¡Tenemos la solución! Entra en este artículo para saber más sobre la ruta de los cuentos de hadas.",
       "image": "https://i.imgur.com/pa1YgOx.jpg",
@@ -83,6 +92,7 @@
     },
     {
       "title": "La Filarmónica del Elba",
+      "title-url": "filarmonica-elba-hamburgo",
       "_id": "10",
       "description": "La Filarmónica del Elba de Hamburgo es uno de los símbolos de la ciudad. El edifico más caro de la historia de Alemania te está esperando para que lo visites. ¿A qué estás esperando?",
       "image": "https://i.imgur.com/MmIwaMn.jpg",
@@ -92,6 +102,7 @@
     },
     {
       "title": "Sankt Pauli",
+      "title-url": "sankt-pauli",
       "_id": "11",
       "description": "¿Sabías que en Alemania hay un barrio rojo tan famoso como el de Ámsterdam? Está en Hamburgo y, además de ser famoso por su vida nocturna, fue testigo de los inicios de The Beatles. ¡No te puedes perder este artículo!",
       "image": "https://i.imgur.com/f1EpoTh.jpg?1",
@@ -101,6 +112,7 @@
     },
     {
       "title": "Ayuntamiento de Hamburgo",
+      "title-url": "ayuntamiento-hamburgo",
       "_id": "12",
       "description": "El Ayuntamiento de Hamburgo, o Rathaus, es uno de los meeting points más famosos de la ciudad, y donde empiezan la mayoría de los free tours. ¡Te contamos qué puedes hacer aquí en este artículo!",
       "image": "https://i.imgur.com/e3Gc94o.jpg",
@@ -110,6 +122,7 @@
     },
     {
       "title": "Puerto de Hamburgo",
+      "title-url": "puerto-hamburgo",
       "_id": "13",
       "description": "Si estás planeando tu viaje a Hamburgo, sin duda, no te puedes perder este post en el que te contamos todo sobre el puerto más grande e importante de Alemania: el puerto de Hamburgo.",
       "image": "https://i.imgur.com/QygDeg2.jpg",
@@ -119,6 +132,7 @@
     },
     {
       "title": "Transporte en Hamburgo",
+      "title-url": "transporte-hamburgo",
       "_id": "14",
       "description": "Si quieres volverte un experto en el metro de Hamburgo y en el resto de transportes de la ciudad, tienes que leer nuestra guía simplificada. Con ella te moverás cual hamburgués.",
       "image": "https://i.imgur.com/UekdqKk.jpg",
@@ -128,6 +142,7 @@
     },
     {
       "title": "Kunsthalle de Hamburgo",
+      "title-url": "kunsthalle-hamburgo",
       "_id": "15",
       "description": "La Kunsthalle de Hamburgo es considerada por muchos la mejor galería de Hamburgo. Y es normal, con la colección que hay en su interior disfrutarás como un enano seas un experto en arte o no.",
       "image": "https://i.imgur.com/db40Re9.jpg",
@@ -137,6 +152,7 @@
     },
     {
       "title": "El Rey León en Hamburgo",
+      "title-url": "rey-leon-hamburgo",
       "_id": "16",
       "description": "El musical más famoso de todos los tiempos lo tienes aquí, en Hamburgo. ¿Te lo vas a perder? ¡Vive las aventuras de Simba y sus amigos al ritmo de Hakuna Matata!",
       "image": "https://i.imgur.com/9MbSngI.jpg",
@@ -146,6 +162,7 @@
     },
     {
       "title": "Alojamiento en Hamburgo",
+      "title-url": "alojamiento-hamburgo",
       "_id": "17",
       "description": "Está claro que si vienes a Hamburgo, una de las primeras cosas en las que tienes que pensar es en dónde vas a dormir. ¡Te simplificamos la tarea con nuestras 6 opciones de alojamiento en Hamburgo favoritas!",
       "image": "https://i.imgur.com/v6Zm7YE.jpg",
