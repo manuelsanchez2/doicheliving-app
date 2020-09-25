@@ -3,7 +3,6 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Main from "../../components/Main";
 import { getArticles } from "../../api/articles";
-
 import GridContainer from "../../components/GridContainer";
 import SearchSelector from "../../components/SearchSelector";
 import SearchSelectorForm from "../../components/SearchSelectorForm";
@@ -85,10 +84,7 @@ const Search = () => {
         {filteredArticles ? (
           <SearchResultList>
             {filteredArticles.map((article) => (
-              <SearchResultListItem
-                key={article._id}
-                to="/destinations/hamburg"
-              >
+              <SearchResultListItem key={article.id} id={article.id}>
                 <SearchResultListItemImage
                   src={article.image}
                   alt={article.title}

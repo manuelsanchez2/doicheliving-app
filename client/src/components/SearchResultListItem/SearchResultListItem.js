@@ -15,10 +15,10 @@ const Container = styled.div`
   }
 `;
 
-function SearchResultListItem({ children, to }) {
+function SearchResultListItem({ children, to, id }) {
   return (
     <Container>
-      <Link to={to}>{children}</Link>
+      <Link to={`/search/articles/${id}`}>{children}</Link>
     </Container>
   );
 }
@@ -26,6 +26,7 @@ function SearchResultListItem({ children, to }) {
 SearchResultListItem.propTypes = {
   children: PropTypes.node,
   to: PropTypes.node,
+  id: PropTypes.string,
 };
 
 export default SearchResultListItem;
