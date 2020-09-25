@@ -63,7 +63,10 @@ const ArticlePageMainContent = ({ src, alt, children, title, body }) => {
   return (
     <ContentContainer>
       <h2>{title}</h2>
-      {body}
+      <div
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: body }}
+      />
     </ContentContainer>
   );
 };

@@ -23,6 +23,7 @@ const Article = ({ src, alt, title, body }) => {
       }
     }
     showArticle();
+    // eslint-disable-next-line
   }, [id]);
 
   return (
@@ -36,15 +37,6 @@ const Article = ({ src, alt, title, body }) => {
         title={fetchedArticle.title}
         body={fetchedArticle.body}
       />
-      <div>This is a test</div>
-      <div>This is a test</div>
-      <div>This is a test</div>
-      <div>This is a test</div>
-      <div>This is a test</div>
-      <div>This is a test</div>
-      <div>This is a test</div>
-      <div>This is a test</div>
-      <div>This is a test</div>
       <Footer />
     </>
   );
