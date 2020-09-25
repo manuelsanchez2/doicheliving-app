@@ -1,4 +1,4 @@
-const { default: styled } = require("@emotion/styled");
+import styled from "@emotion/styled";
 
 const SearchResultListItemImage = styled.img`
   width: 25%;
