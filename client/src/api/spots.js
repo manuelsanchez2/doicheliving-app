@@ -4,10 +4,11 @@ export async function listSpots() {
 }
 
 export async function createSpot(spot) {
-  const response = await fetch(`/api/spots`, {
+  console.log(spot);
+  const response = await fetch("/api/spots", {
     method: "POST",
     headers: {
-      "content-type": "application/json",
+      "Content-Type": "application/json",
     },
 
     body: JSON.stringify(spot),
