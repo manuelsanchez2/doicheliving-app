@@ -16,10 +16,10 @@ const Container = styled.div`
   }
 `;
 
-const HomeBigPictureContainer = ({ to, src, alt, children }) => {
+const HomeBigPictureContainer = ({ to, src, alt, children, id }) => {
   return (
     <Container>
-      <Link to={to}>
+      <Link to={`/search/articles/${id}`}>
         <img src={src} alt={alt} />
       </Link>
     </Container>
@@ -31,6 +31,7 @@ HomeBigPictureContainer.propTypes = {
   to: PropTypes.any,
   src: PropTypes.string,
   alt: PropTypes.string,
+  id: PropTypes.string,
 };
 
 export default HomeBigPictureContainer;

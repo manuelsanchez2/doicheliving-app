@@ -60,7 +60,6 @@ const Search = () => {
               <option value="frankfurt">Frankfurt</option>
               <option value="hamburg">Hamburg</option>
               <option value="munich">Múnich</option>
-              <option value="all">Todas</option>
             </select>
           </SearchSelector>
 
@@ -72,10 +71,6 @@ const Search = () => {
               <option value="transport">Cómo moverse</option>
               <option value="parks">Zonas verdes</option>
               <option value="sightseeing">Monumentos</option>
-              <option value="routes">Rutas (Elige Todas arriba)</option>
-              <option value="organization">
-                Organiza tu viaje (Elige Todas arriba)
-              </option>
             </select>
           </SearchSelector>
           <input type="submit" value="BUSCAR" />
@@ -97,7 +92,7 @@ const Search = () => {
             ))}
           </SearchResultList>
         ) : (
-          <p>Todavía no has realizado ninguna búsqueda.</p>
+          " "
         )}
       </Main>
 
