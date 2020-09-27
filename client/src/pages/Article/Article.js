@@ -16,8 +16,6 @@ const Article = ({ src, alt, title, body }) => {
       try {
         const loadedArticle = await getArticle(id);
         setFetchedArticle(loadedArticle);
-        console.log(id);
-        console.log(fetchedArticle);
       } catch (error) {
         console.log(error);
       }

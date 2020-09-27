@@ -43,8 +43,6 @@ const DestinationArticleImage = ({ src, alt, id, imageTitle }) => {
 };
 
 DestinationArticleImage.propTypes = {
-  children: PropTypes.node,
-  to: PropTypes.any,
   src: PropTypes.string,
   alt: PropTypes.string,
   id: PropTypes.string,
