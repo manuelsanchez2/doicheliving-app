@@ -65,6 +65,7 @@ const Home = () => {
                 id={article.id}
                 src={article.image}
                 alt={article.title}
+                imageTitle={article.title}
               ></HomeBigPictureContainer>
             ))}
           </HomeCarouselContainer>
@@ -113,6 +114,7 @@ const Home = () => {
                 id={article.id}
                 src={article.image}
                 alt={article.title}
+                imageTitle={article.title}
               ></HomeBigPictureContainer>
             ))}
           </HomeCarouselContainer>
