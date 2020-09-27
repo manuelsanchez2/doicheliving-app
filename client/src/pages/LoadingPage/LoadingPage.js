@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "@emotion/styled";
+import introSrc from "../../assets/intro/intro.mp4";
 import doichelivingSrc from "../../assets/icons/doicheliving-logo.png";
 
 const LoadingScreenWrapper = styled.div`
@@ -7,7 +8,7 @@ const LoadingScreenWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-primary);
+  background-color: #ffd300;
   height: 100vh;
   h2 {
     font-family: var(--font-lato);
@@ -33,10 +34,25 @@ const LoadingScreenWrapper = styled.div`
 `;
 
 function LoadingPage() {
+  const videoRef = useRef();
+  const setPlayBack = () => {
+    videoRef.current.playbackRate = 0.8;
+  };
+
   return (
     <LoadingScreenWrapper>
-      <img src={doichelivingSrc} alt="Logo" />
-      <h2>Cargando...</h2>
+      <video
+        ref={videoRef}
+        width="320"
+        height="240"
+        onCanPlay={() => setPlayBack()}
+        autoPlay
+        muted
+      >
+        <source src={introSrc} type="video/mp4" />
+        <img src={doichelivingSrc} alt="Logo" />
+        <h2>Cargando...</h2>
+      </video>
     </LoadingScreenWrapper>
   );
 }

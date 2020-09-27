@@ -7,9 +7,10 @@ const SubmitButton = styled.button`
   padding: 0.3rem 2rem;
   color: var(--color-white);
   font-family: var(--font-lato);
-  font-size: 1rem;
-  letter-spacing: 3px;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
   display: block;
+  margin: 0 auto;
 `;
 
 export default SubmitButton;
