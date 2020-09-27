@@ -169,6 +169,46 @@
       "city": "hamburg",
       "category": "accommodation",
       "body": "<p>My favourite monuments in Hamburg are these, these and these...</p><br><h2>History of Hamburg</h2><br><p>Hamburg's roots date from ...</p><br><img src='https://i.imgur.com/L2bsjbG.jpg' alt='hamburg' /><button><a href='https://clk.tradedoubler.com/click?p=281568&a=3127979&g=24202230' target='_blank'>SEE TOUR</a></button>"
+    },
+    {
+      "title": "Catedral de Colonia",
+      "titleUrl": "catedral-colonia",
+      "id": "18",
+      "description": "Está claro que si vienes a Hamburgo, una de las primeras cosas en las que tienes que pensar es en dónde vas a dormir. ¡Te simplificamos la tarea con nuestras 6 opciones de alojamiento en Hamburgo favoritas!",
+      "image": "https://i.imgur.com/v6Zm7YE.jpg",
+      "city": "cologne",
+      "category": "sightseeing",
+      "body": "<p>My favourite monuments in Hamburg are these, these and these...</p><br><h2>History of Hamburg</h2><br><p>Hamburg's roots date from ...</p><br><img src='https://i.imgur.com/L2bsjbG.jpg' alt='hamburg' /><button><a href='https://clk.tradedoubler.com/click?p=281568&a=3127979&g=24202230' target='_blank'>SEE TOUR</a></button>"
+    },
+    {
+      "title": "Ayuntamiento de Múnich",
+      "titleUrl": "alojamiento-hamburgo",
+      "id": "19",
+      "description": "Está claro que si vienes a Hamburgo, una de las primeras cosas en las que tienes que pensar es en dónde vas a dormir. ¡Te simplificamos la tarea con nuestras 6 opciones de alojamiento en Hamburgo favoritas!",
+      "image": "https://i.imgur.com/v6Zm7YE.jpg",
+      "city": "munich",
+      "category": "sightseeing",
+      "body": "<p>My favourite monuments in Hamburg are these, these and these...</p><br><h2>History of Hamburg</h2><br><p>Hamburg's roots date from ...</p><br><img src='https://i.imgur.com/L2bsjbG.jpg' alt='hamburg' /><button><a href='https://clk.tradedoubler.com/click?p=281568&a=3127979&g=24202230' target='_blank'>SEE TOUR</a></button>"
+    },
+    {
+      "title": "Alexanderplatz en Berlín",
+      "titleUrl": "alexanderplatz-berlin",
+      "id": "20",
+      "description": "Está claro que si vienes a Hamburgo, una de las primeras cosas en las que tienes que pensar es en dónde vas a dormir. ¡Te simplificamos la tarea con nuestras 6 opciones de alojamiento en Hamburgo favoritas!",
+      "image": "https://i.imgur.com/v6Zm7YE.jpg",
+      "city": "berlin",
+      "category": "sightseeing",
+      "body": "<p>My favourite monuments in Hamburg are these, these and these...</p><br><h2>History of Hamburg</h2><br><p>Hamburg's roots date from ...</p><br><img src='https://i.imgur.com/L2bsjbG.jpg' alt='hamburg' /><button><a href='https://clk.tradedoubler.com/click?p=281568&a=3127979&g=24202230' target='_blank'>SEE TOUR</a></button>"
+    },
+    {
+      "title": "Plaza Römerberg",
+      "titleUrl": "plaza-roemerberg",
+      "id": "21",
+      "description": "Está claro que si vienes a Hamburgo, una de las primeras cosas en las que tienes que pensar es en dónde vas a dormir. ¡Te simplificamos la tarea con nuestras 6 opciones de alojamiento en Hamburgo favoritas!",
+      "image": "https://i.imgur.com/v6Zm7YE.jpg",
+      "city": "frankfurt",
+      "category": "sightseeing",
+      "body": "<p>My favourite monuments in Hamburg are these, these and these...</p><br><h2>History of Hamburg</h2><br><p>Hamburg's roots date from ...</p><br><img src='https://i.imgur.com/L2bsjbG.jpg' alt='hamburg' /><button><a href='https://clk.tradedoubler.com/click?p=281568&a=3127979&g=24202230' target='_blank'>SEE TOUR</a></button>"
     }
   ],
   "spots": [
