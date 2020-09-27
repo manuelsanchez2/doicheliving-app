@@ -3,12 +3,13 @@ import styled from "@emotion/styled";
 const ArticlePageMainImageContainerWrapper = styled.div`
   position: relative;
   background: white;
+  height: 215px;
 
   img:nth-child(2) {
     width: 100%;
     height: 13.5rem;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
 
     border-bottom: 0.2px solid var(--color-dark-border);
     box-shadow: 0.5px 0px 5px 0px rgba(0, 0, 0, 0.01);
@@ -23,7 +24,7 @@ const ArticlePageMainImageContainerWrapper = styled.div`
   }
   button:last-of-type {
     position: absolute;
-    top: 85%;
+    top: 90%;
     left: 80%;
     z-index: 30;
   }

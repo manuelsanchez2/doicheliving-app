@@ -73,17 +73,17 @@ const Map = () => {
 
           {spots.map((spot) => (
             <Spot
-              key={spot._id}
+              key={spot.id}
               spot={spot}
-              popup={showPopup[spot._id]}
+              popup={showPopup[spot.id]}
               onMarkerClick={() =>
                 setShowPopup({
-                  [spot._id]: true,
+                  [spot.id]: true,
                 })
               }
               onClose={() =>
                 setShowPopup({
-                  [spot._id]: false,
+                  [spot.id]: false,
                 })
               }
             />
@@ -109,7 +109,7 @@ const Map = () => {
           {addSpot ? (
             <>
               <Marker
-                key={addSpot._id}
+                key={addSpot.id}
                 latitude={addSpot.latitude}
                 longitude={addSpot.longitude}
                 offsetLeft={-12}
@@ -118,7 +118,7 @@ const Map = () => {
                 <div
                   onClick={() =>
                     setShowPopup({
-                      [addSpot._id]: true,
+                      [addSpot.id]: true,
                     })
                   }
                 >

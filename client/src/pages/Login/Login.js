@@ -35,11 +35,7 @@ const Login = () => {
               <label>Contraseña</label>
               <input type="password" id="password" name="password" />
             </LoginFormInputWrapper>
-            <input
-              className="button__login"
-              type="submit"
-              value="ACCEDER A LA CUENTA"
-            />
+            <input type="submit" value="ACCEDER A LA CUENTA" />
           </SignupForm>
 
           <small>

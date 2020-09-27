@@ -1,11 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import Mailchimp from "react-mailchimp-form";
 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import pictureTest from "../../assets/images/picture-test-1.jpg";
-import pictureTest3 from "../../assets/images/picture-test-3.jpg";
 import instagramSrc from "../../assets/icons/social-instagram.svg";
 import facebookSrc from "../../assets/icons/social-facebook.svg";
 import mailSrc from "../../assets/icons/social-mail.svg";
@@ -20,29 +18,60 @@ import HomeSubscribeSection from "../../components/HomeSubscribeSection";
 import HomeSubscribeSectionText from "../../components/HomeSubscribeSectionText";
 import HomeSubscribeSectionField from "../../components/HomeSubscribeSectionField/HomeSubscribeSectionField";
 import HomeCarouselContainer from "../../components/HomeCarouselContainer";
-import hamburgSrc from "../destinations/assets/hamburg.jpeg";
+import hamburgSrc from "../destinations/assets/hamburg.jpg";
 import berlinSrc from "../destinations/assets/berlin.jpg";
 import cologneSrc from "../destinations/assets/cologne.jpg";
 import munichSrc from "../destinations/assets/munich.jpg";
 import frankfurtSrc from "../destinations/assets/frankfurt.jpg";
+import { getArticles } from "../../api/articles";
 
 const mailchimpUrl = process.env.REACT_APP_MAILCHIMP_URL;
 
 const Home = () => {
+  const [articles, setArticles] = useState(null);
+
+  useEffect(() => {
+    async function fetchArticles() {
+      try {
+        const fetchedArticles = await getArticles();
+        setArticles(fetchedArticles);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    fetchArticles();
+  }, []);
+
+  const ArticlesByCategoryOrganization = articles
+    ? articles.filter((article) => article.category === "organization")
+    : null;
+
+  const ArticlesByCategoryRoutes = articles
+    ? articles.filter((article) => article.category === "routes")
+    : null;
+
   return (
     <div className="container">
       <Header />
       <Main>
         <h2>¿Qué quieres descubrir de Alemania?</h2>
         <h3>Organiza tu viaje</h3>
-        <HomeCarouselContainer>
-          <HomeBigPictureContainer to={"/login"} src={pictureTest} alt="" />
-          <HomeBigPictureContainer to={"/login"} src={pictureTest} alt="" />
-          <HomeBigPictureContainer to={"/login"} src={pictureTest} alt="" />
-          <HomeBigPictureContainer to={"/login"} src={pictureTest} alt="" />
-          <HomeBigPictureContainer to={"/login"} src={pictureTest} alt="" />
-        </HomeCarouselContainer>
 
+        {ArticlesByCategoryOrganization ? (
+          <HomeCarouselContainer>
+            {ArticlesByCategoryOrganization.map((article) => (
+              <HomeBigPictureContainer
+                key={article.id}
+                id={article.id}
+                src={article.image}
+                alt={article.title}
+                imageTitle={article.title}
+              ></HomeBigPictureContainer>
+            ))}
+          </HomeCarouselContainer>
+        ) : (
+          " "
+        )}
         <h3>Destinos más populares</h3>
         <HomeCarouselContainer>
           <HomeSmallPictureContainer
@@ -77,13 +106,21 @@ const Home = () => {
           />
         </HomeCarouselContainer>
         <h3>Rutas por Alemania</h3>
-        <HomeCarouselContainer>
-          <HomeBigPictureContainer to={"/login"} src={pictureTest3} alt="" />
-          <HomeBigPictureContainer to={"/login"} src={pictureTest3} alt="" />
-          <HomeBigPictureContainer to={"/login"} src={pictureTest3} alt="" />
-          <HomeBigPictureContainer to={"/login"} src={pictureTest3} alt="" />
-          <HomeBigPictureContainer to={"/login"} src={pictureTest3} alt="" />
-        </HomeCarouselContainer>
+        {ArticlesByCategoryRoutes ? (
+          <HomeCarouselContainer>
+            {ArticlesByCategoryRoutes.map((article) => (
+              <HomeBigPictureContainer
+                key={article.id}
+                id={article.id}
+                src={article.image}
+                alt={article.title}
+                imageTitle={article.title}
+              ></HomeBigPictureContainer>
+            ))}
+          </HomeCarouselContainer>
+        ) : (
+          " "
+        )}
 
         {/* SUBSCRIBE SECTION  */}
 

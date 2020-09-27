@@ -1,12 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import GridContainer from "../../../components/GridContainer";
 import DestinationPageMainImageContainer from "../../../components/DestinationPageMainImageContainer";
 import DestinationPageMainContent from "../../../components/DestinationPageMainContent";
 import frankfurtSrc from "../assets/frankfurt.jpg";
+import { getArticles } from "../../../api/articles";
+import DestinationArticleImageNav from "../../../components/DestinationArticleImageNav/DestinationArticleImageNav";
+import DestinationArticleImage from "../../../components/DestinationArticleImage";
 
 const Frankfurt = () => {
+  const [articles, setArticles] = useState(null);
+
+  useEffect(() => {
+    async function fetchArticles() {
+      try {
+        const fetchedArticles = await getArticles();
+        setArticles(fetchedArticles);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    fetchArticles();
+  }, []);
+
+  const ArticlesByCityFrankfurt = articles
+    ? articles.filter((article) => article.city === "frankfurt")
+    : null;
   return (
     <GridContainer>
       <Header />
@@ -21,10 +41,22 @@ const Frankfurt = () => {
 
           Y, aunque las comparaciones son odiosas, suponemos que es por eso que muchos llaman a la ciudad «Mainhattan». Si hay algo en lo que se parece a Nueva York, es que desde muchas partes de la ciudad vas a poder disfrutar de una bonitas vistas del skyline."
           subtitle="Todo lo que debes saber sobre Frankfurt"
-          src={frankfurtSrc}
-          alt=""
-          imageTitle="Descubre Frankfurt"
         />
+        {ArticlesByCityFrankfurt ? (
+          <DestinationArticleImageNav>
+            {ArticlesByCityFrankfurt.map((article) => (
+              <DestinationArticleImage
+                key={article.id}
+                id={article.id}
+                src={article.image}
+                alt={article.title}
+                imageTitle={article.title}
+              />
+            ))}
+          </DestinationArticleImageNav>
+        ) : (
+          " "
+        )}
       </div>
       <Footer />
     </GridContainer>

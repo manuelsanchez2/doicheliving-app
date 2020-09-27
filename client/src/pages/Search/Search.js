@@ -1,56 +1,99 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Main from "../../components/Main";
+import { getArticles } from "../../api/articles";
 import GridContainer from "../../components/GridContainer";
 import SearchSelector from "../../components/SearchSelector";
-import doichelivingSrc from "../../assets/icons/doicheliving-logo.png";
-import styled from "@emotion/styled";
-
-const ImgTest = styled.img`
-  width: 6rem;
-`;
+import SearchSelectorForm from "../../components/SearchSelectorForm";
+import SearchResultList from "../../components/SearchResultList/SearchResultList";
+import SearchResultListItem from "../../components/SearchResultListItem/SearchResultListItem";
+import SearchResultListItemImage from "../../components/SearchResultListItemImage/SearchResultListItemImage";
+import SearchResultListItemText from "../../components/SearchResultListItemText/SearchResultListItemText";
 
 const Search = () => {
+  const [articles, setArticles] = useState(null);
+  const [search, setSearch] = useState({
+    city: "",
+    category: "",
+  });
+
+  const searchInfo = (e) => {
+    e.preventDefault();
+    setSearch({
+      city: e.target.city.value,
+      category: e.target.category.value,
+    });
+  };
+
+  useEffect(() => {
+    async function fetchArticles() {
+      try {
+        const fetchedArticles = await getArticles();
+        setArticles(fetchedArticles);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    fetchArticles();
+  }, []);
+
+  const filteredArticles = articles
+    ? articles.filter(
+        (article) =>
+          article.city === search.city && article.category === search.category
+      )
+    : null;
+
   return (
     <GridContainer>
       <Header />
 
       <Main>
-        <button>VOLVER</button>
-
         <h2>¿Qué estás buscando?</h2>
+        <SearchSelectorForm onSubmit={searchInfo}>
+          <SearchSelector>
+            <label>Ciudad</label>
+            <select name="city" id="city">
+              <option value="berlin">Berlín</option>
+              <option value="cologne">Colonia</option>
+              <option value="frankfurt">Frankfurt</option>
+              <option value="hamburg">Hamburg</option>
+              <option value="munich">Múnich</option>
+            </select>
+          </SearchSelector>
 
-        <SearchSelector>
-          <label>Ciudad</label>
-          <select name="cities" id="cities">
-            <option value="berlin">Berlín</option>
-            <option value="cologne">Colonia</option>
-            <option value="frankfurt">Frankfurt</option>
-            <option value="hamburg">Hamburg</option>
-            <option value="munich">Múnich</option>
-            <option value="germany">Alemania</option>
-          </select>
-        </SearchSelector>
-        <br />
-
-        <SearchSelector>
-          <label>Categoría</label>
-          <select name="categories" id="categories">
-            <option value="accomodation">Dónde dormir</option>
-            <option value="restaurants">Dónde comer</option>
-            <option value="transport">Cómo moverse</option>
-            <option value="parks">Zonas verdes</option>
-            <option value="routes">Rutas (Solo Alemania)</option>
-            <option value="organization">
-              Organiza tu viaje (Solo Alemania)
-            </option>
-          </select>
-        </SearchSelector>
-
+          <SearchSelector>
+            <label>Categoría</label>
+            <select name="category" id="category">
+              <option value="accommodation">Dónde dormir</option>
+              <option value="restaurants">Dónde comer</option>
+              <option value="transport">Cómo moverse</option>
+              <option value="parks">Zonas verdes</option>
+              <option value="sightseeing">Monumentos</option>
+            </select>
+          </SearchSelector>
+          <input type="submit" value="BUSCAR" />
+        </SearchSelectorForm>
         <h3>Resultados de búsqueda</h3>
-        <p>Todavía no has realizado ninguna búsqueda.</p>
-        <ImgTest src={doichelivingSrc} alt="" />
+        {filteredArticles ? (
+          <SearchResultList>
+            {filteredArticles.map((article) => (
+              <SearchResultListItem key={article.id} id={article.id}>
+                <SearchResultListItemImage
+                  src={article.image}
+                  alt={article.title}
+                />
+                <SearchResultListItemText
+                  title={article.title}
+                  description={article.description}
+                />
+              </SearchResultListItem>
+            ))}
+          </SearchResultList>
+        ) : (
+          " "
+        )}
       </Main>
 
       <Footer />

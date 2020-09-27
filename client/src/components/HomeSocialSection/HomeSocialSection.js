@@ -6,6 +6,7 @@ const HomeSocialSection = styled.div`
   flex-flow: column nowrap;
 
   h3 {
+    padding-top: 1rem;
     margin: 0 auto;
   }
 `;

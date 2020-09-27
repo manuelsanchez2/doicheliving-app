@@ -1,37 +1,220 @@
 {
   "articles": [
     {
-      "title": "Alojamiento en Alemania",
-      "_id": "1",
-      "description": "Una de las cosas que más nos importa a la hora de viajar -si no la que más- es dónde vamos a dormir. El tema de cómo llegar en avión o cómo moverse por la ciudad o el país es importante, está claro, pero queremos tener la certeza de que descansaremos sobre techo firme y de que nuestras maletas estarán a salvo en algún lugar.",
-      "image": "https://i.imgur.com/Jycf1xG.jpg",
-      "city": "Todas",
-      "category": "Organización",
-      "body": "<p><strong>Una de las cosas que más nos importa a la hora de viajar -si no la que más- es dónde vamos a dormir. El tema de cómo llegar en avión o cómo moverse por la ciudad o el país es importante, está claro, pero queremos tener la certeza de que descansaremos sobre techo firme y de que nuestras maletas estarán a salvo en algún lugar.</strong></p><br><p>En Alemania hay muchísimas opciones de alojamiento, lo cual es perfecto porque seguro que vas a encontrar la que mejor se ajuste a tu estilo de viaje. Así que tu primera pregunta será: ¿Hotel, hostal o apartamento?</p><h3>Cómo conseguir tu hotel en Alemania</h3><br><p>Si <a href=’https://www.booking.com/country/de.es.html?aid=1884131’ target='_blank' rel=’noopener noreferrer’ >Booking</a> sigue siendo líder indiscutible en cuanto a alojamiento, en Alemania no iba a ser de otra forma. En base a nuestra experiencia creemos que es una de las mejores páginas para encontrar un lugar donde alojarte vayas donde vayas. Además, la plataforma también tiene algunos hostales y apartamentos, así que podrás verlo todo a través del buscador que tienen.</p><br><img src=’https://i.imgur.com/htZLVMn.jpg’ alt=’alojamiento en Alemania’/><br><p>La gente suele utilizar <strong>Booking</strong> frente a otros buscadores de hoteles por las ventajas que ofrecen en cuanto a flexibilidad: yo como usuario recurrente valoro realmente el hecho de que en muchas ocasiones pueda cancelar -con un reembolso íntegro- hasta 24 horas antes de la fecha de entrada.</p><br><p>Además, la herramienta es superintuitiva y fácil de utilizar. Nada de terminología difícil o letra pequeña; tan solo introduces el lugar de destino, las fechas que quieres y el número de personas, y tienes las ofertas a continuación.</p><br><button><a href=’https://www.booking.com/country/de.es.html?aid=1884131’ target='_blank' rel=’noopener noreferrer’>VER OFERTAS DE HOTELES</a></button><br><h3>Cómo conseguir tu hostal en Alemania</h3><p><a href=’https://prf.hn/l/6nv5No6’ target='_blank' rel=’noopener noreferrer’>Hostelworld</a> se consolida como una de las mejores opciones a la hora de buscar alojamiento, ya no solo en Alemania, sino en cualquier parte del mundo. <strong>Cuenta con más de 22.000 hostales</strong> y hoteles de <strong>bajo coste</strong> en todo el mundo, y nos gusta sobre todo por <strong>tres razones</strong>:</p><ol><li>Los <strong>precios</strong> son muy competentes y <strong>bastante asequibles</strong>.</li<li>Hay <strong>muchísima información</strong> de cada uno de los hostales, lo cual es genial cuando se está dudando entre varios.</li><li>Hay <strong>cancelación gratuita</strong> si se reserva con más de 7 días de antelación, así que tienes <strong>muchísima flexibilidad</strong> en caso de que haya alguna variación en el viaje.</li></ol><br><button><a href=’https://prf.hn/l/6nv5No6’ target='_blank' rel=’noopener noreferrer’>VER OFERTAS DE HOSTELWORLD</a></button><br><h3>Cómo conseguir tu apartamento en Alemania</h3><p><strong>Airbnb</strong> es sin duda la opción perfecta para aquellos que quieran tener un lugar en el que sentirse como en casa. Creemos que <strong>es genial</strong> para aquellos que valoran la intimidad y la autonomía ante todo. Al menos a nosotros la recomendamos 100%.</p><br><p>Hay que tener en cuenta que en ciudades como Múnich y Hamburgo, con un nivel adquisitivo más elevado, los precios suben y no es la opción más económica. Por ponerte un ejemplo, en Hamburgo un apartamento para 4 relativamente bien situado puede costar 220 euros el fin de semana. De todas maneras os recomendamos buscar alojamiento en las diferentes plataformas para comparar opciones y precios.</p><br><p><strong>Si decides usar esta plataforma para reservar tu alojamiento (ya sea en Alemania o en cualquier otro sitio) y aún no tienes cuenta en Airbnb, al registrarte con <a href=’https://www.airbnb.es/c/doichel?currency=EUR’ rel=’noopener noreferrer’>este link<a/> obtendrás 34€ de descuento en tu primer viaje, ¡que no está nada mal! ¡Qué lo disfrutes! </strong></p><br><h3>Conclusión sobre el alojamiento en Alemania</h3><br><p>Seguramente estemos de acuerdo en lo importante que es la elección del alojamiento. Échale un vistazo SIEMPRE a las reviews que hagan los otros usuarios, porque al final las imágenes pueden engañarnos y tal, pero las opiniones de gente como tú y como yo nos ayudan a decidir mejor.</p><br><p>¡Buen viaje!</p>"
+      "title": "Buscar Alojamiento",
+      "titleUrl": "alojamiento-alemania",
+      "id": "1",
+      "description": "El tema de cómo llegar en avión o cómo moverse por la ciudad o el país es importante, está claro, pero queremos tener la certeza de que descansaremos sobre techo firme y de que nuestras maletas estarán a salvo en algún lugar.",
+      "image": "https://i.imgur.com/Fk7whfK.jpg",
+      "city": "all",
+      "category": "organization",
+      "body": "<p><strong>Una de las cosas que más nos importa a la hora de viajar -si no la que más- es dónde vamos a dormir. El tema de cómo llegar en avión o cómo moverse por la ciudad o el país es importante, está claro, pero queremos tener la certeza de que descansaremos sobre techo firme y de que nuestras maletas estarán a salvo en algún lugar.</strong></p><br><p>En Alemania hay muchísimas opciones de alojamiento, lo cual es perfecto porque seguro que vas a encontrar la que mejor se ajuste a tu estilo de viaje. Así que tu primera pregunta será: ¿Hotel, hostal o apartamento?</p><h3>Cómo conseguir tu hotel en Alemania</h3><br><p>Si <a href='https://www.booking.com/country/de.es.html?aid=1884131' target='_blank' rel='noopener noreferrer' >Booking</a> sigue siendo líder indiscutible en cuanto a alojamiento, en Alemania no iba a ser de otra forma. En base a nuestra experiencia creemos que es una de las mejores páginas para encontrar un lugar donde alojarte vayas donde vayas. Además, la plataforma también tiene algunos hostales y apartamentos, así que podrás verlo todo a través del buscador que tienen.</p><br><img src='https://i.imgur.com/htZLVMn.jpg' alt='alojamiento en Alemania'/><br><p>La gente suele utilizar <strong>Booking</strong> frente a otros buscadores de hoteles por las ventajas que ofrecen en cuanto a flexibilidad: yo como usuario recurrente valoro realmente el hecho de que en muchas ocasiones pueda cancelar -con un reembolso íntegro- hasta 24 horas antes de la fecha de entrada.</p><br><p>Además, la herramienta es superintuitiva y fácil de utilizar. Nada de terminología difícil o letra pequeña; tan solo introduces el lugar de destino, las fechas que quieres y el número de personas, y tienes las ofertas a continuación.</p><br><button><a href='https://www.booking.com/country/de.es.html?aid=1884131' target='_blank' rel='noopener noreferrer'>VER OFERTAS DE HOTELES</a></button><br><h3>Cómo conseguir tu hostal en Alemania</h3><p><a href='https://prf.hn/l/6nv5No6' target='_blank' rel='noopener noreferrer'>Hostelworld</a> se consolida como una de las mejores opciones a la hora de buscar alojamiento, ya no solo en Alemania, sino en cualquier parte del mundo. <strong>Cuenta con más de 22.000 hostales</strong> y hoteles de <strong>bajo coste</strong> en todo el mundo, y nos gusta sobre todo por <strong>tres razones</strong>:</p><ol><li>Los <strong>precios</strong> son muy competentes y <strong>bastante asequibles</strong>.</li<li>Hay <strong>muchísima información</strong> de cada uno de los hostales, lo cual es genial cuando se está dudando entre varios.</li><li>Hay <strong>cancelación gratuita</strong> si se reserva con más de 7 días de antelación, así que tienes <strong>muchísima flexibilidad</strong> en caso de que haya alguna variación en el viaje.</li></ol><br><button><a href='https://prf.hn/l/6nv5No6' target='_blank' rel='noopener noreferrer'>VER OFERTAS DE HOSTELWORLD</a></button><br><h3>Cómo conseguir tu apartamento en Alemania</h3><p><strong>Airbnb</strong> es sin duda la opción perfecta para aquellos que quieran tener un lugar en el que sentirse como en casa. Creemos que <strong>es genial</strong> para aquellos que valoran la intimidad y la autonomía ante todo. Al menos a nosotros la recomendamos 100%.</p><br><p>Hay que tener en cuenta que en ciudades como Múnich y Hamburgo, con un nivel adquisitivo más elevado, los precios suben y no es la opción más económica. Por ponerte un ejemplo, en Hamburgo un apartamento para 4 relativamente bien situado puede costar 220 euros el fin de semana. De todas maneras os recomendamos buscar alojamiento en las diferentes plataformas para comparar opciones y precios.</p><br><p><strong>Si decides usar esta plataforma para reservar tu alojamiento (ya sea en Alemania o en cualquier otro sitio) y aún no tienes cuenta en Airbnb, al registrarte con <a href='https://www.airbnb.es/c/doichel?currency=EUR' rel='noopener noreferrer'>este link<a/> obtendrás 34€ de descuento en tu primer viaje, ¡que no está nada mal! ¡Qué lo disfrutes! </strong></p><br><h3>Conclusión sobre el alojamiento en Alemania</h3><br><p>Seguramente estemos de acuerdo en lo importante que es la elección del alojamiento. Échale un vistazo SIEMPRE a las reviews que hagan los otros usuarios, porque al final las imágenes pueden engañarnos y tal, pero las opiniones de gente como tú y como yo nos ayudan a decidir mejor.</p><br><p>¡Buen viaje!</p>"
     },
     {
       "title": "Vuelos a Alemania",
-      "_id": "2",
-      "description": "La realidad es que esto es más sencillo de lo que parece. Tan solo necesitas dedicarle algo de tiempo a la búsqueda y pensar bien cuánto te quieres gastar y las posibilidades que tienes. Una vez tengas claro eso, te contamos a través de unos sencillos consejos, cómo conseguir billetes de avión baratos a Alemania en cuestión de minutos.",
-      "image": "https://i.imgur.com/9UYeyPU.jpg",
-      "city": "General",
-      "category": "Organización",
+      "titleUrl": "vuelo-alemania",
+      "id": "2",
+      "description": "Para conseguir el mejor vuelo necesitas dedicarle algo de tiempo y pensar bien cuánto te quieres gastar y las posibilidades que tienes. Aquí te contamos a través de unos simples consejos cómo conseguir billetes al mejor precio.",
+      "image": "https://i.imgur.com/q014RKD.jpg",
+      "city": "all",
+      "category": "organization",
+      "body": "<p><strong>La realidad es que esto es más sencillo de lo que parece.Tan solo necesitas dedicarle algo de tiempo a la búsqueda y pensar bien cuánto te quieres gastar y las posibilidades que tienes. Una vez tengas claro eso, te contamos a través de unos sencillos consejos, cómo conseguir billetes de avión baratos a Alemania en cuestión de minutos. </strong></p><br><img src='https://i.imgur.com/6NJRxby.jpg' alt='vuelo a Alemania' /><br><h3>Consejos para conseguir vuelos baratos</h3><p>En primer lugar, debes saber que hay diversas páginas con las que conseguir tus billetes de avión. Nosotros llevamos utilizando <a href='https://www.skyscanner.es/?utm_content=flights-link&associateid=AFF_TRA_00074_00002&utm_source=trade+doubler&utm_medium=affiliate&utm_campaign=es-travel-3127979-&tduid=da9c33b5c832335701bf78fe0363c7d3&clickid=da9c33b5c832335701bf78fe0363c7d3&c=3127979' rel='noopener noreferrer' target='_blank'>Skyscanner</a> desde hace muchos años porque <strong>es un buscador de vuelos que te muestra todas las combinaciones posibles con las diferentes compañías aéreas,</strong> y es muy sencillo de utilizar. Así, una vez estás dentro de la página verás una interfaz muy simple en la que te preguntarán los típicos datos de viaje. A partir de aquí te queremos dar <strong>3 consejos para ahorrar al máximo en tu billete de avión a Alemania.</strong></p><br><img src='https://i.imgur.com/9QvLu1c.png' alt='skyscanner' /><br><ol><li><strong>Mes en lugar de día exacto.</strong> Lo primero que te aconsejaríamos hacer para ver los precios  elegir la opción de ver mes completo o el mes más económico.</li><li><strong>Piensa de forma más global.</strong> Si no te gustan las opciones que tienes para llegar a tu ciudad de destino, prueba las conexiones que hay con otros aeropuertos de Alemania. Para ello, en la elección de destino, prueba a insertar Alemania en general, en lugar del aeropuerto. Por ejemplo, imagina que quisieras ir a Leipzig. La ciudad tiene aeropuerto, pero a veces se puede dar la situación en la que no tengas buenas conexiones. Lo que hace mucha gente es volar a Dresde, y luego buscarse un medio de transporte para llegar a Leipzig. El trayecto dura algo más de hora y media y no te saldrá nada caro, ya que moverse en bus por Alemania es muy económico.</li><li><strong>Elige el día correcto en el que comprar tu entrada.</strong> Según varios estudios, está demostrado que el día más barato para comprar billetes de avión es el martes, a las 15:00 para ser exactos, así que ya lo sabes, si quieres ahorrarte algo de dinero extra, échale un vistazo a las ofertas de los vuelos los martes.</li></ol><br><button><a href='https://clk.tradedoubler.com/click?p(224466)a(3127979)g(20638346)' target='_blank' rel='noopener noreferrer'>VER OFERTAS DESDE CUALQUIER LUGAR</a></button>"
+    },
+    {
+      "title": "Moverse por Alemania",
+      "titleUrl": "transporte-alemania",
+      "id": "3",
+      "description": "Si quieres saber cuáles son las mejores formas de moverse por Alemania, ¡necesitas leer nuestra guía detallada!",
+      "image": "https://i.imgur.com/DM0dqtV.jpg",
+      "city": "all",
+      "category": "organization",
+      "body": "<p>My favourite monuments in Hamburg are these, these and these...</p><br><h2>History of Hamburg</h2><br><p>Hamburg's roots date from ...</p><br><img src='https://i.imgur.com/L2bsjbG.jpg' alt='hamburg' /><button><a href='https://clk.tradedoubler.com/click?p=281568&a=3127979&g=24202230' target='_blank'>SEE TOUR</a></button>"
+    },
+    {
+      "title": "Seguro de viaje",
+      "titleUrl": "seguro-viaje-alemania",
+      "id": "4",
+      "description": "Después de mucho estudiar el tema, te traemos el mejor seguro de viaje para Alemania en cuanto a coberturas.",
+      "image": "https://i.imgur.com/SgTGca3.jpg",
+      "city": "all",
+      "category": "organization",
+      "body": "<p>My favourite monuments in Hamburg are these, these and these...</p><br><h2>History of Hamburg</h2><br><p>Hamburg's roots date from ...</p><br><img src='https://i.imgur.com/L2bsjbG.jpg' alt='hamburg' /><button><a href='https://clk.tradedoubler.com/click?p=281568&a=3127979&g=24202230' target='_blank'>SEE TOUR</a></button>"
+    },
+    {
+      "title": "Documentación",
+      "titleUrl": "documentacion-alemania",
+      "id": "5",
+      "description": "¿Sabes qué se necesita para venir a Alemania? Como el tema puede ser algo tedioso, te dejamos este artículo de ayuda.",
+      "image": "https://i.imgur.com/1kyKKJZ.jpg",
+      "city": "all",
+      "category": "organization",
+      "body": "<p>My favourite monuments in Hamburg are these, these and these...</p><br><h2>History of Hamburg</h2><br><p>Hamburg's roots date from ...</p><br><img src='https://i.imgur.com/L2bsjbG.jpg' alt='hamburg' /><button><a href='https://clk.tradedoubler.com/click?p=281568&a=3127979&g=24202230' target='_blank'>SEE TOUR</a></button>"
+    },
+    {
+      "title": "Ruta de la Selva Negra",
+      "titleUrl": "ruta-selva-negra",
+      "id": "6",
+      "description": "En este artículo te contamos todo lo que necesitas saber para organizar la ruta por la Selva Negra en Alemania: qué ver, cómo llegar, qué pueblos visitar, dónde alojarse, cómo moverse, etc.",
+      "image": "https://i.imgur.com/KKQHImK.jpg",
+      "city": "all",
+      "category": "routes",
+      "body": "<p>My favourite monuments in Hamburg are these, these and these...</p><br><h2>History of Hamburg</h2><br><p>Hamburg's roots date from ...</p><br><img src='https://i.imgur.com/L2bsjbG.jpg' alt='hamburg' /><button><a href='https://clk.tradedoubler.com/click?p=281568&a=3127979&g=24202230' target='_blank'>SEE TOUR</a></button>"
+    },
+    {
+      "title": "Ruta de los Castillos",
+      "titleUrl": "ruta-castillos",
+      "id": "7",
+      "description": "La Ruta de los Castillos de Alemania es una de las más turísticas y conocidas. A lo largo de su recorrido, atravesarás paisajes de ensueño y visitarás los castillos más importantes e impresionantes de Alemania.",
+      "image": "https://i.imgur.com/Tryt2xQ.jpg",
+      "city": "all",
+      "category": "routes",
+      "body": "<p>My favourite monuments in Hamburg are these, these and these...</p><br><h2>History of Hamburg</h2><br><p>Hamburg's roots date from ...</p><br><img src='https://i.imgur.com/L2bsjbG.jpg' alt='hamburg' /><button><a href='https://clk.tradedoubler.com/click?p=281568&a=3127979&g=24202230' target='_blank'>SEE TOUR</a></button>"
+    },
+    {
+      "title": "Ruta Romántica",
+      "titleUrl": "ruta-romantica-alemania",
+      "id": "8",
+      "description": "La ruta romántica de Alemania es uno de los recorridos más famosos de Europa. Cargada de castillos y ciudades con un espíritu de cuento, ¡esta es una ruta que no te puedes perder!",
+      "image": "https://i.imgur.com/uljAxlp.jpg",
+      "city": "all",
+      "category": "routes",
+      "body": "<p>My favourite monuments in Hamburg are these, these and these...</p><br><h2>History of Hamburg</h2><br><p>Hamburg's roots date from ...</p><br><img src='https://i.imgur.com/L2bsjbG.jpg' alt='hamburg' /><button><a href='https://clk.tradedoubler.com/click?p=281568&a=3127979&g=24202230' target='_blank'>SEE TOUR</a></button>"
+    },
+    {
+      "title": "Ruta Cuentos de Hadas",
+      "titleUrl": "ruta-cuentos-hadas",
+      "id": "9",
+      "description": "¿Te apetece descubrir Alemania de una forma diferente, original y que guste a toda la familia? ¡Tenemos la solución! Entra en este artículo para saber más sobre la ruta de los cuentos de hadas.",
+      "image": "https://i.imgur.com/pa1YgOx.jpg",
+      "city": "all",
+      "category": "routes",
       "body": "<p>My favourite monuments in Hamburg are these, these and these...</p><br><h2>History of Hamburg</h2><br><p>Hamburg's roots date from ...</p><br><img src='https://i.imgur.com/L2bsjbG.jpg' alt='hamburg' /><button><a href='https://clk.tradedoubler.com/click?p=281568&a=3127979&g=24202230' target='_blank'>SEE TOUR</a></button>"
     },
     {
       "title": "La Filarmónica del Elba",
-      "_id": "3",
-      "description": "La Filarmónica del Elba, o Elbphilharmonie, es básicamente una obra maestra de la arquitectura contemporánea en forma de sala de conciertos. Desde 2017, ha pasado a ser uno de los símbolos característicos de la ciudad de Hamburgo, ¡y nos queda bastante claro el porqué!",
+      "titleUrl": "filarmonica-elba-hamburgo",
+      "id": "10",
+      "description": "La Filarmónica del Elba de Hamburgo es uno de los símbolos de la ciudad. El edifico más caro de la historia de Alemania te está esperando para que lo visites. ¿A qué estás esperando?",
       "image": "https://i.imgur.com/MmIwaMn.jpg",
-      "city": "Hamburgo",
-      "category": "Imprescindibles",
+      "city": "hamburg",
+      "category": "sightseeing",
+      "body": "<p><strong>La Filarmónica del Elba, o Elbphilharmonie, es básicamente una obra maestra de la arquitectura contemporánea en forma de sala deconciertos. Desde 2017, ha pasado a ser uno de los símbolos característicos de la ciudad de Hamburgo, ¡y nos queda bastante claro el porqué!</strong></p><p>En este artículo, te contamos todo lo que debes saber sobre este símbolode la ciudad. Por ejemplo, ¿sabes cuánto se han dejado para la construcción de tal maravilla? Nosotros te lo contamos. </p><img src='https://i.imgur.com/MmIwaMn.jpg' alt='filarmonica del elba' /><h3>¿Qué es la Filarmónica del Elba?</h3><p>Construida sobre unos antiguos almacenes de cacao, tabaco y té, la Filarmónica de Hamburgo es desde 2017 uno de los símbolos de la ciudad. Ha sido un proyecto a gran escala: se estimaba que se iban a gastar unos 77 millones de euros,<strong>¡y acabaron dejándose 789.000.000!</strong> Lo pongo con todos los ceros porque puede parecer que la palabra millones con cantidades tan ingentes de dinero le protagonismo a la cifra en cuestión. <strong>En resumen, fue, ha sido y es un proyecto ambicioso. De hecho, los alemanes no han invertido tanto dinero en ningún otro monumento.</strong>Pero, ¿qué se ha conseguido con la Filarmónica del Elba?</p><p>El interior de la Filarmónica alberga un hotel de lujo, varios restaurantes, un museo, más de 40 apartamentos y de los auditorios. Lo que se pretendía conseguir era algo imposible hasta la fecha: que la música se escuchase a la perfección independientemente del asiento en el que estés sentado. Gracias a Yasuhisa Toyota, un ingeniero acústico japonés, se ha conseguido algo que era hasta entonces impensable: <strong>da igual si la sala está llena de gente o vacía, la música suena igual de bien desde cualquier lugar.</strong></p><p>Estilísticamente hablando, el edificio llama bastante la atención al conservar el ladrillo rojo -muy característico de esta zona de Hamburgo-<strong>y tener una parte superior que simula una gran ola de cristal.</strong></p><h3>Filarmónica del Elba: Entradas</h3><p>La entrada para ver las instalaciones más básicas de la Filarmónica <strong>es completamente gratuita</strong>. Sin embargo, no tendrás acceso a la zona de los conciertos de esta forma. La única forma de ver los auditorios es viendo uno de los conciertos que hacen allí. Si queréis saber la programación de los conciertos en la Filarmónica del Elba, entonces le puedes echar un vistazo a este<a href='https://www.elbphilharmonie.de/de/konzerte/' target='_blank' rel='noopener noreferrer'>enlace</a>. Merece la pena ver la página de vez en cuando, porque<strong>a veces hay conciertos gratuitos!</strong></p><p>También con respecto a la Filarmónica, si, como nosotros, sois muy curiosos y os gustan las grandes historias llenas de altibajos, entonces puede que os interese uno de los tours que se pueden hacer por la Filarmónica de Hamburgo. Hay opcion para todos los bolsillos, pero nosotros hemos encontrado uno que en relación calidad-precio es una pasada.</p><button><a href='https://www.getyourguide.es/hamburgo-l23/filarmonica-del-elba-tour-guiado-sin-salas-de-conciertos-t92790/?partner_id=AUS9KHH&utm_medium=online_publisher&placement=other&cmp=ES_Filar' target='_blank' rel='noopener noreferrer'>VER TOUR POR LA FILARMÓNICA</a></button><h3>Preguntas Frecuentes</h3><h4>¿Cómo llegar a la Filarmónica del Elba?</h4><p>La Filarmónica del Elba se encuentra en el extremo occidental del barriode HafenCity de Hamburgo, concretamente en la Platz der Deutschen Einheit (Plaza de la Unidad Alemana). La forma más fácil de llegar es con la U3 hasta Baumwall Station o con el S1 o S2 hasta Landungsbrücken o Stadthausbrücke. Desde ahí, estaréis a unos 5-10 minutos a pie de la Filarmónica de Hamburgo.</p><img src='https://i.imgur.com/wGRo81y.jpg' alt='speicherstadt hamburgo' /><p>Sin embargo, a nosotros nos gusta personalmente ir sin prisa y dándonos un paseo por la Speicherstad que es el antiguo barrio de almacenes de la ciudad. Es una zona que, como gran parte de la ciudad, está repleta de puentes.<strong>De hecho, dicen que Hamburgo es la ciudad con más puentes del mundo.¡Muy por encima de Venecia y Amsterdam!</strong></p><h4>¿Cuánto cuesta la entrada a la Elbphilarmonie?</h4><p>Como hemos dicho antes, la entrada a la Filarmónica de Hamburgo escompletamente gratuita. Sin embargo, si queréis que os cuenten pequeñas anécdotas sobre su construcción y queréis hacer un tour diferente, entonces os recomendamos que hagáis alguno de los tours que hay por menos de 20 euros que merecen mucho la pena.</p><button><a href='https://www.getyourguide.es/hamburgo-l23/filarmonica-del-elba-tour-guiado-sin-salas-de-conciertos-t92790/?partner_id=AUS9KHH&utm_medium=online_publisher&placement=other&cmp=ES_Filar' target='_blank' rel='noopener noreferrer'>VER TOUR POR LA FILARMÓNICA</a></button><h4>¿Merece la pena la Elbphilarmonie?</h4><p>Si te gustan los edificios grandes y tener unas vistas que son una pasada, entonces es un sí rotundo. Creemos que es una visita obligada en Hamburgo, ya sea con concierto, tour o sin nada planificado.</p>"
+    },
+    {
+      "title": "Sankt Pauli",
+      "titleUrl": "sankt-pauli",
+      "id": "11",
+      "description": "¿Sabías que en Alemania hay un barrio rojo tan famoso como el de Ámsterdam? Está en Hamburgo y, además de ser famoso por su vida nocturna, fue testigo de los inicios de The Beatles. ¡No te puedes perder este artículo!",
+      "image": "https://i.imgur.com/f1EpoTh.jpg?1",
+      "city": "hamburg",
+      "category": "leisure",
+      "body": "<p>My favourite monuments in Hamburg are these, these and these...</p><br><h2>History of Hamburg</h2><br><p>Hamburg's roots date from ...</p><br><img src='https://i.imgur.com/L2bsjbG.jpg' alt='hamburg' /><button><a href='https://clk.tradedoubler.com/click?p=281568&a=3127979&g=24202230' target='_blank'>SEE TOUR</a></button>"
+    },
+    {
+      "title": "Ayuntamiento de Hamburgo",
+      "titleUrl": "ayuntamiento-hamburgo",
+      "id": "12",
+      "description": "El Ayuntamiento de Hamburgo, o Rathaus, es uno de los meeting points más famosos de la ciudad, y donde empiezan la mayoría de los free tours. ¡Te contamos qué puedes hacer aquí en este artículo!",
+      "image": "https://i.imgur.com/e3Gc94o.jpg",
+      "city": "hamburg",
+      "category": "sightseeing",
+      "body": "<p>My favourite monuments in Hamburg are these, these and these...</p><br><h2>History of Hamburg</h2><br><p>Hamburg's roots date from ...</p><br><img src='https://i.imgur.com/L2bsjbG.jpg' alt='hamburg' /><button><a href='https://clk.tradedoubler.com/click?p=281568&a=3127979&g=24202230' target='_blank'>SEE TOUR</a></button>"
+    },
+    {
+      "title": "Puerto de Hamburgo",
+      "titleUrl": "puerto-hamburgo",
+      "id": "13",
+      "description": "Si estás planeando tu viaje a Hamburgo, sin duda, no te puedes perder este post en el que te contamos todo sobre el puerto más grande e importante de Alemania: el puerto de Hamburgo.",
+      "image": "https://i.imgur.com/QygDeg2.jpg",
+      "city": "hamburg",
+      "category": "sightseeing",
+      "body": "<p>My favourite monuments in Hamburg are these, these and these...</p><br><h2>History of Hamburg</h2><br><p>Hamburg's roots date from ...</p><br><img src='https://i.imgur.com/L2bsjbG.jpg' alt='hamburg' /><button><a href='https://clk.tradedoubler.com/click?p=281568&a=3127979&g=24202230' target='_blank'>SEE TOUR</a></button>"
+    },
+    {
+      "title": "Transporte en Hamburgo",
+      "title-url": "transporte-hamburgo",
+      "id": "14",
+      "description": "Si quieres volverte un experto en el metro de Hamburgo y en el resto de transportes de la ciudad, tienes que leer nuestra guía simplificada. Con ella te moverás cual hamburgués.",
+      "image": "https://i.imgur.com/UekdqKk.jpg",
+      "city": "hamburg",
+      "category": "transport",
+      "body": "<p><strong>Como siempre que se llega a una ciudad nueva el tema del transporte público es un lío hemos decidido explicarte todo lo que tienes que saber, no solo del metro de Hamburgo, sino también del resto de transportes de la ciudad, como el cercanías, el bus o el ferry. ¡Estate atento que allá vamos!</strong></p><br><h3>Transporte en Hamburgo: tipos</h3><br><img src='https://i.imgur.com/UekdqKk.jpg' alt='transporte en hamburgo' /><br><p>Como hemos dicho en la introducción, hay varios medios de transporte en Hamburgo que debes conocer para poder desenvolverte con total libertad por la ciudad. Aquí te contamos cuáles son los más importantes:</p><br><ul><li><strong>S-Bahn (S) y U-Bahn (U):</strong> En líneas generales, estos dos medios de transporte hacen las funciones de metro y tranvía de la ciudad. Mucha gente llama a los S-Bahn trenes y a los U-Bahn metros, pero la realidad es que -en mi opinión- muchas veces el uno toma las funciones del otro. Vas a ver muchos S-Bahn que van a ir por partes subterráneas y muchos U-Bahn que van a nivel de calle. Si bien es cierto, para recorrer distancias más grandes, se tomaría un S-Bahn. El S1 es tu mejor aliado: es el que comunica la ciudad con el aeropuerto de Hamburgo (Hamburg Flughafen)</li><li><strong>Bus:</strong> El autobús en Hamburgo funciona genial. Además, tienen precios muy económicos: los mismos que los de un billete de metro normal. Sin embargo, tienes que tener en cuenta que existen unos autobuses rápidos por la ciudad -los denominados Schnellbus-, cuyo ticket cuesta más de 4 €. Eso sí, el Schnellbus de la línea 37 yo lo recomendaría perfectamente para dar una vuelta por toda la ciudad porque recorre zonas muy interesantes de la ciudad, como Altona, St. Pauli, Jungfernstieg, la Estación y Stadtpark.</li><li><strong>Los trenes regionales (R):</strong> Estos no son particularmente interesantes si solo vas a visitar Hamburgo. Sin embargo, si vas a visitar también ciudades de alrededor, te interesará saber que existen Trenes interregionales rápidos (IRE) y trenes regionales rápidos(RE).</li><li><strong>Ferry:</strong> En nuestra opinión, si hace buen tiempo cuando vengas a Hamburgo, no puedes perderte un trayecto en ferry. Te recomendamos que te subas en Hafencity y que ahí vayas a Blankenese.</li></ul><br><h3>Mapa del transporte público de Hamburgo</h3><br><p>Lo que tienes que saber -en caso de que te sientas más perdido que el barco del arroz- es que <strong>es la empresa HVV la que administra el sistema de transportes en Hamburgo</strong>. A continuación te dejamos un mapa con las distintas líneas de la ciudad. ¡Estamos seguros de que te hará la vida mucho más sencilla!</p><br><img src='https://i.imgur.com/PFtjlQh.jpg' alt='mapa del metro de hamburgo' /><br><h3>Metro de Hamburgo: Información Importante</h3><br><p>Hamburgo, al igual que muchísimas otras ciudades de Alemania, es una ciudad que confía en sus habitantes. Por ello, a la hora de subirte al metro nadie te va a pedir tu billete. De vez en cuando verás a algunos controladores -vestidos de paisano- que te pedirán el billete.</p><br><p>No llevar el billete de metro y viajar de gratis se llama Schwarzfahren (viajar en negro, literal), y es algo que puede conllevar una multa de hasta 60 €. </p><br><p>Como hemos dicho antes, la línea que debes conocer sí o sí es la S1. La dirección que va hacia el aeropuerto es  Poppenbüttel/Flughafen. Eso sí, <strong>solo los primeros tres vagones van al aeropuerto y los tres últimos van Poppenbüttel, así que procura ponerte en los primeros vagones. </strong></p><br><h4>Cómo comprar un ticket en el metro de Hamburgo</h4><br><img src='https://i.imgur.com/2zxUjRm.jpg' alt='maquinas del metro de hamburgo' /><br><p>Simplemente tienes que ir a alguna de las máquinas automáticas que encuentres y seleccionar el idioma español. ¡A partir de ahí ya es seguir unas sencillas instrucciones y paga con tarjeta o con efectivo! </p><br><h3>El Ferry de Hamburgo: dónde montarse</h3><br><p>Puedes subir al ferry tranquilamente desde el Puerto de Hamburgo. Nuestra recomendación es que busques el que ponga de parada <strong>Blankenese</strong>. Para que no te pierdas y estés preparado, tienes que saber que la parada anterior se llama <strong>Teufelsbrücke</strong>. </p><br><img src='https://i.imgur.com/CVWJ3zH.jpg' alt='ferrie de hamburgo' /><br><h3>Ahorrar en el transporte público de Hamburgo: la Hamburg Card</h3><br><p>Una forma de ahorrar, no solo en el metro de Hamburgo y resto de transportes (completamente gratis), sino también en la mayoría de las atracciones de la ciudad, es utilizar la Hamburg Card. <strong>¡Tendrás descuentos en más de 150 atracciones de Hamburgo, así que merece la pena!</strong> </p><br><a href='https://www.getyourguide.es/activity/hamburgo-l23/hamburg-card-siente-la-ciudad-t5099?partner_id=AUS9KHH&utm_medium=online_publisher&utm_source=doicheliving&placement=content-top&cmp=ES_HA_TRANS' rel='noopener noreferrer' target='_blank'><img src='https://i.imgur.com/jLnqsHG.jpg' alt='hamburg card'/></a><br><button><a href='https://www.getyourguide.es/activity/hamburgo-l23/hamburg-card-siente-la-ciudad-t5099?partner_id=AUS9KHH&utm_medium=online_publisher&utm_source=doicheliving&placement=content-top&cmp=ES_HA_TRANS' rel='noopener noreferrer' target='_blank'>VER HAMBURG CARD</a></button><br><h3>Bicicleta pública de Hamburgo: StadtRad</h3><br><p>No podemos terminar este artículo sin contarte que Hamburgo es una ciudad muy amiga de las bicicletas. De hecho, mucha gente tiene su propia bicicleta y si no la tienen, han utilizado o por lo menos conocen los servicios de StadtRad Hamburg. En resumidas cuentas: <strong>por tan solo 5 € vas a poder utilizar las bicicletas rojas públicas de la ciudad de forma ilimitada. </strong></p>"
+    },
+    {
+      "title": "Kunsthalle de Hamburgo",
+      "titleUrl": "kunsthalle-hamburgo",
+      "id": "15",
+      "description": "La Kunsthalle de Hamburgo es considerada por muchos la mejor galería de Hamburgo. Y es normal, con la colección que hay en su interior disfrutarás como un enano seas un experto en arte o no.",
+      "image": "https://i.imgur.com/db40Re9.jpg",
+      "city": "hamburg",
+      "category": "culture",
+      "body": "<p>My favourite monuments in Hamburg are these, these and these...</p><br><h2>History of Hamburg</h2><br><p>Hamburg's roots date from ...</p><br><img src='https://i.imgur.com/L2bsjbG.jpg' alt='hamburg' /><button><a href='https://clk.tradedoubler.com/click?p=281568&a=3127979&g=24202230' target='_blank'>SEE TOUR</a></button>"
+    },
+    {
+      "title": "El Rey León en Hamburgo",
+      "titleUrl": "rey-leon-hamburgo",
+      "id": "16",
+      "description": "El musical más famoso de todos los tiempos lo tienes aquí, en Hamburgo. ¿Te lo vas a perder? ¡Vive las aventuras de Simba y sus amigos al ritmo de Hakuna Matata!",
+      "image": "https://i.imgur.com/9MbSngI.jpg",
+      "city": "hamburg",
+      "category": "musicals",
+      "body": "<p>My favourite monuments in Hamburg are these, these and these...</p><br><h2>History of Hamburg</h2><br><p>Hamburg's roots date from ...</p><br><img src='https://i.imgur.com/L2bsjbG.jpg' alt='hamburg' /><button><a href='https://clk.tradedoubler.com/click?p=281568&a=3127979&g=24202230' target='_blank'>SEE TOUR</a></button>"
+    },
+    {
+      "title": "Alojamiento en Hamburgo",
+      "titleUrl": "alojamiento-hamburgo",
+      "id": "17",
+      "description": "Está claro que si vienes a Hamburgo, una de las primeras cosas en las que tienes que pensar es en dónde vas a dormir. ¡Te simplificamos la tarea con nuestras 6 opciones de alojamiento en Hamburgo favoritas!",
+      "image": "https://i.imgur.com/v6Zm7YE.jpg",
+      "city": "hamburg",
+      "category": "accommodation",
+      "body": "<p>My favourite monuments in Hamburg are these, these and these...</p><br><h2>History of Hamburg</h2><br><p>Hamburg's roots date from ...</p><br><img src='https://i.imgur.com/L2bsjbG.jpg' alt='hamburg' /><button><a href='https://clk.tradedoubler.com/click?p=281568&a=3127979&g=24202230' target='_blank'>SEE TOUR</a></button>"
+    },
+    {
+      "title": "Catedral de Colonia",
+      "titleUrl": "catedral-colonia",
+      "id": "18",
+      "description": "Está claro que si vienes a Hamburgo, una de las primeras cosas en las que tienes que pensar es en dónde vas a dormir. ¡Te simplificamos la tarea con nuestras 6 opciones de alojamiento en Hamburgo favoritas!",
+      "image": "https://i.imgur.com/v6Zm7YE.jpg",
+      "city": "cologne",
+      "category": "sightseeing",
+      "body": "<p>My favourite monuments in Hamburg are these, these and these...</p><br><h2>History of Hamburg</h2><br><p>Hamburg's roots date from ...</p><br><img src='https://i.imgur.com/L2bsjbG.jpg' alt='hamburg' /><button><a href='https://clk.tradedoubler.com/click?p=281568&a=3127979&g=24202230' target='_blank'>SEE TOUR</a></button>"
+    },
+    {
+      "title": "Ayuntamiento de Múnich",
+      "titleUrl": "alojamiento-hamburgo",
+      "id": "19",
+      "description": "Está claro que si vienes a Hamburgo, una de las primeras cosas en las que tienes que pensar es en dónde vas a dormir. ¡Te simplificamos la tarea con nuestras 6 opciones de alojamiento en Hamburgo favoritas!",
+      "image": "https://i.imgur.com/v6Zm7YE.jpg",
+      "city": "munich",
+      "category": "sightseeing",
+      "body": "<p>My favourite monuments in Hamburg are these, these and these...</p><br><h2>History of Hamburg</h2><br><p>Hamburg's roots date from ...</p><br><img src='https://i.imgur.com/L2bsjbG.jpg' alt='hamburg' /><button><a href='https://clk.tradedoubler.com/click?p=281568&a=3127979&g=24202230' target='_blank'>SEE TOUR</a></button>"
+    },
+    {
+      "title": "Alexanderplatz en Berlín",
+      "titleUrl": "alexanderplatz-berlin",
+      "id": "20",
+      "description": "Está claro que si vienes a Hamburgo, una de las primeras cosas en las que tienes que pensar es en dónde vas a dormir. ¡Te simplificamos la tarea con nuestras 6 opciones de alojamiento en Hamburgo favoritas!",
+      "image": "https://i.imgur.com/v6Zm7YE.jpg",
+      "city": "berlin",
+      "category": "sightseeing",
+      "body": "<p>My favourite monuments in Hamburg are these, these and these...</p><br><h2>History of Hamburg</h2><br><p>Hamburg's roots date from ...</p><br><img src='https://i.imgur.com/L2bsjbG.jpg' alt='hamburg' /><button><a href='https://clk.tradedoubler.com/click?p=281568&a=3127979&g=24202230' target='_blank'>SEE TOUR</a></button>"
+    },
+    {
+      "title": "Plaza Römerberg",
+      "titleUrl": "plaza-roemerberg",
+      "id": "21",
+      "description": "Está claro que si vienes a Hamburgo, una de las primeras cosas en las que tienes que pensar es en dónde vas a dormir. ¡Te simplificamos la tarea con nuestras 6 opciones de alojamiento en Hamburgo favoritas!",
+      "image": "https://i.imgur.com/v6Zm7YE.jpg",
+      "city": "frankfurt",
+      "category": "sightseeing",
       "body": "<p>My favourite monuments in Hamburg are these, these and these...</p><br><h2>History of Hamburg</h2><br><p>Hamburg's roots date from ...</p><br><img src='https://i.imgur.com/L2bsjbG.jpg' alt='hamburg' /><button><a href='https://clk.tradedoubler.com/click?p=281568&a=3127979&g=24202230' target='_blank'>SEE TOUR</a></button>"
     }
   ],
   "spots": [
     {
       "title": "⭐️ Filarmónica del Elba",
-      "_id": "1",
+      "id": "1",
       "description": "Una de las maravillas arquitectónicas del país y símbolo de la ciudad desde su apertura en 2007.",
       "latitude": 53.54129400000003,
       "longitude": 9.984282000000011,
@@ -42,7 +225,7 @@
     },
     {
       "title": "⭐️ Ayuntamiento de Hamburgo",
-      "_id": "2",
+      "id": "2",
       "description": "El Altes Rathaus de Hamburgo es la sede de la vida política de la ciudad. Su majestuosa fachada es solo un adelanto de lo que esconde en su interior: más de 600 salas en 17.000 metros cuadrados.",
       "latitude": 53.55038339999999,
       "longitude": 9.992368599999994,
@@ -53,7 +236,7 @@
     },
     {
       "title": "⭐️ Túnel del Elba",
-      "_id": "3",
+      "id": "3",
       "description": "El túnel del Elba, también llamado St. Pauli-Elbtunnel u Old Elbe Tunnel, es un trayecto de casi 430 metros que comunica la parte de la ciudad con la parte en la que está el puerto de mercancías.",
       "latitude": 53.5459887,
       "longitude": 9.966639099999982,
@@ -64,7 +247,7 @@
     },
     {
       "title": "⭐️ Catedral de Colonia",
-      "_id": "4",
+      "id": "4",
       "description": "El monumento más visitado de todo el país y el lugar en el que se dice están enterrados los Reyes Magos. ¡Un imperdible sin duda!",
       "latitude": 50.941278400000016,
       "longitude": 6.9582814000000015,
@@ -75,7 +258,7 @@
     },
     {
       "title": "🍫 Museo del Chocolate",
-      "_id": "5",
+      "id": "5",
       "description": "Descubre los más de 5000 años de historia del chocolate en uno de los lugares más populares de Colonia.",
       "latitude": 50.932245699999996,
       "longitude": 6.9643738999999805,
@@ -86,7 +269,7 @@
     },
     {
       "title": "🚈 Estación Central de Frankfurt",
-      "_id": "6",
+      "id": "6",
       "description": "Es la mayor estación de ferrocarril de Fráncfort del Meno y una de las principales de Alemania. Conecta toda la ciudad tanto con la red del U-Bahn y S-Bahn.",
       "latitude": 50.1065289999999,
       "longitude": 8.66216179999999,
@@ -97,7 +280,7 @@
     },
     {
       "title": "🛩 Aeropuerto de Frankfurt",
-      "_id": "7",
+      "id": "7",
       "description": "El aeropuerto de Frankfurt es el aeropuerto más grande de toda Alemania. Hay diversas formas de ir desde el aeropuerto de Frankfurt a la estación central o al centro de la ciudad: utilizando el transporte público (S-Bahn) con las líneas S8 o S9, con un traslado privado o en taxi.",
       "latitude": 50.0379325999999,
       "longitude": 8.56215179999998,
@@ -108,7 +291,7 @@
     },
     {
       "title": "🏰 Castillo de Heidelberg",
-      "_id": "8",
+      "id": "8",
       "description": "Uno de los imprescindibles de Heidelberg es sin duda su castillo, denominado Schloss Heidelber.",
       "latitude": 49.4106196,
       "longitude": 8.715309199999982,
@@ -119,7 +302,7 @@
     },
     {
       "title": "🐒 Puente del Mono",
-      "_id": "9",
+      "id": "9",
       "description": "La Estatua del Mono del Puente de Carlos Teodoro, denominada Brückeaffe, es uno de los puntos más fotografiados de Heidelberg. Y no es para menos, se pueden hacer fotos muy buenas desde aquí (exceptuando la mía de arriba). Hay una leyenda que dice que si tocas al mono volverás a la ciudad de Heidelberg algún día, así que ya sabes.",
       "latitude": 49.41314678615803,
       "longitude": 8.709489747385906,
@@ -130,7 +313,7 @@
     },
     {
       "title": "🚈 Estación Central de Heidelberg",
-      "_id": "10",
+      "id": "10",
       "description": "En una posicion de lo más envidiable tienes la estación de Heidelberg, desde la cual llegarás en cuestión de unos 15 minutos al centro de la ciudad.",
       "latitude": 49.40393820000003,
       "longitude": 8.6758142999999876,
@@ -141,7 +324,7 @@
     },
     {
       "title": "⭐️ Puerta de Brandeburgo",
-      "_id": "11",
+      "id": "11",
       "description": "Simbolo de la ciudad de Berlin y de la reunificacion alemana, la Puerta de Brandenburgo es uno de los imprescindibles en la capital y punto de partida de tus aventuras en Berlín.",
       "latitude": 52.51627460000003,
       "longitude": 13.37770410000001,
@@ -152,7 +335,7 @@
     },
     {
       "title": "⭐️ Alexanderplatz",
-      "_id": "12",
+      "id": "12",
       "description": "Bievenido a la plaza mas importante de Berlin. Aqui hallaras algunos de los edificios mas emblematicos de la ciudad, entre los que se encuentra la Torre de Television.",
       "latitude": 52.5219814,
       "longitude": 13.413306,
@@ -163,7 +346,7 @@
     },
     {
       "title": "🥙 Mustafa's Gemüse Kebap",
-      "_id": "13",
+      "id": "13",
       "description": "Situado en el barrio de Kreuzberg, es el kebap más famoso de Alemania y uno de los sitios para comer más concurridos de Berlín, tanto que a veces hay largas colas para comprar un kebap. ¡Será por algo!",
       "latitude": 52.493962900000014,
       "longitude": 13.387956599999983,
@@ -174,7 +357,7 @@
     },
     {
       "title": "⭐️ Ayuntamiento Nuevo de Múnich",
-      "_id": "14",
+      "id": "14",
       "description": "El Neues Rathaus de Marienplatz es un imprescindible en la ciudad de Múnich. Intenta ver el espectáculo diario del carillón de su torre principal a las 11:00, 12:00 o a las 17:00 horas si vas de marzo a octubre.",
       "latitude": 48.137579799999982,
       "longitude": 11.5758153,
@@ -185,7 +368,7 @@
     },
     {
       "title": "🍻 Cervecería Hofbräuhaus",
-      "_id": "15",
+      "id": "15",
       "description": "Tu visita a Múnich no puede pasar por alto una parada en su cervecería más famosa, la Hofbräuhaus. Ubicada en la parte histórica de la ciudad y también en la zona céntrica (cerca de Marienplatz), esta cervecería cuenta con más de 400 años de historia. Pídete una buena cerveza y un codillo (Schweinaxe)",
       "latitude": 48.13760980000003,
       "longitude": 11.579925300000017,
@@ -196,7 +379,7 @@
     },
     {
       "title": "🏰 Castillo de Neuschwanstein",
-      "_id": "16",
+      "id": "16",
       "description": "El Castillo de Neuschwanstein, también conocido como el castillo del Rey Loco, es una de las principales atracciones turísticas de Alemania, no solo por su grandiosidad, sino también por la belleza del paisaje que lo rodea.",
       "latitude": 47.557574000000045,
       "longitude": 10.749800399999993,
@@ -207,7 +390,7 @@
     },
     {
       "title": "⭐️ Porta Nigra",
-      "_id": "17",
+      "id": "17",
       "description": "La Porta Nigra de Trier, o Tréveris en español, es uno de los monumentos más antiguos de toda Alemania, y un imprescindible si visitas la ciudad. Datada de hace más de 1850 años de antigüedad, la Porta Nigra es la puerta romana que daba acceso a la ciudad. A día de hoy, es el punto de encuentro de muchos de los que viven en la ciudad.",
       "latitude": 49.75962309999999,
       "longitude": 6.644165900000019,
@@ -218,7 +401,7 @@
     },
     {
       "title": "⭐️ Estatua de Karl Marx",
-      "_id": "18",
+      "id": "18",
       "description": "¿Sabías que este político revolucionario nació en Trier? ¡Pues sí! La Estatua de Marx fue un regalo que le hizo la República Popular China en 2018 a la ciudad y ahora es uno de los símbolos de Trier.",
       "latitude": 49.75959370000002,
       "longitude": 6.642667300000005,
@@ -229,7 +412,7 @@
     },
     {
       "title": "🏰 Castillo de Cochem",
-      "_id": "19",
+      "id": "19",
       "description": "El castillo de Cochem, también conocido como Reichsburg Cochem, es un antiguo castillo feudal que se erige en una colina que domina todo el valle del río Mosela.",
       "latitude": 50.142260000000014,
       "longitude": 7.167048000000005,
@@ -240,7 +423,7 @@
     },
     {
       "title": "⭐  East Side Gallery",
-      "_id": "20",
+      "id": "20",
       "description": "El Muro de Berlín es la atracción turística más visitada de la capital alemana, ¡y con razón! Este monumento es un símbolo muy importante de la historia de Alemania y, a pesar de que el trozo de muro más famoso sea el East Side Gallery, aún quedan otros restos por toda la ciudad. ¿Te animas a descubrirlos?.",
       "latitude": 52.50502239999999,
       "longitude": 13.4396952,
@@ -251,7 +434,7 @@
     },
     {
       "title": "💀 Barrio de Sankt Pauli",
-      "_id": "21",
+      "id": "21",
       "description": "Conocido por su equipo de fútbol, por su barrio rojo, por su vida nocturna y por haber sido testigo de los inicios de la carrera musical de The Beatles, Sankt Pauli es el barrio más famoso de Hamburgo. Pero además de todo esto, hay otras muchas cosas que visitar. ¡Te aseguramos que no te dejará indiferente!",
       "latitude": 53.549737513187615,
       "longitude": 9.96240184999999,
@@ -262,7 +445,7 @@
     },
     {
       "title": "🚢  El puerto de Hamburgo",
-      "_id": "22",
+      "id": "22",
       "description": "Hamburger Hafen, en alemán, es una de las principales atracciones de esta ciudad. Se ubica en la desembocadura del río Elba y se le conoce también como «la puerta al mundo de Alemania», puesto que se trata del puerto más grande del país germano y el tercero más grande de Europa.",
       "latitude": 53.543599999999984,
       "longitude": 9.979555599999994,
@@ -273,7 +456,7 @@
     },
     {
       "title": "🛏 Hotel Superbude St. Georg (€€)",
-      "_id": "23",
+      "id": "23",
       "description": "Este hotel situado en el centro de Hamburgo es una muy buena opción si quieres un hotel barato que incluya un desayuno tipo buffet. Es ideal si no quieres un hotel convencional pero sigues queriendo mantener calidad.",
       "latitude": 53.5505615999999009,
       "longitude": 10.0217733,
@@ -284,7 +467,7 @@
     },
     {
       "title": "⭐️ Plaza Römerberg",
-      "_id": "24",
+      "id": "24",
       "description": "En pleno centro de Frankfurt tienes esta plaza tan popular que destaca entre muchas cosas por sus casas tan especiales.",
       "latitude": 50.11028790000001,
       "longitude": 8.682154700000012,
@@ -295,7 +478,7 @@
     },
     {
       "title": "⭐️ Antigua Ópera",
-      "_id": "25",
+      "id": "25",
       "description": "La Alte Oper de Frankfurt es un edificio renacentista restaurada con la ayuda de la gente tras los incendios de la Segunda Guerra Mundial. A día de hoy es sede de muchísimos eventos y actuaciones.",
       "latitude": 50.1160319,
       "longitude": 8.671915999999982,
@@ -306,7 +489,7 @@
     },
     {
       "title": "🛏 Hotel Paulaner am Dom (€€)",
-      "_id": "26",
+      "id": "26",
       "description": "El Hotel Paulaner am Dom de Frankfurt recibe su nombre por estar situada al lado de la catedral (Dom) de San Bartolomé. Además, tienes muchísimos museos al lado. ¡Muy recomendable!",
       "latitude": 50.110915,
       "longitude": 8.68612999999999,
@@ -317,7 +500,7 @@
     },
     {
       "title": "🛏  Hotel Kommerz (€)",
-      "_id": "27",
+      "id": "27",
       "description": "A tan solo 200 metros de la Catedral de Colonia tienes este hotel con habitaciones amplias, saunas y un buen buffet diario. Relación calidad-precio increíble.",
       "latitude": 50.9433333,
       "longitude": 6.9583669,
@@ -328,7 +511,7 @@
     },
     {
       "title": "🛩  Aeropuerto de Colonia/Bonn",
-      "_id": "28",
+      "id": "28",
       "description": "La cuarta ciudad más grande de todo el país comparte aeropuerto con la ciudad de los Haribos y no son pocas las personas que pasan por el a diario.",
       "latitude": 50.87071680000001,
       "longitude": 7.140734399999986,
@@ -339,7 +522,7 @@
     },
     {
       "title": "🚂 Estación principal (Hauptbahnhof Köln)",
-      "_id": "29",
+      "id": "29",
       "description": "En una posición céntrica envidiable, es casi imposible no pasar por la estación principal de Colonia en tu visita a la ciudad.",
       "latitude": 50.94321410000002,
       "longitude": 6.958601700000004,
@@ -350,7 +533,7 @@
     },
     {
       "title": "🛩  Aeropuerto Internacional de Múnich-Franz Josef Strauss",
-      "_id": "30",
+      "id": "30",
       "description": "Situado a 28 km al noroeste de Múnich. Es el segundo aeropuerto con más tráfico de Alemania y el noveno de Europa. Tiene conexión directa a la ciudad de Múnich a través de la línea de tren S8.",
       "latitude": 48.3536972,
       "longitude": 11.775110999999994,
@@ -361,7 +544,7 @@
     },
     {
       "title": "🚍 Estación de autobuses (ZOB München)",
-      "_id": "31",
+      "id": "31",
       "description": "Es la estación central de autobuses ubicada en el barrio de Maxvorstadt de Múnich. La estación de S-Bahn más cercana es la estación Munich Hackerbrücke.",
       "latitude": 48.142276,
       "longitude": 11.54984800000002,
@@ -372,7 +555,7 @@
     },
     {
       "title": "🚂 Estación principal (Hauptbahnhof München)",
-      "_id": "32",
+      "id": "32",
       "description": "Es la principal estación de ferrocarril de la ciudad de Múnich. Tiene conexiones con las líneas de metro U1, U2, U4, U5, U7 y U8.",
       "latitude": 48.14026689999999,
       "longitude": 11.559997999999986,
@@ -383,7 +566,7 @@
     },
     {
       "title": "🛩  Aeropuerto de Berlín-Tegel (TXL)",
-      "_id": "33",
+      "id": "33",
       "description": "Está localizado a ocho kilómetros del centro de Berlín y es el principal aeropuerto de la ciudad.",
       "latitude": 52.5588327,
       "longitude": 13.288437399999982,
@@ -394,7 +577,7 @@
     },
     {
       "title": "🛩 Aeropuerto de Berlín-Schonefeld (SXF)",
-      "_id": "34",
+      "id": "34",
       "description": "Este aeropuerto se encuentra a 24 kilómetros al sureste de Berlín. Durante la época del Muro de Berlín, fue el mayor aeropuerto civil de la RDA y el único que daba servicio a Berlín Este.",
       "latitude": 52.373315299999994,
       "longitude": 13.506449699999989,
@@ -405,7 +588,7 @@
     },
     {
       "title": "🚂 Estación principal (Hauptbahnhof Berlin)",
-      "_id": "35",
+      "id": "35",
       "description": "La Estación Central de Berlín es la mayor estación ferroviaria de paso de la Unión Europea. Está ubicada en el centro de la ciudad, cerca de la Cancillería, del Reichstag (edificio del Parlamento de Alemania) y de la Puerta de Brandeburgo.",
       "latitude": 52.52508389999999,
       "longitude": 13.369401999999981,
@@ -416,7 +599,7 @@
     },
     {
       "title": "🚂 Estación principal (Hauptbahnhof Hamburg)",
-      "_id": "36",
+      "id": "36",
       "description": "Es la estación principal de la ciudad. Se inauguró en 1906 con el propósito de reemplazar las 4 terminales con las que contaba Hamburgo en aquel entonces. Con una media de 550.000 pasajeros al día, es la estación de tren más transitada de Alemania y la segunda más transitada de Europa después de la de Gare du Nord en París.",
       "latitude": 53.55292599,
       "longitude": 10.0066044999999,
@@ -427,7 +610,7 @@
     },
     {
       "title": "🛩 Aeropuerto de Hamburgo",
-      "_id": "37",
+      "id": "37",
       "description": "El aeropuerto de Hamburgo (HAM) es el aeropuerto internacional de la ciudad hanseática de Hamburgo. Se encuentra a aprox. 10 kilómetros del centro de la ciudad, lo que se traduce en media hora de trayecto, tanto en vehículo privado como en transporte público. La línea de metro que te llevará a la Estación Central de Hamburgo desde el aeropuerto es la S1.",
       "latitude": 53.633622,
       "longitude": 9.9974128,
@@ -438,7 +621,7 @@
     },
     {
       "title": "🚂 Estación principal (Hauptbahnhof Bremen)",
-      "_id": "38",
+      "id": "38",
       "description": "La estación principal de Bremen se encuentra en una posición muy céntrica. Desde allí podrás llegar al centro de la ciudad en cuestión de 10-15 minutos a pie. Además, en el camino podrás ver el famoso Molino de Bremen.",
       "latitude": 53.08165250000002,
       "longitude": 8.81390279999998,
@@ -449,7 +632,7 @@
     },
     {
       "title": "⭐️ Molino de Bremen",
-      "_id": "39",
+      "id": "39",
       "description": "Este popular molino, que puede ser perfectamente el punto más fotografiado de la ciudad, es a día de hoy una cafetería-restaurante. ¡A nosotros nos encanta, ya que significa de alguna forma la entrada a la ciudad!",
       "latitude": 53.08017010000001,
       "longitude": 8.806884000000016,
@@ -460,7 +643,7 @@
     },
     {
       "title": "⭐️ Estatua de Los Músicos de Bremen",
-      "_id": "40",
+      "id": "40",
       "description": "Justo al lado del Ayuntamiento tienes esta peculiar estatua que rinde homenaje a la obra Los Músicos de Bremen, de los hermanos Grimm",
       "latitude": 53.076227000000024,
       "longitude": 8.807576100000007,
@@ -471,7 +654,7 @@
     },
     {
       "title": "⭐️ Escultura de los Cerdos de Bremen",
-      "_id": "41",
+      "id": "41",
       "description": "En la Sögestrasse encontrarás a estos simpáticos animales. Se encuentran precisamente en esta calle porque este era el camino de los pastores hacia el prado municipal",
       "latitude": 53.07819908278097,
       "longitude": 8.808165279449275,
@@ -482,7 +665,7 @@
     },
     {
       "title": "🍗 Schüttinger",
-      "_id": "42",
+      "id": "42",
       "description": "Dicen que fue el primer pub/restaurante de Bremen en tener su propia cerveza. La comida está simplemente deliciosa. ¡Si podéis probar el Schnitzel nos lo agradeceréis!",
       "latitude": 53.07509250000001,
       "longitude": 8.806762700000013,
