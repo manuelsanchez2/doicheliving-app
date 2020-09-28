@@ -7,41 +7,41 @@ const ContentContainer = styled.section`
   background: white;
   display: flex;
   flex-direction: column;
-
-  h2,
-  h3 {
-    text-align: center;
-    margin: 0.5rem 0;
-  }
-
   h2 {
+    text-align: center;
     margin-top: 1.5rem;
+    margin-bottom: 0.2rem;
   }
-
+  h3 {
+    border-left: 3px solid var(--color-primary);
+    margin: 0.8rem 0.2rem 0.5 8rem 0;
+    padding-left: 0.5rem;
+  }
   h4 {
-    margin: 0.5rem 0;
+    margin: 0.8rem 0.2rem 0.5 8rem 0;
+    text-align: center;
   }
-
   p {
-    margin: 0.5rem 0;
+    margin: 0.7rem 0;
   }
-
+  div {
+    display: flex;
+    flex-direction: column;
+  }
   img {
     align-self: center;
     width: 90%;
-    margin: 0.5rem 0;
+    margin: 0.8rem auto;
     border-radius: 10px;
     box-shadow: 0.5px 0px 5px 0px rgba(0, 0, 0, 0.01);
   }
-
   a {
     text-decoration: none;
     color: red;
   }
-
   button {
     align-self: center;
-    margin: 0.5rem 0;
+    margin: 1rem 0;
     border: 1px solid var(--color-gradient-submit);
     border-radius: 15px;
     max-width: 70%;
@@ -53,9 +53,21 @@ const ContentContainer = styled.section`
     letter-spacing: 1px;
     display: block;
   }
-
   button > a {
     color: white;
+  }
+  ol {
+    margin-left: 0.2rem;
+    padding-left: 0.8rem;
+    font-family: var(--font-lato);
+  }
+  ul {
+    margin-left: 0.2rem;
+    padding-left: 0.8rem;
+    font-family: var(--font-lato);
+  }
+  li {
+    margin-bottom: 0.2rem;
   }
 `;
 
