@@ -7,6 +7,7 @@ const { initDatabase } = require("./lib/database");
 
 const users = require("./lib/routes/users");
 const spots = require("./lib/routes/spots");
+const articles = require("./lib/routes/articles");
 
 const port = process.env.PORT || 3001;
 const app = express();
@@ -17,6 +18,7 @@ app.use(morgan("common"));
 
 app.use("/api/users", users);
 app.use("/api/spots", spots);
+app.use("/api/articles", articles);
 
 app.use(express.static(path.join(__dirname, "client/build")));
 
