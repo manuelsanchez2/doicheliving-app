@@ -14,11 +14,11 @@ const GlobalStyles = () => {
         }
         @font-face {
           font-family: "Lato-Regular";
-          src: url(${Lato}) format("ttf");
+          src: url(${Lato}) format("truetype");
         }
         @font-face {
           font-family: "Nunito-Regular";
-          src: url(${Nunito}) format("ttf");
+          src: url(${Nunito}) format("truetype");
         }
 
         :root {
