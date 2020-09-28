@@ -214,7 +214,7 @@
   "spots": [
     {
       "title": "⭐️ Filarmónica del Elba",
-      "id": "1",
+      "id": 1,
       "description": "Una de las maravillas arquitectónicas del país y símbolo de la ciudad desde su apertura en 2007.",
       "latitude": 53.54129400000003,
       "longitude": 9.984282000000011,
