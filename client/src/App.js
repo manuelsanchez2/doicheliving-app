@@ -14,6 +14,7 @@ import Munich from "./pages/destinations/Munich/Munich";
 import Frankfurt from "./pages/destinations/Frankfurt/Frankfurt";
 import Berlin from "./pages/destinations/Berlin/Berlin";
 import SearchRouter from "./SearchRouter";
+import Profile from "./pages/Profile/Profile";
 
 function App() {
   return (
@@ -44,6 +45,9 @@ function App() {
           </Route>
           <Route path="/register">
             <Register />
+          </Route>
+          <Route path="/profile">
+            <Profile />
           </Route>
           <Route path="/destinations/hamburg">
             <Hamburg />
