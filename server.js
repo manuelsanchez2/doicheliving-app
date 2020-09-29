@@ -1,15 +1,24 @@
 const express = require("express");
-const app = express();
-const morgan = require("morgan");
-const jsonServer = require("json-server");
-const router = jsonServer.router("db.json");
-const middlewares = jsonServer.defaults();
-
 const path = require("path");
+const morgan = require("morgan");
+require("dotenv").config();
+
+const { initDatabase } = require("./lib/database");
+
+const users = require("./lib/routes/users");
+const spots = require("./lib/routes/spots");
+const articles = require("./lib/routes/articles");
 
 const port = process.env.PORT || 3001;
+const app = express();
+
+app.use(express.json());
 
 app.use(morgan("common"));
+
+app.use("/api/users", users);
+app.use("/api/spots", spots);
+app.use("/api/articles", articles);
 
 app.use(express.static(path.join(__dirname, "client/build")));
 
@@ -17,14 +26,16 @@ app.use(
   "/storybook",
   express.static(path.join(__dirname, "client/storybook-static"))
 );
-
-app.use("/api", router);
-app.use(middlewares);
 // Handle React routing, return all requests to React app
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client/build", "index.html"));
+  res.sendFile(path.join(__dirname, "client/build/index.html"));
 });
 
-app.listen(port, () => {
-  console.log(`Doiche Living App listening at http://localhost:${port}`);
-});
+initDatabase(process.env.MONGO_URL, process.env.MONGO_DB_NAME).then(
+  async () => {
+    console.log(`Database ${process.env.MONGO_DB_NAME} is working`);
+    app.listen(port, () => {
+      console.log(`Server is really running on http://localhost:${port}`);
+    });
+  }
+);
