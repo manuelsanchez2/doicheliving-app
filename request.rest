@@ -1,0 +1,7 @@
+GET http://localhost:3001/api/articles
+
+###
+GET http://localhost:3001/api/spots
+
+###
+GET http://localhost:3001/api/users
