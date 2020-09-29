@@ -29,7 +29,7 @@ const Register = () => {
           <SignupForm>
             <SignupFormInputWrapper>
               <label>Nombre</label>
-              <input type="name" id="name" name="name" />
+              <input type="name" id="userName" name="userName" />
             </SignupFormInputWrapper>
             <SignupFormInputWrapper>
               <label>Email</label>
@@ -41,7 +41,11 @@ const Register = () => {
             </SignupFormInputWrapper>
             <SignupFormInputWrapper>
               <label>Confirmar Contraseña</label>
-              <input type="password" id="password2" name="password2" />
+              <input
+                type="password"
+                id="passwordRepeat"
+                name="passwordRepeat"
+              />
             </SignupFormInputWrapper>
             <input type="submit" value="REGISTRARME" />
           </SignupForm>
