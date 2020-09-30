@@ -14,29 +14,40 @@ const Container = styled.div`
   padding-top: 0.3rem;
   margin-right: 0.1rem;
 
-  & > img {
+  a {
+    text-decoration: none;
+    color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & > a > img {
     height: 2.3vh;
     margin-bottom: 0.2rem;
     margin-left: 0.6rem;
   }
 
-  & > small {
+  & > a > small {
     font-size: 0.6rem;
     margin-left: 0.5rem;
   }
 `;
 
-const HomeSocialSectionItemContainer = ({ small, alt, src }) => {
+const HomeSocialSectionItemContainer = ({ href, small, alt, src }) => {
   return (
     <Container>
-      <img src={src} alt={alt} />
-      <small>{small}</small>
+      <a href={href} rel="nofollow noreferrer" target="_blank">
+        <img src={src} alt={alt} />
+        <small>{small}</small>
+      </a>
     </Container>
   );
 };
 
 HomeSocialSectionItemContainer.propTypes = {
   children: PropTypes.node,
+  href: PropTypes.string,
   src: PropTypes.string,
   alt: PropTypes.string,
   small: PropTypes.string,

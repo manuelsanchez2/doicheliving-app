@@ -164,23 +164,27 @@ const Home = () => {
           <h3>¿Te gusta Doiche Living?</h3>
           <HomeSocialSectionContainer>
             <HomeSocialSectionItemContainer
+              href="https://www.instagram.com/doicheliving/"
               src={instagramSrc}
-              alt=""
+              alt="Instagram logo"
               small={"Síguenos en Instagram"}
             />
             <HomeSocialSectionItemContainer
+              href="http://mailto:info@doicheliving.com/"
               src={mailSrc}
-              alt=""
+              alt="Mail logo"
               small={"Contacta con nosotros"}
             />
             <HomeSocialSectionItemContainer
+              href="https://www.facebook.com/blogdoicheliving/"
               src={facebookSrc}
-              alt=""
-              small={"Síguenos en Instagram"}
+              alt="Facebook logo"
+              small={"Síguenos en Facebook"}
             />
             <HomeSocialSectionItemContainer
+              href="https://www.facebook.com/blogdoicheliving/"
               src={shareSrc}
-              alt=""
+              alt="Share logo"
               small={"Comparte la aplicación"}
             />
           </HomeSocialSectionContainer>
