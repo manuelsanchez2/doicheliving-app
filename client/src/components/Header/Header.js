@@ -30,10 +30,12 @@ const Header = () => {
     <StyledHeader>
       <Hamburger />
 
-      <ImageHeader src={doichelivingSrc} alt="" />
+      <Link to="/home">
+        <ImageHeader src={doichelivingSrc} alt="logo doicheliving" />
+      </Link>
 
       <Link to="/profile">
-        <ImageHeader src={profileSrc} alt="" />
+        <ImageHeader src={profileSrc} alt="profile icon" />
       </Link>
     </StyledHeader>
   );
