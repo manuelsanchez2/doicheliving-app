@@ -16,13 +16,12 @@ const HomeSubscribeSectionField = styled.div`
     border: 1px solid var(--color-gradient-submit);
     border-radius: 15px;
     background: var(--color-gradient-submit);
-    margin: 0 auto;
-    margin-top: 6px;
+    margin: 1rem auto 0.7rem auto;
     padding: 0.5rem 2rem;
     color: var(--color-white);
     font-family: var(--font-lato);
     font-size: 1rem;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     display: block;
   }
 `;
