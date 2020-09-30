@@ -59,7 +59,7 @@ const Search = () => {
               <option value="cologne">Colonia</option>
               <option value="frankfurt">Frankfurt</option>
               <option value="hamburg" selected>
-                Hamburg
+                Hamburgo
               </option>
               <option value="munich">Múnich</option>
             </select>
