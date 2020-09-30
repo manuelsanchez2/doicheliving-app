@@ -58,7 +58,9 @@ const Search = () => {
               <option value="berlin">Berlín</option>
               <option value="cologne">Colonia</option>
               <option value="frankfurt">Frankfurt</option>
-              <option value="hamburg">Hamburg</option>
+              <option value="hamburg" selected>
+                Hamburg
+              </option>
               <option value="munich">Múnich</option>
             </select>
           </SearchSelector>
@@ -66,11 +68,16 @@ const Search = () => {
           <SearchSelector>
             <label>Categoría</label>
             <select name="category" id="category">
+              <option value="sightseeing" selected>
+                Cosas que ver
+              </option>
               <option value="accommodation">Dónde dormir</option>
               <option value="restaurants">Dónde comer</option>
               <option value="transport">Cómo moverse</option>
               <option value="parks">Zonas verdes</option>
-              <option value="sightseeing">Monumentos</option>
+              <option value="leisure">Pasarlo bien</option>
+              <option value="musicals">Musicales y Espectáculos</option>
+              <option value="cultura">Museos y Galerías</option>
             </select>
           </SearchSelector>
           <input type="submit" value="BUSCAR" />
