@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import PropTypes from "prop-types";
 
 const Button = styled.button`
-  border: 0.1px solid var(--color-dark-border);
+  border: 0.5px solid var(--color-dark-border);
   background: var(--color-input);
   border-radius: 50%;
   width: 40px;

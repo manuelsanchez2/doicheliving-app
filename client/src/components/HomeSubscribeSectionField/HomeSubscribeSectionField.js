@@ -21,7 +21,7 @@ const HomeSubscribeSectionField = styled.div`
     color: var(--color-white);
     font-family: var(--font-lato);
     font-size: 1rem;
-    letter-spacing: 2px;
+    letter-spacing: 0.1rem;
     display: block;
   }
 `;
