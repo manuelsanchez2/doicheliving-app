@@ -37,7 +37,7 @@ const Container = styled.div`
 const HomeSocialSectionItemContainer = ({ href, small, alt, src }) => {
   return (
     <Container>
-      <a href={href} rel="nofollow noreferrer" target="_blank">
+      <a href={href} rel="nofollow noopener noreferrer" target="_blank">
         <img src={src} alt={alt} />
         <small>{small}</small>
       </a>
