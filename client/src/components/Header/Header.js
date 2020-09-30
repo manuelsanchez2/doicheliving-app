@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 import doichelivingSrc from "../../assets/icons/doicheliving-logo.png";
 import profileSrc from "../../assets/icons/header-profile.svg";
 import Hamburger from "./Hamburger";
+import { Link } from "react-router-dom";
 
 const ImageHeader = styled.img`
   height: 2rem;
@@ -31,7 +32,9 @@ const Header = () => {
 
       <ImageHeader src={doichelivingSrc} alt="" />
 
-      <ImageHeader src={profileSrc} alt="" />
+      <Link to="/profile">
+        <ImageHeader src={profileSrc} alt="" />
+      </Link>
     </StyledHeader>
   );
 };
