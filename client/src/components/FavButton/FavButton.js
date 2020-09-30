@@ -4,8 +4,8 @@ import favoriteIcon from "../../assets/icons/favorite-icon.svg";
 import PropTypes from "prop-types";
 
 const Button = styled.button`
-  border: 1px solid var(--color-dark-border);
-  background: var(--color-transparent);
+  border: 0.1px solid var(--color-dark-border);
+  background: var(--color-input);
   border-radius: 50%;
   width: 40px;
   height: 40px;
