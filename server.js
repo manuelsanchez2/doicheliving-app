@@ -1,24 +1,22 @@
 const express = require("express");
 const path = require("path");
 const morgan = require("morgan");
-require("dotenv").config();
+require("dotenv").config({ path: ".env" });
 
-const { initDatabase } = require("./lib/database");
+const initDatabase = require("./config/database");
 
-const users = require("./lib/routes/users");
-const spots = require("./lib/routes/spots");
-const articles = require("./lib/routes/articles");
+const usersRoute = require("./lib/routes/users");
+// const spotsRoute = require("./lib/routes/spots");
+// const articlesRoute = require("./lib/routes/articles");
 
-// const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3001;
 const app = express();
-
-app.use(express.json());
-
 app.use(morgan("common"));
+app.use(express.json({ extended: true }));
 
-app.use("/api/users", users);
-app.use("/api/spots", spots);
-app.use("/api/articles", articles);
+app.use("/api/users", usersRoute);
+// app.use("/api/spots", spotsRoute);
+// app.use("/api/articles", articlesRoute);
 
 app.use(express.static(path.join(__dirname, "client/build")));
 
@@ -31,13 +29,14 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "client/build/index.html"));
 });
 
+// initDatabase().then(async () => {
+//   app.listen(port, () => {
+//     console.log(`Server is really running on http://localhost:${port}`);
+//   });
+// });
+
 initDatabase();
 
-// initDatabase(process.env.MONGO_URL, process.env.MONGO_DB_NAME).then(
-//   async () => {
-//     console.log(`Database ${process.env.MONGO_DB_NAME} is working`);
-//     app.listen(port, () => {
-//       console.log(`Server is really running on http://localhost:${port}`);
-//     });
-//   }
-// );
+app.listen(port, () => {
+  console.log(`Server is really running on http://localhost:${port}`);
+});

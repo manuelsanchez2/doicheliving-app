@@ -1,1 +1,5 @@
 GET http://localhost:3001/api/articles
+
+###
+POST http://localhost:3001/api/users
+

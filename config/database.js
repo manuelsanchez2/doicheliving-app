@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-require("dotenv").config();
+require("dotenv").config({ path: "../.env" });
 
 const initDatabase = async () => {
   try {
@@ -16,4 +16,4 @@ const initDatabase = async () => {
   }
 };
 
-exports.initDatabase = initDatabase;
+module.exports = initDatabase;
