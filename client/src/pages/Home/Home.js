@@ -24,6 +24,7 @@ import cologneSrc from "../destinations/assets/cologne.jpg";
 import munichSrc from "../destinations/assets/munich.jpg";
 import frankfurtSrc from "../destinations/assets/frankfurt.jpg";
 import { getArticles } from "../../api/articles";
+import HomeMainSubtitle from "../../components/HomeMainSubtitle/HomeMainSubtitle";
 
 const mailchimpUrl = process.env.REACT_APP_MAILCHIMP_URL;
 
@@ -55,7 +56,7 @@ const Home = () => {
       <Header />
       <Main>
         <h2>¿Qué quieres descubrir de Alemania?</h2>
-        <h3>Organiza tu viaje</h3>
+        <HomeMainSubtitle>Organiza tu viaje</HomeMainSubtitle>
 
         {ArticlesByCategoryOrganization ? (
           <HomeCarouselContainer>
@@ -72,7 +73,7 @@ const Home = () => {
         ) : (
           " "
         )}
-        <h3>Destinos más populares</h3>
+        <HomeMainSubtitle>Destinos más populares</HomeMainSubtitle>
         <HomeCarouselContainer>
           <HomeSmallPictureContainer
             to={"/destinations/hamburg"}
@@ -105,7 +106,7 @@ const Home = () => {
             imageTitle="Múnich"
           />
         </HomeCarouselContainer>
-        <h3>Rutas por Alemania</h3>
+        <HomeMainSubtitle>Rutas por Alemania</HomeMainSubtitle>
         {ArticlesByCategoryRoutes ? (
           <HomeCarouselContainer>
             {ArticlesByCategoryRoutes.map((article) => (
@@ -164,23 +165,27 @@ const Home = () => {
           <h3>¿Te gusta Doiche Living?</h3>
           <HomeSocialSectionContainer>
             <HomeSocialSectionItemContainer
+              href="https://www.instagram.com/doicheliving/"
               src={instagramSrc}
-              alt=""
+              alt="Instagram logo"
               small={"Síguenos en Instagram"}
             />
             <HomeSocialSectionItemContainer
+              href="http://mailto:info@doicheliving.com/"
               src={mailSrc}
-              alt=""
+              alt="Mail logo"
               small={"Contacta con nosotros"}
             />
             <HomeSocialSectionItemContainer
+              href="https://www.facebook.com/blogdoicheliving/"
               src={facebookSrc}
-              alt=""
-              small={"Síguenos en Instagram"}
+              alt="Facebook logo"
+              small={"Síguenos en Facebook"}
             />
             <HomeSocialSectionItemContainer
+              href="https://www.facebook.com/blogdoicheliving/"
               src={shareSrc}
-              alt=""
+              alt="Share logo"
               small={"Comparte la aplicación"}
             />
           </HomeSocialSectionContainer>
