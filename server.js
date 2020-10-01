@@ -29,14 +29,14 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "client/build/index.html"));
 });
 
-// initDatabase().then(async () => {
-//   app.listen(port, () => {
-//     console.log(`Server is really running on http://localhost:${port}`);
-//   });
-// });
-
-initDatabase();
-
-app.listen(port, () => {
-  console.log(`Server is really running on http://localhost:${port}`);
+initDatabase().then(async () => {
+  app.listen(port, () => {
+    console.log(`Server is really running on http://localhost:${port}`);
+  });
 });
+
+// initDatabase();
+
+// app.listen(port, () => {
+//   console.log(`Server is really running on http://localhost:${port}`);
+// });
