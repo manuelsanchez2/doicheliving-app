@@ -54,23 +54,19 @@ const Search = () => {
         <SearchSelectorForm onSubmit={searchInfo}>
           <SearchSelector>
             <label>Ciudad</label>
-            <select name="city" id="city">
+            <select defaultValue="hamburg" name="city" id="city">
               <option value="berlin">Berlín</option>
               <option value="cologne">Colonia</option>
               <option value="frankfurt">Frankfurt</option>
-              <option value="hamburg" selected>
-                Hamburgo
-              </option>
+              <option value="hamburg">Hamburgo</option>
               <option value="munich">Múnich</option>
             </select>
           </SearchSelector>
 
           <SearchSelector>
             <label>Categoría</label>
-            <select name="category" id="category">
-              <option value="sightseeing" selected>
-                Cosas que ver
-              </option>
+            <select defaultValue="sightseeing" name="category" id="category">
+              <option value="sightseeing">Cosas que ver</option>
               <option value="accommodation">Dónde dormir</option>
               <option value="restaurants">Dónde comer</option>
               <option value="transport">Cómo moverse</option>
