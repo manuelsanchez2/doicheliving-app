@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Marker } from "react-map-gl";
 import mapMarkerYellow from "../../assets/icons/map-marker-yellow.svg";
 import mapMarkerRed from "../../assets/icons/map-marker-red.svg";
+import spotSrc from "../../assets/images/spot.jpg";
 
 import SpotPopupContainer from "../../components/SpotPopupContainer";
 
@@ -45,7 +46,10 @@ const Spot = ({ spot, onMarkerClick, onClose, popup }) => {
               {spot.image && <img src={spot.image} alt={spot.title} />}
             </>
           ) : (
-            <p>{spot.description}</p>
+            <div>
+              <p>{spot.description}</p>
+              <img src={spotSrc} alt="user spot" />
+            </div>
           )}
         </SpotPopupContainer>
       )}
