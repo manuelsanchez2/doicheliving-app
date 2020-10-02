@@ -26,25 +26,29 @@ const Spot = ({ spot, onMarkerClick, onClose, popup }) => {
           />
         </div>
       </Marker>
-      {popup ? (
+      {popup && (
         <SpotPopupContainer>
           <h3>{spot.title}</h3>
           <button onClick={onClose}>X</button>
-          <div>
+          {spot.address ? (
+            <>
+              <div>
+                <p>{spot.description}</p>
+                <small>{spot.address}</small>
+                {spot.addInfo && (
+                  <div
+                    // eslint-disable-next-line react/no-danger
+                    dangerouslySetInnerHTML={{ __html: spot.addInfo }}
+                  />
+                )}
+              </div>
+              {spot.image && <img src={spot.image} alt={spot.title} />}
+            </>
+          ) : (
             <p>{spot.description}</p>
-            <small>{spot.address}</small>
-            {spot.addInfo && (
-              <div
-                // eslint-disable-next-line react/no-danger
-                dangerouslySetInnerHTML={{ __html: spot.addInfo }}
-              />
-            )}
-            {/* {spot.addInfo && <p>{spot.addInfo}</p>} */}
-          </div>
-
-          {spot.image && <img src={spot.image} alt={spot.title} />}
+          )}
         </SpotPopupContainer>
-      ) : null}
+      )}
     </div>
   );
 };
