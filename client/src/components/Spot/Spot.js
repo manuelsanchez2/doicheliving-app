@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Marker } from "react-map-gl";
 import mapMarkerYellow from "../../assets/icons/map-marker-yellow.svg";
+import mapMarkerRed from "../../assets/icons/map-marker-red.svg";
+
 import SpotPopupContainer from "../../components/SpotPopupContainer";
 
 const Spot = ({ spot, onMarkerClick, onClose, popup }) => {
@@ -19,7 +21,7 @@ const Spot = ({ spot, onMarkerClick, onClose, popup }) => {
               height: "24px",
               width: "24px",
             }}
-            src={mapMarkerYellow}
+            src={spot.address ? mapMarkerYellow : mapMarkerRed}
             alt="map marker"
           />
         </div>
