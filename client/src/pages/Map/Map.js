@@ -74,21 +74,22 @@ const Map = () => {
           {/* Display of the existing spots and their popups */}
 
           {spots.map((spot) => (
-            <Spot
-              key={spot.id}
-              spot={spot}
-              popup={showPopup[spot.id]}
-              onMarkerClick={() =>
-                setShowPopup({
-                  [spot.id]: true,
-                })
-              }
-              onClose={() =>
-                setShowPopup({
-                  [spot.id]: false,
-                })
-              }
-            />
+            <React.Fragment key={spot._id}>
+              <Spot
+                spot={spot}
+                popup={showPopup[spot._id]}
+                onMarkerClick={() =>
+                  setShowPopup({
+                    [spot._id]: true,
+                  })
+                }
+                onClose={() =>
+                  setShowPopup({
+                    [spot._id]: false,
+                  })
+                }
+              />
+            </React.Fragment>
           ))}
 
           {/* Add the search bar  */}
