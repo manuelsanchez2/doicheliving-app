@@ -43,11 +43,13 @@ const Map = () => {
     // eslint-disable-next-line
   }, []);
 
+  const getSpots = async () => {
+    const spots = await listSpots();
+    setSpots(spots);
+  };
+
   useEffect(() => {
-    (async () => {
-      const spots = await listSpots();
-      setSpots(spots);
-    })();
+    getSpots();
   }, []);
 
   const showAddMarkerPopup = (event) => {
@@ -72,21 +74,22 @@ const Map = () => {
           {/* Display of the existing spots and their popups */}
 
           {spots.map((spot) => (
-            <Spot
-              key={spot.id}
-              spot={spot}
-              popup={showPopup[spot.id]}
-              onMarkerClick={() =>
-                setShowPopup({
-                  [spot.id]: true,
-                })
-              }
-              onClose={() =>
-                setShowPopup({
-                  [spot.id]: false,
-                })
-              }
-            />
+            <React.Fragment key={spot._id}>
+              <Spot
+                spot={spot}
+                popup={showPopup[spot._id]}
+                onMarkerClick={() =>
+                  setShowPopup({
+                    [spot._id]: true,
+                  })
+                }
+                onClose={() =>
+                  setShowPopup({
+                    [spot._id]: false,
+                  })
+                }
+              />
+            </React.Fragment>
           ))}
 
           {/* Add the search bar  */}
@@ -137,11 +140,18 @@ const Map = () => {
                 longitude={addSpot.longitude}
                 closeButton={true}
                 closeOnClick={false}
+                dynamicPosition={true}
                 anchor="top"
                 onClose={() => setAddSpot(null)}
               >
                 <SpotEntryFormContainer>
-                  <SpotEntryForm location={addSpot} />
+                  <SpotEntryForm
+                    onClose={() => {
+                      setAddSpot(null);
+                      getSpots();
+                    }}
+                    location={addSpot}
+                  />
                 </SpotEntryFormContainer>
               </Popup>
             </>

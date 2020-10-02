@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import React from "react";
+import React, { useState } from "react";
 import SubmitButton from "../SubmitButton/SubmitButton";
 import { useForm } from "react-hook-form";
 import { createSpot } from "../../api/spots";
@@ -20,21 +20,32 @@ const EntryForm = styled.form`
   }
 `;
 
-const SpotEntryForm = ({ location }) => {
+const EntryFormErrorMessage = styled.h3`
+  color: red;
+`;
+
+const SpotEntryForm = ({ location, onClose }) => {
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
   const { register, handleSubmit } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     try {
+      setLoading(true);
       data.latitude = location.latitude;
       data.longitude = location.longitude;
-      const spotCreated = createSpot(data);
+      const spotCreated = await createSpot(data);
       console.log(spotCreated);
+      onClose();
     } catch (error) {
       console.error(error);
+      setError(error.message);
+      setLoading(false);
     }
   };
   return (
     <EntryForm onSubmit={handleSubmit(onSubmit)}>
+      {error ? <EntryFormErrorMessage>{error}</EntryFormErrorMessage> : null}
       <label>
         Título
         <input name="title" required ref={register} />
@@ -49,7 +60,9 @@ const SpotEntryForm = ({ location }) => {
         Día de visita <input name="visitDate" type="date" ref={register} />
       </label>
 
-      <SubmitButton>CREAR SPOT</SubmitButton>
+      <SubmitButton disabled={loading}>
+        {loading ? "CARGANDO..." : "CREAR SPOT"}
+      </SubmitButton>
     </EntryForm>
   );
 };
@@ -57,6 +70,7 @@ const SpotEntryForm = ({ location }) => {
 SpotEntryForm.propTypes = {
   children: PropTypes.node,
   location: PropTypes.any,
+  onClose: PropTypes.func,
 };
 
 export default SpotEntryForm;

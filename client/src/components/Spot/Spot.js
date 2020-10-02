@@ -2,6 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Marker } from "react-map-gl";
 import mapMarkerYellow from "../../assets/icons/map-marker-yellow.svg";
+import mapMarkerRed from "../../assets/icons/map-marker-red.svg";
+import spotSrc from "../../assets/images/spot.jpg";
+
 import SpotPopupContainer from "../../components/SpotPopupContainer";
 
 const Spot = ({ spot, onMarkerClick, onClose, popup }) => {
@@ -19,30 +22,37 @@ const Spot = ({ spot, onMarkerClick, onClose, popup }) => {
               height: "24px",
               width: "24px",
             }}
-            src={mapMarkerYellow}
+            src={spot.address ? mapMarkerYellow : mapMarkerRed}
             alt="map marker"
           />
         </div>
       </Marker>
-      {popup ? (
+      {popup && (
         <SpotPopupContainer>
           <h3>{spot.title}</h3>
           <button onClick={onClose}>X</button>
-          <div>
-            <p>{spot.description}</p>
-            <small>{spot.address}</small>
-            {spot.addInfo && (
-              <div
-                // eslint-disable-next-line react/no-danger
-                dangerouslySetInnerHTML={{ __html: spot.addInfo }}
-              />
-            )}
-            {/* {spot.addInfo && <p>{spot.addInfo}</p>} */}
-          </div>
-
-          {spot.image && <img src={spot.image} alt={spot.title} />}
+          {spot.address ? (
+            <>
+              <div>
+                <p>{spot.description}</p>
+                <small>{spot.address}</small>
+                {spot.addInfo && (
+                  <div
+                    // eslint-disable-next-line react/no-danger
+                    dangerouslySetInnerHTML={{ __html: spot.addInfo }}
+                  />
+                )}
+              </div>
+              {spot.image && <img src={spot.image} alt={spot.title} />}
+            </>
+          ) : (
+            <div>
+              <p>{spot.description}</p>
+              <img src={spotSrc} alt="user spot" />
+            </div>
+          )}
         </SpotPopupContainer>
-      ) : null}
+      )}
     </div>
   );
 };
