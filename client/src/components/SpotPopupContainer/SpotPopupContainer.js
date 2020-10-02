@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 const SpotPopupContainer = styled.div`
   position: absolute;
   bottom: 0px;
-  width: inherit;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
