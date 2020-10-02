@@ -2,4 +2,19 @@ GET http://localhost:3001/api/articles
 
 ###
 POST http://localhost:3001/api/users
+Content-Type: application/json
 
+{
+    "name": "Manuelpapa",
+    "email": "manupapa@neuefische.de",
+    "password": "vivaitalia"
+}
+
+### 
+POST http://localhost:3001/api/auth
+Content-Type: application/json
+
+{
+    "email": "manupapa@neuefische.de",
+    "password": "vivaitalia"
+}
