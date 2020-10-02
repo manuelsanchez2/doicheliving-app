@@ -40,8 +40,8 @@ const SpotEntryForm = ({ location, onClose }) => {
     } catch (error) {
       console.error(error);
       setError(error.message);
+      setLoading(false);
     }
-    setLoading(false);
   };
   return (
     <EntryForm onSubmit={handleSubmit(onSubmit)}>
