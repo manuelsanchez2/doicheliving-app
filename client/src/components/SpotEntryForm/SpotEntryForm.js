@@ -23,11 +23,11 @@ const EntryForm = styled.form`
 const SpotEntryForm = ({ location }) => {
   const { register, handleSubmit } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     try {
       data.latitude = location.latitude;
       data.longitude = location.longitude;
-      const spotCreated = createSpot(data);
+      const spotCreated = await createSpot(data);
       console.log(spotCreated);
     } catch (error) {
       console.error(error);

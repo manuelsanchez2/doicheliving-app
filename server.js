@@ -7,7 +7,7 @@ const initDatabase = require("./config/database");
 
 const usersRoute = require("./lib/routes/users");
 const authRoute = require("./lib/routes/auth");
-// const spotsRoute = require("./lib/routes/spots");
+const spotsRoute = require("./lib/routes/spots");
 // const articlesRoute = require("./lib/routes/articles");
 
 const port = process.env.PORT || 3001;
@@ -17,7 +17,7 @@ app.use(express.json({ extended: true }));
 
 app.use("/api/users", usersRoute);
 app.use("/api/auth", authRoute);
-// app.use("/api/spots", spotsRoute);
+app.use("/api/spots", spotsRoute);
 // app.use("/api/articles", articlesRoute);
 
 app.use(express.static(path.join(__dirname, "client/build")));

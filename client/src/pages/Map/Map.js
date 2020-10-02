@@ -137,6 +137,7 @@ const Map = () => {
                 longitude={addSpot.longitude}
                 closeButton={true}
                 closeOnClick={false}
+                dynamicPosition={true}
                 anchor="top"
                 onClose={() => setAddSpot(null)}
               >
