@@ -43,11 +43,13 @@ const Map = () => {
     // eslint-disable-next-line
   }, []);
 
+  const getSpots = async () => {
+    const spots = await listSpots();
+    setSpots(spots);
+  };
+
   useEffect(() => {
-    (async () => {
-      const spots = await listSpots();
-      setSpots(spots);
-    })();
+    getSpots();
   }, []);
 
   const showAddMarkerPopup = (event) => {
@@ -142,7 +144,13 @@ const Map = () => {
                 onClose={() => setAddSpot(null)}
               >
                 <SpotEntryFormContainer>
-                  <SpotEntryForm location={addSpot} />
+                  <SpotEntryForm
+                    onClose={() => {
+                      setAddSpot(null);
+                      getSpots();
+                    }}
+                    location={addSpot}
+                  />
                 </SpotEntryFormContainer>
               </Popup>
             </>
