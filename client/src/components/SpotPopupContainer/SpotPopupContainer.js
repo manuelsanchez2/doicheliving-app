@@ -40,7 +40,7 @@ const SpotPopupContainer = styled.div`
     font-size: 0.6rem;
     font-family: var(--font-lato);
     margin: 0 auto 6px 0;
-    font-weight: bold;
+    margin-left: 0.3rem;
   }
 
   img {
@@ -55,11 +55,13 @@ const SpotPopupContainer = styled.div`
   small {
     font-size: 0.5rem;
     font-style: italic;
+    margin-left: 0.3rem;
   }
   p {
     font-size: 0.6rem;
     font-family: var(--font-lato);
     width: 90%;
+    margin-left: 0.3rem;
   }
 `;
 
