@@ -25,7 +25,7 @@ const SpotUserContainer = styled.div`
 
   .image__user__container {
     position: absolute;
-    top: 15px;
+    top: 22px;
     right: 37px;
     width: auto;
     height: 3rem;
