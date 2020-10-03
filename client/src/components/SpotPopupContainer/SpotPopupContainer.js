@@ -23,13 +23,6 @@ const SpotPopupContainer = styled.div`
     margin-left: 0.3rem;
   }
 
-  button {
-    width: 10%;
-    height: 10%;
-    border-radius: 50px;
-    margin-right: 2px;
-  }
-
   div {
     width: 65%;
     margin-left: 0.3rem;

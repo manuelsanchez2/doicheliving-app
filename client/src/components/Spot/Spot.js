@@ -6,6 +6,19 @@ import mapMarkerRed from "../../assets/icons/map-marker-red.svg";
 import spotSrc from "../../assets/images/spot.jpg";
 
 import SpotPopupContainer from "../../components/SpotPopupContainer";
+import styled from "@emotion/styled";
+
+const SpotPopUpCloseButton = styled.button`
+  background: red;
+  border: 0;
+  width: 21px;
+  color: white;
+  height: 21px;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  border-radius: 50px;
+`;
 
 const Spot = ({ spot, onMarkerClick, onClose, popup }) => {
   return (
@@ -30,7 +43,7 @@ const Spot = ({ spot, onMarkerClick, onClose, popup }) => {
       {popup && (
         <SpotPopupContainer>
           <h3>{spot.title}</h3>
-          <button onClick={onClose}>X</button>
+          <SpotPopUpCloseButton onClick={onClose}>X</SpotPopUpCloseButton>
           {spot.address ? (
             <>
               <div>
