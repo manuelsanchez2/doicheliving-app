@@ -20,6 +20,18 @@ const SpotPopUpCloseButton = styled.button`
   border-radius: 50px;
 `;
 
+const SpotUserContainer = styled.div`
+  display: flex;
+
+  .image__user__container {
+    position: absolute;
+    top: 15px;
+    right: 37px;
+    width: auto;
+    height: 3rem;
+  }
+`;
+
 const Spot = ({ spot, onMarkerClick, onClose, popup }) => {
   return (
     <div>
@@ -59,10 +71,14 @@ const Spot = ({ spot, onMarkerClick, onClose, popup }) => {
               {spot.image && <img src={spot.image} alt={spot.title} />}
             </>
           ) : (
-            <div>
+            <SpotUserContainer>
               <p>{spot.description}</p>
-              <img src={spotSrc} alt="user spot" />
-            </div>
+              <img
+                className="image__user__container"
+                src={spotSrc}
+                alt="user spot"
+              />
+            </SpotUserContainer>
           )}
         </SpotPopupContainer>
       )}
