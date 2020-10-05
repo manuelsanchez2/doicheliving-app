@@ -5,9 +5,9 @@ POST http://localhost:3001/api/users
 Content-Type: application/json
 
 {
-    "name": "Manuelpapa",
-    "email": "manupapa@neuefische.de",
-    "password": "vivaitalia"
+    "name": "Slawo",
+    "email": "slawo@neuefische.de",
+    "password": "ilovemanu"
 }
 
 ### 
@@ -15,6 +15,11 @@ POST http://localhost:3001/api/auth
 Content-Type: application/json
 
 {
-    "email": "manupapa@neuefische.de",
-    "password": "vivaitalia"
+    "email": "slawo@neuefische.de",
+    "password": "ilovemanu"
 }
+
+###
+POST http://localhost:3000/api/spots
+Content-Type: application/json 
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWY3YWQ4MmFjZWZlNDMyNGEyMjg2MTgwIn0sImlhdCI6MTYwMTg4NjI3MSwiZXhwIjoxNjAxODg5ODcxfQ.hCSDSqw29LFXmd7HwKgUAqy4WH8zNjwl7nbpJA2gJj8
