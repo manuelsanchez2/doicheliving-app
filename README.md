@@ -10,11 +10,11 @@ In an attempt to raise awareness on the beauty of the country, the blog provides
 
 In the first version of the project, you will find some functionalities that will help any interested user organize a trip to Germany:
 
-✔️ **An interactive map with 40+ spots to check** \
-✔️ **5 articles on how to organize your trip to Germany** \
-✔️ **4 articles on the main routes around the country** \
-✔️ **Destinations Hamburg, Berlin, Munich, Frankfurt and Cologne ready to be discovered** \
-✔️ **A filter function to search exactly what you want (let's say "accommodation" in "Hamburg")**
+✔️ An interactive map with 40+ spots to check \
+✔️ 5 articles on how to organize your trip to Germany \
+✔️ 4 articles on the main routes around the country \
+✔️ Destinations Hamburg, Berlin, Munich, Frankfurt and Cologne ready to be discovered \
+✔️ A filter function to search exactly what you want (let's say "accommodation" in "Hamburg")
 
 See demo [here](https://doicheliving.herokuapp.com/home).
 
@@ -24,10 +24,10 @@ See demo [here](https://doicheliving.herokuapp.com/home).
 
 Here you'll find the improvements that we are working on right now:
 
-- **User Register and Login authentication**
-- **The possibility of adding new spots on the map if logged**
-- **The possibility of saving articles as favourites if logged**
-- **Improve the filtering options and increase the amount of articles**
+- User Register and Login authentication
+- The possibility of adding new spots on the map if logged
+- The possibility of saving articles as favourites if logged
+- Improve the filtering options and increase the amount of articles
 
 Stay tuned for future updates!
 
@@ -55,6 +55,6 @@ You can run the server by using `npm run dev`
 
 ### 📸 SCREENS OF THE PROJECT
 
-![Doiche Living Screens](./client/src/assets/images/screens.gif)
+![Doiche Living Screens](./client/src/assets/images/screens-doicheliving.gif)
 
 See all of them [here](./client/src/assets/images).
