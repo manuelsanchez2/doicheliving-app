@@ -10,9 +10,6 @@ const MainMap = styled.main`
     width: 85%;
   }
 
-  .mapboxgl-ctrl-geocoder--input {
-  }
-
   .mapboxgl-popup-content {
     border-radius: 10px;
     box-shadow: 0.5px 0px 20px 0px rgba(0, 0, 0, 0.3);
@@ -22,7 +19,7 @@ const MainMap = styled.main`
     right: 6px;
     top: 5px;
     background-color: red;
-    color: white;
+    color: var(--color-white);
     border-radius: 50%;
     width: 19px;
   }
