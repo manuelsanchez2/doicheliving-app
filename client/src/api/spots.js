@@ -4,7 +4,6 @@ export async function listSpots() {
 }
 
 export async function createSpot(spot) {
-  console.log(spot);
   const response = await fetch("/api/spots", {
     method: "POST",
     headers: {
