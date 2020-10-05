@@ -6,6 +6,31 @@ import mapMarkerRed from "../../assets/icons/map-marker-red.svg";
 import spotSrc from "../../assets/images/spot.jpg";
 
 import SpotPopupContainer from "../../components/SpotPopupContainer";
+import styled from "@emotion/styled";
+
+const SpotPopUpCloseButton = styled.button`
+  background: red;
+  border: 0;
+  width: 21px;
+  color: white;
+  height: 21px;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  border-radius: 50px;
+`;
+
+const SpotUserContainer = styled.div`
+  display: flex;
+
+  .image__user__container {
+    position: absolute;
+    top: 16px;
+    right: 37px;
+    width: auto;
+    height: 3rem;
+  }
+`;
 
 const Spot = ({ spot, onMarkerClick, onClose, popup }) => {
   return (
@@ -30,7 +55,7 @@ const Spot = ({ spot, onMarkerClick, onClose, popup }) => {
       {popup && (
         <SpotPopupContainer>
           <h3>{spot.title}</h3>
-          <button onClick={onClose}>X</button>
+          <SpotPopUpCloseButton onClick={onClose}>X</SpotPopUpCloseButton>
           {spot.address ? (
             <>
               <div>
@@ -46,10 +71,14 @@ const Spot = ({ spot, onMarkerClick, onClose, popup }) => {
               {spot.image && <img src={spot.image} alt={spot.title} />}
             </>
           ) : (
-            <div>
+            <SpotUserContainer>
               <p>{spot.description}</p>
-              <img src={spotSrc} alt="user spot" />
-            </div>
+              <img
+                className="image__user__container"
+                src={spotSrc}
+                alt="user spot"
+              />
+            </SpotUserContainer>
           )}
         </SpotPopupContainer>
       )}

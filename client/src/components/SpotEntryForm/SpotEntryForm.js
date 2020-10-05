@@ -6,13 +6,14 @@ import { createSpot } from "../../api/spots";
 import PropTypes from "prop-types";
 
 const EntryForm = styled.form`
-  label,
   input,
   textarea {
     font-family: var(--font-lato);
     margin: 0.5rem 0;
     display: block;
     width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--color-dark-border);
   }
 
   button {
