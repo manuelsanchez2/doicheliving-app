@@ -23,3 +23,12 @@ Content-Type: application/json
 POST http://localhost:3000/api/spots
 Content-Type: application/json 
 x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWY3YWQ4MmFjZWZlNDMyNGEyMjg2MTgwIn0sImlhdCI6MTYwMTg4NjI3MSwiZXhwIjoxNjAxODg5ODcxfQ.hCSDSqw29LFXmd7HwKgUAqy4WH8zNjwl7nbpJA2gJj8
+
+{
+    "title": "micasasasas",
+    "description": "adsasdadsasd",
+    "latitude": 50,
+    "longitude": 8
+}
+
+### 
